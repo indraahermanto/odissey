@@ -1,0 +1,413 @@
+
+01:14:07 | 0.0.0.0
+http://localhost/odissey/main/login
+SELECT GET_LOCK('4f1cd9313229ab2a16fed25f56e51482502183df', 300) AS ci_session_lock 
+ Execution Time:0.0010001659393311
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '4f1cd9313229ab2a16fed25f56e51482502183df' 
+ Execution Time:0.003000020980835
+
+
+10:05:20 | 0.0.0.0
+http://localhost/odissey/main/login
+SELECT GET_LOCK('fea8f91d70714b2f115dc003195987b913687882', 300) AS ci_session_lock 
+ Execution Time:0
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = 'fea8f91d70714b2f115dc003195987b913687882' 
+ Execution Time:0.007000207901001
+
+
+10:05:26 | 0.0.0.0
+http://localhost/odissey/main/login
+SELECT GET_LOCK('fea8f91d70714b2f115dc003195987b913687882', 300) AS ci_session_lock 
+ Execution Time:0
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = 'fea8f91d70714b2f115dc003195987b913687882' 
+ Execution Time:0.0039999485015869
+
+
+10:12:56 | 0.0.0.0
+http://localhost/odissey/snba/coba
+SELECT GET_LOCK('87e63e6577ff093e79654c7c9fad713f1ae2bcda', 300) AS ci_session_lock 
+ Execution Time:0.00099992752075195
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '87e63e6577ff093e79654c7c9fad713f1ae2bcda' 
+ Execution Time:0.0060000419616699
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0.003000020980835
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0.0060009956359863
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0.00099992752075195
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0.00099992752075195
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0.00099992752075195
+
+
+10:18:05 | 0.0.0.0
+http://localhost/odissey/snba/coba
+SELECT GET_LOCK('87e63e6577ff093e79654c7c9fad713f1ae2bcda', 300) AS ci_session_lock 
+ Execution Time:0
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '87e63e6577ff093e79654c7c9fad713f1ae2bcda' 
+ Execution Time:0.0039999485015869
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0.003000020980835
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0.0039999485015869
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0.00099992752075195
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0.00099992752075195
+
+
+10:18:19 | 0.0.0.0
+http://localhost/odissey/snba/coba
+SELECT GET_LOCK('5ecfb0de6d02c09963b585168af34e0292e46e0a', 300) AS ci_session_lock 
+ Execution Time:0.0010001659393311
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '5ecfb0de6d02c09963b585168af34e0292e46e0a' 
+ Execution Time:0.0040011405944824
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0.003000020980835
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0.0060009956359863
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0.00099992752075195
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0.00099992752075195
+
+
+10:19:07 | 0.0.0.0
+http://localhost/odissey/snba/coba
+SELECT GET_LOCK('5ecfb0de6d02c09963b585168af34e0292e46e0a', 300) AS ci_session_lock 
+ Execution Time:0
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '5ecfb0de6d02c09963b585168af34e0292e46e0a' 
+ Execution Time:0.003000020980835
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0.002000093460083
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0.0049998760223389
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0.00099992752075195
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0.00099992752075195
+
+
+10:39:02 | 0.0.0.0
+http://localhost/odissey/snba/coba
+SELECT GET_LOCK('2d4a80154b28ad38adeaa5e923f5f0fd1386912a', 300) AS ci_session_lock 
+ Execution Time:0.00099992752075195
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '2d4a80154b28ad38adeaa5e923f5f0fd1386912a' 
+ Execution Time:0.0039999485015869
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0.00099992752075195
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0
+
+
+10:39:02 | 0.0.0.0
+http://localhost/odissey/snba/coba
+SELECT GET_LOCK('a0cbd99a45b24492a7392c82b422c0e6953620d3', 300) AS ci_session_lock 
+ Execution Time:0.0010001659393311
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = 'a0cbd99a45b24492a7392c82b422c0e6953620d3' 
+ Execution Time:0.003000020980835
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0.0010001659393311
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0.00099992752075195
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0.0010001659393311
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0.00099992752075195
+
+
+10:41:19 | 0.0.0.0
+http://localhost/odissey/snba/coba
+SELECT GET_LOCK('a0cbd99a45b24492a7392c82b422c0e6953620d3', 300) AS ci_session_lock 
+ Execution Time:0.0010001659393311
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = 'a0cbd99a45b24492a7392c82b422c0e6953620d3' 
+ Execution Time:0.0019998550415039
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0.00099992752075195
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0
+
+
+10:41:20 | 0.0.0.0
+http://localhost/odissey/snba/coba
+SELECT GET_LOCK('a0cbd99a45b24492a7392c82b422c0e6953620d3', 300) AS ci_session_lock 
+ Execution Time:0.0080001354217529
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = 'a0cbd99a45b24492a7392c82b422c0e6953620d3' 
+ Execution Time:0.0040009021759033
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0.0010001659393311
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0.0010011196136475
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0
+
+
+10:41:32 | 0.0.0.0
+http://localhost/odissey/snba/coba
+SELECT GET_LOCK('a0cbd99a45b24492a7392c82b422c0e6953620d3', 300) AS ci_session_lock 
+ Execution Time:0
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = 'a0cbd99a45b24492a7392c82b422c0e6953620d3' 
+ Execution Time:0.0019998550415039
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0.00099992752075195
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0.00099992752075195
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0.00099992752075195
+
+
+10:41:33 | 0.0.0.0
+http://localhost/odissey/snba/coba
+SELECT GET_LOCK('a0cbd99a45b24492a7392c82b422c0e6953620d3', 300) AS ci_session_lock 
+ Execution Time:0
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = 'a0cbd99a45b24492a7392c82b422c0e6953620d3' 
+ Execution Time:0.0040009021759033
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0.0010001659393311
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0.00099992752075195
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0
+
+SELECT *
+FROM `od_user`
+WHERE `email` IS NULL 
+ Execution Time:0.00099992752075195
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` IS NULL 
+ Execution Time:0
+

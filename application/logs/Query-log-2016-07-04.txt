@@ -1,0 +1,110 @@
+
+19:58:01 | 127.0.0.1
+http://odissey.app/
+SELECT GET_LOCK('6d8e060183b3d843c850153efabbef9a8788c7ba', 300) AS ci_session_lock 
+ Execution Time:0.00014400482177734
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '6d8e060183b3d843c850153efabbef9a8788c7ba' 
+ Execution Time:0.012407064437866
+
+
+19:58:01 | 127.0.0.1
+http://odissey.app/
+SELECT GET_LOCK('b0d97a786249efbf70aff2079110154643ebecec', 300) AS ci_session_lock 
+ Execution Time:0.00015497207641602
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'b0d97a786249efbf70aff2079110154643ebecec' 
+ Execution Time:0.012423038482666
+
+
+19:58:05 | 127.0.0.1
+http://odissey.app/member/login
+SELECT GET_LOCK('6d8e060183b3d843c850153efabbef9a8788c7ba', 300) AS ci_session_lock 
+ Execution Time:0.00015807151794434
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '6d8e060183b3d843c850153efabbef9a8788c7ba' 
+ Execution Time:0.00092792510986328
+
+
+19:58:18 | 127.0.0.1
+http://odissey.app/finance
+SELECT GET_LOCK('6d8e060183b3d843c850153efabbef9a8788c7ba', 300) AS ci_session_lock 
+ Execution Time:0.00030612945556641
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '6d8e060183b3d843c850153efabbef9a8788c7ba' 
+ Execution Time:0.00078892707824707
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'indrapastisukses@gmail.com' 
+ Execution Time:0.00035786628723145
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '5' 
+ Execution Time:5.6982040405273E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '5' 
+ Execution Time:0.00011801719665527
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'indrapastisukses@gmail.com' 
+ Execution Time:0.00011205673217773
+
+
+19:58:21 | 127.0.0.1
+http://odissey.app/finance
+SELECT GET_LOCK('6d8e060183b3d843c850153efabbef9a8788c7ba', 300) AS ci_session_lock 
+ Execution Time:0.00010895729064941
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '6d8e060183b3d843c850153efabbef9a8788c7ba' 
+ Execution Time:8.1062316894531E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'indrapastisukses@gmail.com' 
+ Execution Time:6.7949295043945E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '5' 
+ Execution Time:6.0081481933594E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '5' 
+ Execution Time:5.9843063354492E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'indrapastisukses@gmail.com' 
+ Execution Time:4.6968460083008E-5
+
+
+19:58:23 | 127.0.0.1
+http://odissey.app/member/login
+SELECT GET_LOCK('898b98b0d140b8282d0a60adae2d4ee7aa611706', 300) AS ci_session_lock 
+ Execution Time:0.00019478797912598
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '898b98b0d140b8282d0a60adae2d4ee7aa611706' 
+ Execution Time:0.001060962677002
+

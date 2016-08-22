@@ -1,0 +1,503 @@
+
+07:12:04 | 127.0.0.1
+http://odissey.app/
+SELECT GET_LOCK('c908ea10fd59f9dad371fb299636ab495e3698a0', 300) AS ci_session_lock 
+ Execution Time:0.00026822090148926
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'c908ea10fd59f9dad371fb299636ab495e3698a0' 
+ Execution Time:0.026144981384277
+
+
+07:17:37 | 127.0.0.1
+http://odissey.app/
+SELECT GET_LOCK('c908ea10fd59f9dad371fb299636ab495e3698a0', 300) AS ci_session_lock 
+ Execution Time:0.0001370906829834
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'c908ea10fd59f9dad371fb299636ab495e3698a0' 
+ Execution Time:0.00066304206848145
+
+
+07:19:05 | 127.0.0.1
+http://odissey.app/
+SELECT GET_LOCK('929bb70cb1e52892dd6ff229a60221dac145a086', 300) AS ci_session_lock 
+ Execution Time:0.00019192695617676
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '929bb70cb1e52892dd6ff229a60221dac145a086' 
+ Execution Time:0.00057601928710938
+
+
+09:41:57 | 127.0.0.1
+http://odissey.app/
+SELECT GET_LOCK('7111c6a3c5d3a4cca7e198551984b5af4ce40d5a', 300) AS ci_session_lock 
+ Execution Time:0.00012612342834473
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '7111c6a3c5d3a4cca7e198551984b5af4ce40d5a' 
+ Execution Time:0.057528018951416
+
+
+21:41:51 | 127.0.0.1
+http://odissey.app/
+SELECT GET_LOCK('67861c4c00927c2706d758b7f33fbd3ea6d463b1', 300) AS ci_session_lock 
+ Execution Time:0.00018596649169922
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '67861c4c00927c2706d758b7f33fbd3ea6d463b1' 
+ Execution Time:0.010477066040039
+
+
+22:05:48 | 127.0.0.1
+http://odissey.app/
+SELECT GET_LOCK('67861c4c00927c2706d758b7f33fbd3ea6d463b1', 300) AS ci_session_lock 
+ Execution Time:0.0001528263092041
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '67861c4c00927c2706d758b7f33fbd3ea6d463b1' 
+ Execution Time:0.1729428768158
+
+
+22:05:53 | 127.0.0.1
+http://odissey.app/main
+SELECT GET_LOCK('bc94058fe8d2967dbe88b530aada3bcee16da872', 300) AS ci_session_lock 
+ Execution Time:0.00020599365234375
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'bc94058fe8d2967dbe88b530aada3bcee16da872' 
+ Execution Time:0.00015997886657715
+
+
+22:05:56 | 127.0.0.1
+http://odissey.app/main/login
+SELECT GET_LOCK('bc94058fe8d2967dbe88b530aada3bcee16da872', 300) AS ci_session_lock 
+ Execution Time:0.00012302398681641
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'bc94058fe8d2967dbe88b530aada3bcee16da872' 
+ Execution Time:8.1062316894531E-5
+
+
+22:06:08 | 127.0.0.1
+http://odissey.app/admin
+SELECT GET_LOCK('bc94058fe8d2967dbe88b530aada3bcee16da872', 300) AS ci_session_lock 
+ Execution Time:0.00013017654418945
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'bc94058fe8d2967dbe88b530aada3bcee16da872' 
+ Execution Time:0.00071310997009277
+
+SELECT *
+FROM `od_user`
+WHERE `email` = '' 
+ Execution Time:0.0010809898376465
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '2' 
+ Execution Time:0.00017809867858887
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '2' 
+ Execution Time:8.4877014160156E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = '' 
+ Execution Time:6.103515625E-5
+
+
+22:06:10 | 127.0.0.1
+http://odissey.app/admin/users
+SELECT GET_LOCK('bc94058fe8d2967dbe88b530aada3bcee16da872', 300) AS ci_session_lock 
+ Execution Time:0.00012922286987305
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'bc94058fe8d2967dbe88b530aada3bcee16da872' 
+ Execution Time:0.0009920597076416
+
+SELECT *
+FROM `od_user`
+WHERE `email` = '' 
+ Execution Time:0.00012302398681641
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '2' 
+ Execution Time:8.2015991210938E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '2' 
+ Execution Time:8.0108642578125E-5
+
+SELECT `od_user`.*, `od_user`.`id` as `id`, `od_user`.`id` as `user_id`
+FROM `od_user` 
+ Execution Time:0.00029897689819336
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '1'
+AND `od_user_level`.`status` =0 
+ Execution Time:0.00034904479980469
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '1'
+AND `od_user_level`.`status` = 1 
+ Execution Time:0.00031304359436035
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '2'
+AND `od_user_level`.`status` =0 
+ Execution Time:0.00027918815612793
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '2'
+AND `od_user_level`.`status` = 1 
+ Execution Time:0.00054693222045898
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '3'
+AND `od_user_level`.`status` =0 
+ Execution Time:0.00027799606323242
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '3'
+AND `od_user_level`.`status` = 1 
+ Execution Time:0.00019383430480957
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '4'
+AND `od_user_level`.`status` =0 
+ Execution Time:0.00026893615722656
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '4'
+AND `od_user_level`.`status` = 1 
+ Execution Time:0.00033092498779297
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '5'
+AND `od_user_level`.`status` =0 
+ Execution Time:0.0011050701141357
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '5'
+AND `od_user_level`.`status` = 1 
+ Execution Time:0.00057888031005859
+
+SELECT *
+FROM `od_user`
+WHERE `email` = '' 
+ Execution Time:7.7962875366211E-5
+
+
+22:06:16 | 127.0.0.1
+http://odissey.app/admin/users
+SELECT GET_LOCK('bc94058fe8d2967dbe88b530aada3bcee16da872', 300) AS ci_session_lock 
+ Execution Time:0.00040817260742188
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'bc94058fe8d2967dbe88b530aada3bcee16da872' 
+ Execution Time:0.00059604644775391
+
+SELECT *
+FROM `od_user`
+WHERE `email` = '' 
+ Execution Time:0.00012302398681641
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '2' 
+ Execution Time:0.00010800361633301
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '2' 
+ Execution Time:7.0095062255859E-5
+
+SELECT `od_user`.*, `od_user`.`id` as `id`, `od_user`.`id` as `user_id`
+FROM `od_user` 
+ Execution Time:6.4849853515625E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '1'
+AND `od_user_level`.`status` =0 
+ Execution Time:5.3882598876953E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '1'
+AND `od_user_level`.`status` = 1 
+ Execution Time:9.1075897216797E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '2'
+AND `od_user_level`.`status` =0 
+ Execution Time:4.6014785766602E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '2'
+AND `od_user_level`.`status` = 1 
+ Execution Time:4.9114227294922E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '3'
+AND `od_user_level`.`status` =0 
+ Execution Time:4.7922134399414E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '3'
+AND `od_user_level`.`status` = 1 
+ Execution Time:4.6968460083008E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '4'
+AND `od_user_level`.`status` =0 
+ Execution Time:4.6968460083008E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '4'
+AND `od_user_level`.`status` = 1 
+ Execution Time:3.9100646972656E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '5'
+AND `od_user_level`.`status` =0 
+ Execution Time:3.6001205444336E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '5'
+AND `od_user_level`.`status` = 1 
+ Execution Time:3.6001205444336E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = '' 
+ Execution Time:6.5088272094727E-5
+
+
+22:06:17 | 127.0.0.1
+http://odissey.app/admin/partners
+SELECT GET_LOCK('bc94058fe8d2967dbe88b530aada3bcee16da872', 300) AS ci_session_lock 
+ Execution Time:0.00019288063049316
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'bc94058fe8d2967dbe88b530aada3bcee16da872' 
+ Execution Time:0.0017209053039551
+
+SELECT *
+FROM `od_user`
+WHERE `email` = '' 
+ Execution Time:0.00010895729064941
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '2' 
+ Execution Time:6.2942504882812E-5
+
+SELECT *
+FROM `od_partner` AS `a` 
+ Execution Time:0.072241067886353
+
+SELECT *
+FROM `od_partner` AS `a`
+ LIMIT 20 
+ Execution Time:0.00035905838012695
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '2' 
+ Execution Time:0.00012803077697754
+
+SELECT *
+FROM `od_user`
+WHERE `email` = '' 
+ Execution Time:6.6995620727539E-5
+
+
+22:06:20 | 127.0.0.1
+http://odissey.app/admin/partners
+SELECT GET_LOCK('bc94058fe8d2967dbe88b530aada3bcee16da872', 300) AS ci_session_lock 
+ Execution Time:0.00012111663818359
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'bc94058fe8d2967dbe88b530aada3bcee16da872' 
+ Execution Time:0.00060319900512695
+
+SELECT *
+FROM `od_user`
+WHERE `email` = '' 
+ Execution Time:8.392333984375E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '2' 
+ Execution Time:3.8862228393555E-5
+
+SELECT *
+FROM `od_partner` AS `a` 
+ Execution Time:8.8214874267578E-5
+
+SELECT *
+FROM `od_partner` AS `a`
+ LIMIT 20 
+ Execution Time:7.6055526733398E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '2' 
+ Execution Time:8.2015991210938E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = '' 
+ Execution Time:0.00017976760864258
+
+
+22:06:21 | 127.0.0.1
+http://odissey.app/admin/partners/new
+SELECT GET_LOCK('bc94058fe8d2967dbe88b530aada3bcee16da872', 300) AS ci_session_lock 
+ Execution Time:0.00015401840209961
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'bc94058fe8d2967dbe88b530aada3bcee16da872' 
+ Execution Time:0.0015158653259277
+
+SELECT *
+FROM `od_user`
+WHERE `email` = '' 
+ Execution Time:9.0837478637695E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '2' 
+ Execution Time:5.9843063354492E-5
+
+SELECT *
+FROM `od_partner` AS `a` 
+ Execution Time:0.00011205673217773
+
+SELECT *
+FROM `od_partner` AS `a`
+ LIMIT 20 
+ Execution Time:8.8930130004883E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '2' 
+ Execution Time:7.8916549682617E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = '' 
+ Execution Time:7.3909759521484E-5
+
+
+22:06:23 | 127.0.0.1
+http://odissey.app/admin/partners
+SELECT GET_LOCK('bc94058fe8d2967dbe88b530aada3bcee16da872', 300) AS ci_session_lock 
+ Execution Time:0.00016903877258301
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'bc94058fe8d2967dbe88b530aada3bcee16da872' 
+ Execution Time:0.00063204765319824
+
+SELECT *
+FROM `od_user`
+WHERE `email` = '' 
+ Execution Time:0.00011110305786133
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '2' 
+ Execution Time:6.0081481933594E-5
+
+SELECT *
+FROM `od_partner` AS `a` 
+ Execution Time:7.7009201049805E-5
+
+SELECT *
+FROM `od_partner` AS `a`
+ LIMIT 20 
+ Execution Time:7.1048736572266E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '2' 
+ Execution Time:6.6041946411133E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = '' 
+ Execution Time:5.1975250244141E-5
+

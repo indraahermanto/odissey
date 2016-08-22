@@ -1,0 +1,170 @@
+
+00:02:35 | 0.0.0.0
+http://localhost/odissey/main/login
+SELECT GET_LOCK('016e6c322701cecbd3ab1856594e5652094429e8', 300) AS ci_session_lock 
+ Execution Time:0
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '016e6c322701cecbd3ab1856594e5652094429e8' 
+ Execution Time:0.015599966049194
+
+
+00:26:37 | 0.0.0.0
+http://localhost/odissey/main/login
+SELECT GET_LOCK('016e6c322701cecbd3ab1856594e5652094429e8', 300) AS ci_session_lock 
+ Execution Time:0
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '016e6c322701cecbd3ab1856594e5652094429e8' 
+ Execution Time:0.003000020980835
+
+
+00:26:46 | 0.0.0.0
+http://localhost/odissey/snba
+SELECT GET_LOCK('016e6c322701cecbd3ab1856594e5652094429e8', 300) AS ci_session_lock 
+ Execution Time:0.0010001659393311
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '016e6c322701cecbd3ab1856594e5652094429e8' 
+ Execution Time:0.002000093460083
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00099992752075195
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00099992752075195
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00099992752075195
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00099992752075195
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00099992752075195
+
+
+00:26:49 | 0.0.0.0
+http://localhost/odissey/snba/task
+SELECT GET_LOCK('016e6c322701cecbd3ab1856594e5652094429e8', 300) AS ci_session_lock 
+ Execution Time:0.00099992752075195
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '016e6c322701cecbd3ab1856594e5652094429e8' 
+ Execution Time:0.002000093460083
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.0010001659393311
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.002000093460083
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.0010001659393311
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'indraahermanto'
+ORDER BY `task_date` DESC 
+ Execution Time:0.002000093460083
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'indraahermanto'
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.00099992752075195
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0
+
+
+00:26:53 | 0.0.0.0
+http://localhost/odissey/snba/task/preview/fc2e728f8f6476eb23b5e07bf08613e589f3c448
+SELECT GET_LOCK('016e6c322701cecbd3ab1856594e5652094429e8', 300) AS ci_session_lock 
+ Execution Time:0
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '016e6c322701cecbd3ab1856594e5652094429e8' 
+ Execution Time:0.002000093460083
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.0010008811950684
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00099992752075195
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00099992752075195
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0
+
+SELECT *
+FROM `od_task_doc` 
+ Execution Time:0.0010001659393311
+
+SELECT *
+FROM `od_task_doc`
+WHERE `task_id` = '18' 
+ Execution Time:0
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0
+

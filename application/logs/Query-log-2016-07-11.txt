@@ -1,0 +1,11 @@
+
+21:48:50 | 127.0.0.1
+http://odissey.app/
+SELECT GET_LOCK('aadda47f18d0b152e8d440d33bee5a1ee5ae4e08', 300) AS ci_session_lock 
+ Execution Time:0.00016880035400391
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'aadda47f18d0b152e8d440d33bee5a1ee5ae4e08' 
+ Execution Time:0.00067496299743652
+

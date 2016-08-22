@@ -1,0 +1,11 @@
+
+17:10:38 | 127.0.0.1
+http://pulsa.go/
+SELECT GET_LOCK('b54cdc27af73adcb6880ad4e21e07129b287d115', 300) AS ci_session_lock 
+ Execution Time:0.16376614570618
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'b54cdc27af73adcb6880ad4e21e07129b287d115' 
+ Execution Time:0.60094714164734
+

@@ -1,0 +1,4304 @@
+
+09:06:26 | 10.11.23.157
+http://10.11.23.93/odissey/main/login
+SELECT GET_LOCK('7c88bdc73ed895e5e0cbed5f1d383b0d0c6ecc75', 300) AS ci_session_lock 
+ Execution Time:0.00035500526428223
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '7c88bdc73ed895e5e0cbed5f1d383b0d0c6ecc75' 
+ Execution Time:0.00026702880859375
+
+
+09:06:54 | 10.11.23.157
+http://10.11.23.93/odissey/snba
+SELECT GET_LOCK('7c88bdc73ed895e5e0cbed5f1d383b0d0c6ecc75', 300) AS ci_session_lock 
+ Execution Time:0.00027179718017578
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '7c88bdc73ed895e5e0cbed5f1d383b0d0c6ecc75' 
+ Execution Time:0.0032460689544678
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.01256799697876
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:9.3936920166016E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00015783309936523
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00012111663818359
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:8.9883804321289E-5
+
+
+09:06:57 | 10.11.23.157
+http://10.11.23.93/odissey/snba/invoices
+SELECT GET_LOCK('7c88bdc73ed895e5e0cbed5f1d383b0d0c6ecc75', 300) AS ci_session_lock 
+ Execution Time:0.00029611587524414
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '7c88bdc73ed895e5e0cbed5f1d383b0d0c6ecc75' 
+ Execution Time:0.0032479763031006
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00015807151794434
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00013303756713867
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00014805793762207
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00012397766113281
+
+SELECT *
+FROM `od_partner`
+WHERE `partner_status` = 1 
+ Execution Time:0.0093159675598145
+
+SELECT *, `a`.`number` as `inv_number`, `f`.`number` as `ba_number`
+FROM `od_inv_doc` as `a`
+JOIN `od_inv_stat` as `b` ON `a`.`inv_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_inv_mod` as `e` ON `a`.`inv_id`=`e`.`inv_id`
+JOIN `od_ba_doc` as `f` ON `e`.`ba_id`=`f`.`ba_id`
+ORDER BY `a`.`inv_id` DESC 
+ Execution Time:0.0029759407043457
+
+SELECT *
+FROM `od_inv_stat` 
+ Execution Time:0.0002439022064209
+
+SELECT *, `a`.`number` as `inv_number`, `f`.`number` as `ba_number`
+FROM `od_inv_doc` as `a`
+JOIN `od_inv_stat` as `b` ON `a`.`inv_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_inv_mod` as `e` ON `a`.`inv_id`=`e`.`inv_id`
+JOIN `od_ba_doc` as `f` ON `e`.`ba_id`=`f`.`ba_id`
+ORDER BY `a`.`inv_id` DESC
+ LIMIT 20 
+ Execution Time:0.0001838207244873
+
+
+09:06:58 | 10.11.23.157
+http://10.11.23.93/odissey/snba/spb
+SELECT GET_LOCK('7c88bdc73ed895e5e0cbed5f1d383b0d0c6ecc75', 300) AS ci_session_lock 
+ Execution Time:0.00030994415283203
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '7c88bdc73ed895e5e0cbed5f1d383b0d0c6ecc75' 
+ Execution Time:0.0034549236297607
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00025320053100586
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00018787384033203
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00011706352233887
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:7.9154968261719E-5
+
+SELECT *
+FROM `od_partner`
+WHERE `partner_status` = 1 
+ Execution Time:0.00012016296386719
+
+SELECT *
+FROM `od_partner_bank`
+WHERE `pbank_stat` = 1 
+ Execution Time:0.024144887924194
+
+SELECT *
+FROM `od_spb_doc` as `a`
+JOIN `od_spb_stat` as `b` ON `a`.`spb_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+ORDER BY `spb_id` DESC 
+ Execution Time:0.030198097229004
+
+SELECT *
+FROM `od_spb_stat` 
+ Execution Time:0.021314144134521
+
+SELECT *, `a`.`number` as `spb_number`, `f`.`number` as `inv_number`
+FROM `od_spb_doc` as `a`
+JOIN `od_spb_stat` as `b` ON `a`.`spb_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_spb_mod` as `e` ON `a`.`spb_id`=`e`.`spb_id`
+JOIN `od_inv_doc` as `f` ON `e`.`inv_id`=`f`.`inv_id`
+JOIN `od_partner_bank` as `g` ON `f`.`pbank_id`=`g`.`pbank_id`
+ORDER BY `a`.`spb_id` DESC
+ LIMIT 20 
+ Execution Time:0.037252902984619
+
+
+09:06:59 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('7c88bdc73ed895e5e0cbed5f1d383b0d0c6ecc75', 300) AS ci_session_lock 
+ Execution Time:0.00029397010803223
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '7c88bdc73ed895e5e0cbed5f1d383b0d0c6ecc75' 
+ Execution Time:0.0034739971160889
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.0001678466796875
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00012993812561035
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00015687942504883
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:7.5101852416992E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00011801719665527
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'indraahermanto'
+ORDER BY `task_date` DESC 
+ Execution Time:0.081640958786011
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'indraahermanto'
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.01794695854187
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.00022292137145996
+
+
+09:07:05 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task/new
+SELECT GET_LOCK('7c88bdc73ed895e5e0cbed5f1d383b0d0c6ecc75', 300) AS ci_session_lock 
+ Execution Time:0.0002601146697998
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '7c88bdc73ed895e5e0cbed5f1d383b0d0c6ecc75' 
+ Execution Time:0.012017011642456
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00020384788513184
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00017499923706055
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00015687942504883
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00012707710266113
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00010895729064941
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.00011992454528809
+
+
+09:10:15 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('2c3058459f1fccf9c05f38e2d7323bce15a4dfd9', 300) AS ci_session_lock 
+ Execution Time:0.00027203559875488
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '2c3058459f1fccf9c05f38e2d7323bce15a4dfd9' 
+ Execution Time:0.0096850395202637
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00011992454528809
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:9.1075897216797E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00010490417480469
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:8.9883804321289E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:8.1062316894531E-5
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'indraahermanto'
+ORDER BY `task_date` DESC 
+ Execution Time:0.0010061264038086
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'indraahermanto'
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.0062031745910645
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.00010895729064941
+
+
+09:10:23 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task/new
+SELECT GET_LOCK('2c3058459f1fccf9c05f38e2d7323bce15a4dfd9', 300) AS ci_session_lock 
+ Execution Time:0.00030279159545898
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '2c3058459f1fccf9c05f38e2d7323bce15a4dfd9' 
+ Execution Time:0.012527942657471
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00016403198242188
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00013208389282227
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00015616416931152
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00011396408081055
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00012803077697754
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.00011897087097168
+
+
+09:19:01 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('2f094f148d060c775c25046868dcc106cf5b2e2c', 300) AS ci_session_lock 
+ Execution Time:0.00022101402282715
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '2f094f148d060c775c25046868dcc106cf5b2e2c' 
+ Execution Time:0.0081110000610352
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00023293495178223
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.0001680850982666
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00022506713867188
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00012922286987305
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:9.5129013061523E-5
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'indraahermanto'
+ORDER BY `task_date` DESC 
+ Execution Time:0.0020439624786377
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'indraahermanto'
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.0018990039825439
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.00010514259338379
+
+
+09:25:07 | 10.11.23.157
+http://10.11.23.93/odissey/snba/invoices
+SELECT GET_LOCK('2f094f148d060c775c25046868dcc106cf5b2e2c', 300) AS ci_session_lock 
+ Execution Time:0.00021100044250488
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '2f094f148d060c775c25046868dcc106cf5b2e2c' 
+ Execution Time:0.0015809535980225
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00022196769714355
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00022482872009277
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00022506713867188
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00013208389282227
+
+SELECT *
+FROM `od_partner`
+WHERE `partner_status` = 1 
+ Execution Time:0.00016593933105469
+
+SELECT *, `a`.`number` as `inv_number`, `f`.`number` as `ba_number`
+FROM `od_inv_doc` as `a`
+JOIN `od_inv_stat` as `b` ON `a`.`inv_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_inv_mod` as `e` ON `a`.`inv_id`=`e`.`inv_id`
+JOIN `od_ba_doc` as `f` ON `e`.`ba_id`=`f`.`ba_id`
+ORDER BY `a`.`inv_id` DESC 
+ Execution Time:0.00018000602722168
+
+SELECT *
+FROM `od_inv_stat` 
+ Execution Time:0.00010585784912109
+
+SELECT *, `a`.`number` as `inv_number`, `f`.`number` as `ba_number`
+FROM `od_inv_doc` as `a`
+JOIN `od_inv_stat` as `b` ON `a`.`inv_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_inv_mod` as `e` ON `a`.`inv_id`=`e`.`inv_id`
+JOIN `od_ba_doc` as `f` ON `e`.`ba_id`=`f`.`ba_id`
+ORDER BY `a`.`inv_id` DESC
+ LIMIT 20 
+ Execution Time:0.00017809867858887
+
+
+09:25:10 | 10.11.23.157
+http://10.11.23.93/odissey/snba/invoices/preview/73d380f88aee62138c2782f84f5a95fdcf824a80
+SELECT GET_LOCK('5dcbff7b5ee1aefa47ea07f624bd48d6c55d4bc2', 300) AS ci_session_lock 
+ Execution Time:0.00029706954956055
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '5dcbff7b5ee1aefa47ea07f624bd48d6c55d4bc2' 
+ Execution Time:0.0028021335601807
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00011992454528809
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:9.2029571533203E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00011897087097168
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:7.1048736572266E-5
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_partner_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_partner` as `c` ON `b`.`partner_id`=`c`.`partner_id`
+JOIN `od_partner_bank` as `d` ON `c`.`partner_id`=`d`.`partner_id`
+WHERE `email` = 'odisseybot@gmail.com'
+AND `d`.`pbank_stat` = 1 
+ Execution Time:0.023709058761597
+
+SELECT *
+FROM `od_inv_doc` 
+ Execution Time:0.007814884185791
+
+SELECT *, `a`.`number` as `inv_number`, `f`.`number` as `ba_number`
+FROM `od_inv_doc` as `a`
+JOIN `od_inv_stat` as `b` ON `a`.`inv_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_inv_mod` as `e` ON `a`.`inv_id`=`e`.`inv_id`
+JOIN `od_ba_doc` as `f` ON `e`.`ba_id`=`f`.`ba_id`
+JOIN `od_partner_bank` as `g` ON `a`.`partner_id`=`g`.`partner_id`
+JOIN `od_partner_mod` as `h` ON `a`.`partner_id`=`h`.`partner_id`
+JOIN `od_user` as `i` ON `h`.`user_id`=`i`.`id`
+WHERE `a`.`inv_id` = '4'
+AND `c`.`status` = 1
+ORDER BY `a`.`inv_id` DESC 
+ Execution Time:0.078931093215942
+
+SELECT *
+FROM `od_partner` as `a`
+JOIN `od_pks_doc` as `b` ON `a`.`partner_id`=`b`.`partner_id`
+JOIN `od_user_level` as `c` ON `c`.`id`=`b`.`ul_id`
+JOIN `od_partner_mod` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_user` as `e` ON `d`.`user_id`=`e`.`id`
+WHERE `a`.`partner_status` = 1
+AND `a`.`partner_id` = 'dnhy'
+AND `e`.`active` = 1
+AND `b`.`ul_id` = '8'
+AND `pks_stat` = 1 
+ Execution Time:0.020096063613892
+
+SELECT *
+FROM `od_ba_mod`
+WHERE `ba_id` = '4' 
+ Execution Time:0.019037008285522
+
+SELECT *
+FROM `od_user_level`
+WHERE `id` = '8' 
+ Execution Time:0.022397994995117
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1125' 
+ Execution Time:0.025609016418457
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1126' 
+ Execution Time:0.0036659240722656
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1130' 
+ Execution Time:0.0079810619354248
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1143' 
+ Execution Time:0.0067880153656006
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1147' 
+ Execution Time:0.01570200920105
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1164' 
+ Execution Time:0.014811038970947
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1430' 
+ Execution Time:0.014243125915527
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1431' 
+ Execution Time:0.010776996612549
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1441' 
+ Execution Time:0.015145063400269
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1446' 
+ Execution Time:0.0070700645446777
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1445' 
+ Execution Time:0.0084500312805176
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1463' 
+ Execution Time:0.00061702728271484
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1471' 
+ Execution Time:0.010005950927734
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1475' 
+ Execution Time:0.49396681785583
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1476' 
+ Execution Time:0.015961170196533
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1477' 
+ Execution Time:0.038362979888916
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1481' 
+ Execution Time:0.026474952697754
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1482' 
+ Execution Time:0.0090529918670654
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1484' 
+ Execution Time:0.00070309638977051
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1485' 
+ Execution Time:0.0095529556274414
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1498' 
+ Execution Time:0.0060009956359863
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1500' 
+ Execution Time:0.00068020820617676
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1502' 
+ Execution Time:0.0006411075592041
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1517' 
+ Execution Time:0.01452112197876
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1518' 
+ Execution Time:0.00068402290344238
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1519' 
+ Execution Time:0.010632038116455
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1529' 
+ Execution Time:0.0062661170959473
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1533' 
+ Execution Time:0.010498046875
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1538' 
+ Execution Time:0.0098090171813965
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1548' 
+ Execution Time:0.0011918544769287
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1552' 
+ Execution Time:0.00084400177001953
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1563' 
+ Execution Time:0.003662109375
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1567' 
+ Execution Time:0.0067977905273438
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1576' 
+ Execution Time:0.00063705444335938
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1579' 
+ Execution Time:0.01447606086731
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1588' 
+ Execution Time:0.012694835662842
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1602' 
+ Execution Time:0.011222839355469
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1603' 
+ Execution Time:0.0041568279266357
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1607' 
+ Execution Time:0.00063300132751465
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1608' 
+ Execution Time:0.0075259208679199
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1611' 
+ Execution Time:0.0057158470153809
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1613' 
+ Execution Time:0.00069403648376465
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1639' 
+ Execution Time:0.015600919723511
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1646' 
+ Execution Time:0.0060970783233643
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1647' 
+ Execution Time:0.016044855117798
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1650' 
+ Execution Time:0.0036442279815674
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1656' 
+ Execution Time:0.010255098342896
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1665' 
+ Execution Time:0.00078892707824707
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1674' 
+ Execution Time:0.00089693069458008
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1676' 
+ Execution Time:0.0010271072387695
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1677' 
+ Execution Time:0.00035190582275391
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1682' 
+ Execution Time:0.0093529224395752
+
+SELECT *
+FROM `od_doc_log`
+WHERE `dlog_doc_id` = '4'
+AND `dlog_type` = 'invoice' 
+ Execution Time:0.01616096496582
+
+SELECT *
+FROM `od_user`
+WHERE `id` = '1' 
+ Execution Time:0.010328054428101
+
+
+09:26:28 | 10.11.23.157
+http://10.11.23.93/odissey/snba/spb
+SELECT GET_LOCK('5dcbff7b5ee1aefa47ea07f624bd48d6c55d4bc2', 300) AS ci_session_lock 
+ Execution Time:0.00022196769714355
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '5dcbff7b5ee1aefa47ea07f624bd48d6c55d4bc2' 
+ Execution Time:0.0011050701141357
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00011897087097168
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:8.8930130004883E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00011491775512695
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:7.7009201049805E-5
+
+SELECT *
+FROM `od_partner`
+WHERE `partner_status` = 1 
+ Execution Time:9.7036361694336E-5
+
+SELECT *
+FROM `od_partner_bank`
+WHERE `pbank_stat` = 1 
+ Execution Time:6.3180923461914E-5
+
+SELECT *
+FROM `od_spb_doc` as `a`
+JOIN `od_spb_stat` as `b` ON `a`.`spb_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+ORDER BY `spb_id` DESC 
+ Execution Time:0.00011086463928223
+
+SELECT *
+FROM `od_spb_stat` 
+ Execution Time:5.6028366088867E-5
+
+SELECT *, `a`.`number` as `spb_number`, `f`.`number` as `inv_number`
+FROM `od_spb_doc` as `a`
+JOIN `od_spb_stat` as `b` ON `a`.`spb_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_spb_mod` as `e` ON `a`.`spb_id`=`e`.`spb_id`
+JOIN `od_inv_doc` as `f` ON `e`.`inv_id`=`f`.`inv_id`
+JOIN `od_partner_bank` as `g` ON `f`.`pbank_id`=`g`.`pbank_id`
+ORDER BY `a`.`spb_id` DESC
+ LIMIT 20 
+ Execution Time:0.00013589859008789
+
+
+09:30:14 | 10.11.23.157
+http://10.11.23.93/odissey/snba/qbaca/transaction
+SELECT GET_LOCK('5dcbff7b5ee1aefa47ea07f624bd48d6c55d4bc2', 300) AS ci_session_lock 
+ Execution Time:0.0003209114074707
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '5dcbff7b5ee1aefa47ea07f624bd48d6c55d4bc2' 
+ Execution Time:0.003403902053833
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00010204315185547
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:7.2956085205078E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00010108947753906
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:6.5088272094727E-5
+
+SELECT *
+FROM `od_partner`
+WHERE `partner_status` = 1 
+ Execution Time:0.00025391578674316
+
+SELECT *
+FROM `od_qbaca_trx` AS `a`
+JOIN `od_partner` AS `b` ON `a`.`partner_id` = `b`.`partner_id`
+WHERE `b`.`partner_status` = '1'
+ORDER BY `a`.`qtrx_date` DESC 
+ Execution Time:0.01742696762085
+
+SELECT *
+FROM `od_qbaca_trx` AS `a`
+JOIN `od_partner` AS `b` ON `a`.`partner_id` = `b`.`partner_id`
+WHERE `b`.`partner_status` = '1'
+ORDER BY `a`.`qtrx_date` DESC
+ LIMIT 20 
+ Execution Time:0.00075697898864746
+
+SELECT *
+FROM `od_qbaca_trx` AS `a`
+JOIN `od_partner` AS `b` ON `a`.`partner_id` = `b`.`partner_id`
+WHERE `b`.`partner_status` = '1'
+ORDER BY `a`.`qtrx_date` DESC 
+ Execution Time:0.0015790462493896
+
+SELECT *
+FROM `od_user_level`
+WHERE `name` = 'qbaca' 
+ Execution Time:0.0010759830474854
+
+
+09:30:21 | 10.11.23.157
+http://10.11.23.93/odissey/snba/reports
+SELECT GET_LOCK('68600e0d171f63beb16fb2d342a038c39cea118f', 300) AS ci_session_lock 
+ Execution Time:0.00030279159545898
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '68600e0d171f63beb16fb2d342a038c39cea118f' 
+ Execution Time:0.0053751468658447
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.0001220703125
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:9.3936920166016E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00012302398681641
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:7.0810317993164E-5
+
+SELECT *
+FROM `od_partner`
+WHERE `partner_status` = 1 
+ Execution Time:0.00012397766113281
+
+SELECT *
+FROM `od_ba_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`ba_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+ORDER BY `ba_id` DESC 
+ Execution Time:0.00012683868408203
+
+SELECT *
+FROM `od_ba_stat` 
+ Execution Time:6.3896179199219E-5
+
+SELECT *
+FROM `od_ba_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`ba_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+ORDER BY `ba_id` DESC
+ LIMIT 20 
+ Execution Time:0.0001227855682373
+
+
+09:30:23 | 10.11.23.157
+http://10.11.23.93/odissey/snba/reports/preview/d7dd73beb05248bedac098259494fc1977092d7a
+SELECT GET_LOCK('68600e0d171f63beb16fb2d342a038c39cea118f', 300) AS ci_session_lock 
+ Execution Time:0.00029897689819336
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '68600e0d171f63beb16fb2d342a038c39cea118f' 
+ Execution Time:0.0033638477325439
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00015115737915039
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00012683868408203
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00015592575073242
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00012612342834473
+
+SELECT *
+FROM `od_ba_doc` 
+ Execution Time:0.00058293342590332
+
+SELECT *
+FROM `od_ba_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`ba_status`=`b`.`stat_id`
+JOIN `od_partner` as `c` ON `a`.`partner_id`=`c`.`partner_id`
+JOIN `od_user_level` as `d` ON `a`.`ul_id`=`d`.`id`
+JOIN `od_partner_mod` as `e` ON `a`.`partner_id`=`e`.`partner_id`
+JOIN `od_user` as `f` ON `e`.`user_id`=`f`.`id`
+WHERE `a`.`ba_id` = '4' 
+ Execution Time:0.031877040863037
+
+SELECT *
+FROM `od_partner` as `a`
+JOIN `od_pks_doc` as `b` ON `a`.`partner_id`=`b`.`partner_id`
+JOIN `od_user_level` as `c` ON `c`.`id`=`b`.`ul_id`
+JOIN `od_partner_mod` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_user` as `e` ON `d`.`user_id`=`e`.`id`
+WHERE `a`.`partner_status` = 1
+AND `a`.`partner_id` = 'dnhy'
+AND `e`.`active` = 1
+AND `b`.`ul_id` = '8'
+AND `pks_stat` = 1 
+ Execution Time:0.00031614303588867
+
+SELECT *
+FROM `od_ba_mod`
+WHERE `ba_id` = '4' 
+ Execution Time:7.7962875366211E-5
+
+SELECT *
+FROM `od_user_level`
+WHERE `id` = '8' 
+ Execution Time:6.3180923461914E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1125' 
+ Execution Time:5.2928924560547E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1126' 
+ Execution Time:5.0067901611328E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1130' 
+ Execution Time:5.1021575927734E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1143' 
+ Execution Time:4.9114227294922E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1147' 
+ Execution Time:4.6968460083008E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1164' 
+ Execution Time:5.0067901611328E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1430' 
+ Execution Time:5.0067901611328E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1431' 
+ Execution Time:5.1021575927734E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1441' 
+ Execution Time:4.7922134399414E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1446' 
+ Execution Time:4.7206878662109E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1445' 
+ Execution Time:4.9114227294922E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1463' 
+ Execution Time:4.6968460083008E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1471' 
+ Execution Time:4.6968460083008E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1475' 
+ Execution Time:5.1021575927734E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1476' 
+ Execution Time:4.6968460083008E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1477' 
+ Execution Time:5.0067901611328E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1481' 
+ Execution Time:4.6968460083008E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1482' 
+ Execution Time:4.7922134399414E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1484' 
+ Execution Time:4.9114227294922E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1485' 
+ Execution Time:4.8160552978516E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1498' 
+ Execution Time:4.887580871582E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1500' 
+ Execution Time:4.887580871582E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1502' 
+ Execution Time:6.413459777832E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1517' 
+ Execution Time:5.1021575927734E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1518' 
+ Execution Time:4.7922134399414E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1519' 
+ Execution Time:5.0067901611328E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1529' 
+ Execution Time:4.6968460083008E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1533' 
+ Execution Time:4.6968460083008E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1538' 
+ Execution Time:0.0001220703125
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1548' 
+ Execution Time:5.5074691772461E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1552' 
+ Execution Time:4.9829483032227E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1563' 
+ Execution Time:4.7922134399414E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1567' 
+ Execution Time:4.6968460083008E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1576' 
+ Execution Time:5.0067901611328E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1579' 
+ Execution Time:4.6968460083008E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1588' 
+ Execution Time:4.887580871582E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1602' 
+ Execution Time:7.2002410888672E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1603' 
+ Execution Time:5.4121017456055E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1607' 
+ Execution Time:5.0783157348633E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1608' 
+ Execution Time:4.7922134399414E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1611' 
+ Execution Time:5.0067901611328E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1613' 
+ Execution Time:4.8160552978516E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1639' 
+ Execution Time:4.7922134399414E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1646' 
+ Execution Time:4.9829483032227E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1647' 
+ Execution Time:4.887580871582E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1650' 
+ Execution Time:4.887580871582E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1656' 
+ Execution Time:5.1021575927734E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1665' 
+ Execution Time:4.8160552978516E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1674' 
+ Execution Time:5.1021575927734E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1676' 
+ Execution Time:5.1021575927734E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1677' 
+ Execution Time:4.7922134399414E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1682' 
+ Execution Time:5.1975250244141E-5
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_user_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_user_level` as `c` ON `c`.`id`=`b`.`ul_id`
+WHERE `c`.`name` = 'snba'
+AND `a`.`active` = '1' 
+ Execution Time:0.035171031951904
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_user_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_user_level` as `c` ON `c`.`id`=`b`.`ul_id`
+WHERE `c`.`name` = 'maker'
+AND `a`.`email` = '' 
+ Execution Time:0.017937898635864
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_user_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_user_level` as `c` ON `c`.`id`=`b`.`ul_id`
+WHERE `c`.`name` = 'maker'
+AND `a`.`email` = 'r17.indra@gmail.com' 
+ Execution Time:0.0050880908966064
+
+SELECT *
+FROM `od_doc_log`
+WHERE `dlog_doc_id` = '4' 
+ Execution Time:0.0088198184967041
+
+SELECT *
+FROM `od_user`
+WHERE `id` = '3' 
+ Execution Time:0.027130842208862
+
+SELECT *
+FROM `od_user`
+WHERE `id` = '4' 
+ Execution Time:0.01274585723877
+
+SELECT *
+FROM `od_user`
+WHERE `id` = '1' 
+ Execution Time:7.8916549682617E-5
+
+SELECT *
+FROM `od_user`
+WHERE `id` = '1' 
+ Execution Time:5.793571472168E-5
+
+SELECT *
+FROM `od_user`
+WHERE `id` = '1' 
+ Execution Time:0.00012493133544922
+
+SELECT *
+FROM `od_user`
+WHERE `id` = '9' 
+ Execution Time:0.015563011169434
+
+
+09:30:23 | 10.11.23.157
+http://10.11.23.93/odissey/snba/reports/preview/d7dd73beb05248bedac098259494fc1977092d7a
+SELECT GET_LOCK('68600e0d171f63beb16fb2d342a038c39cea118f', 300) AS ci_session_lock 
+ Execution Time:0.014352083206177
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '68600e0d171f63beb16fb2d342a038c39cea118f' 
+ Execution Time:0.0033869743347168
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.0001220703125
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:6.9856643676758E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00011897087097168
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:9.2029571533203E-5
+
+SELECT *
+FROM `od_ba_doc` 
+ Execution Time:7.9870223999023E-5
+
+SELECT *
+FROM `od_ba_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`ba_status`=`b`.`stat_id`
+JOIN `od_partner` as `c` ON `a`.`partner_id`=`c`.`partner_id`
+JOIN `od_user_level` as `d` ON `a`.`ul_id`=`d`.`id`
+JOIN `od_partner_mod` as `e` ON `a`.`partner_id`=`e`.`partner_id`
+JOIN `od_user` as `f` ON `e`.`user_id`=`f`.`id`
+WHERE `a`.`ba_id` = '4' 
+ Execution Time:0.00015115737915039
+
+SELECT *
+FROM `od_partner` as `a`
+JOIN `od_pks_doc` as `b` ON `a`.`partner_id`=`b`.`partner_id`
+JOIN `od_user_level` as `c` ON `c`.`id`=`b`.`ul_id`
+JOIN `od_partner_mod` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_user` as `e` ON `d`.`user_id`=`e`.`id`
+WHERE `a`.`partner_status` = 1
+AND `a`.`partner_id` = 'dnhy'
+AND `e`.`active` = 1
+AND `b`.`ul_id` = '8'
+AND `pks_stat` = 1 
+ Execution Time:0.00013995170593262
+
+SELECT *
+FROM `od_ba_mod`
+WHERE `ba_id` = '4' 
+ Execution Time:9.4890594482422E-5
+
+SELECT *
+FROM `od_user_level`
+WHERE `id` = '8' 
+ Execution Time:0.00010800361633301
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1125' 
+ Execution Time:6.4849853515625E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1126' 
+ Execution Time:6.8902969360352E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1130' 
+ Execution Time:7.2956085205078E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1143' 
+ Execution Time:6.1988830566406E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1147' 
+ Execution Time:6.2942504882812E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1164' 
+ Execution Time:6.6041946411133E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1430' 
+ Execution Time:6.2942504882812E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1431' 
+ Execution Time:6.8902969360352E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1441' 
+ Execution Time:6.1988830566406E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1446' 
+ Execution Time:9.7036361694336E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1445' 
+ Execution Time:0.00015592575073242
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1463' 
+ Execution Time:0.00013399124145508
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1471' 
+ Execution Time:0.00013494491577148
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1475' 
+ Execution Time:0.00013208389282227
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1476' 
+ Execution Time:0.00012397766113281
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1477' 
+ Execution Time:0.00013113021850586
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1481' 
+ Execution Time:0.00011801719665527
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1482' 
+ Execution Time:0.00013613700866699
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1484' 
+ Execution Time:0.00011610984802246
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1485' 
+ Execution Time:0.00012707710266113
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1498' 
+ Execution Time:0.00013017654418945
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1500' 
+ Execution Time:0.00012588500976562
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1502' 
+ Execution Time:0.00012493133544922
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1517' 
+ Execution Time:0.00013017654418945
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1518' 
+ Execution Time:0.00011301040649414
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1519' 
+ Execution Time:0.00012922286987305
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1529' 
+ Execution Time:0.00011587142944336
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1533' 
+ Execution Time:0.00012588500976562
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1538' 
+ Execution Time:0.00012803077697754
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1548' 
+ Execution Time:0.00012588500976562
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1552' 
+ Execution Time:0.00012898445129395
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1563' 
+ Execution Time:0.00014591217041016
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1567' 
+ Execution Time:6.9856643676758E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1576' 
+ Execution Time:7.2956085205078E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1579' 
+ Execution Time:6.7949295043945E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1588' 
+ Execution Time:7.2956085205078E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1602' 
+ Execution Time:6.9856643676758E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1603' 
+ Execution Time:6.8902969360352E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1607' 
+ Execution Time:7.0810317993164E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1608' 
+ Execution Time:6.9141387939453E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1611' 
+ Execution Time:7.2956085205078E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1613' 
+ Execution Time:7.2956085205078E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1639' 
+ Execution Time:6.7949295043945E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1646' 
+ Execution Time:7.2956085205078E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1647' 
+ Execution Time:6.9141387939453E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1650' 
+ Execution Time:6.8902969360352E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1656' 
+ Execution Time:7.1048736572266E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1665' 
+ Execution Time:7.1048736572266E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1674' 
+ Execution Time:7.2002410888672E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1676' 
+ Execution Time:6.9856643676758E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1677' 
+ Execution Time:6.9856643676758E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1682' 
+ Execution Time:0.00011086463928223
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_user_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_user_level` as `c` ON `c`.`id`=`b`.`ul_id`
+WHERE `c`.`name` = 'snba'
+AND `a`.`active` = '1' 
+ Execution Time:9.8943710327148E-5
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_user_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_user_level` as `c` ON `c`.`id`=`b`.`ul_id`
+WHERE `c`.`name` = 'maker'
+AND `a`.`email` = '' 
+ Execution Time:0.0001518726348877
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_user_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_user_level` as `c` ON `c`.`id`=`b`.`ul_id`
+WHERE `c`.`name` = 'maker'
+AND `a`.`email` = 'r17.indra@gmail.com' 
+ Execution Time:8.8930130004883E-5
+
+SELECT *
+FROM `od_doc_log`
+WHERE `dlog_doc_id` = '4' 
+ Execution Time:7.0810317993164E-5
+
+SELECT *
+FROM `od_user`
+WHERE `id` = '3' 
+ Execution Time:0.00013303756713867
+
+SELECT *
+FROM `od_user`
+WHERE `id` = '4' 
+ Execution Time:7.9870223999023E-5
+
+SELECT *
+FROM `od_user`
+WHERE `id` = '1' 
+ Execution Time:7.6055526733398E-5
+
+SELECT *
+FROM `od_user`
+WHERE `id` = '1' 
+ Execution Time:7.6055526733398E-5
+
+SELECT *
+FROM `od_user`
+WHERE `id` = '1' 
+ Execution Time:7.6055526733398E-5
+
+SELECT *
+FROM `od_user`
+WHERE `id` = '9' 
+ Execution Time:8.8930130004883E-5
+
+
+09:42:33 | 10.11.23.157
+http://10.11.23.93/odissey/snba/reports
+SELECT GET_LOCK('68600e0d171f63beb16fb2d342a038c39cea118f', 300) AS ci_session_lock 
+ Execution Time:0.00033402442932129
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '68600e0d171f63beb16fb2d342a038c39cea118f' 
+ Execution Time:0.00024604797363281
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.0002589225769043
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00020599365234375
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00014185905456543
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:7.0810317993164E-5
+
+SELECT *
+FROM `od_partner`
+WHERE `partner_status` = 1 
+ Execution Time:8.7976455688477E-5
+
+SELECT *
+FROM `od_ba_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`ba_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+ORDER BY `ba_id` DESC 
+ Execution Time:0.00011706352233887
+
+SELECT *
+FROM `od_ba_stat` 
+ Execution Time:6.7949295043945E-5
+
+SELECT *
+FROM `od_ba_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`ba_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+ORDER BY `ba_id` DESC
+ LIMIT 20 
+ Execution Time:9.8228454589844E-5
+
+
+09:42:38 | 10.11.23.157
+http://10.11.23.93/odissey/snba
+SELECT GET_LOCK('0eba56877efba2fbc5419bfc244d75fff2eeaacd', 300) AS ci_session_lock 
+ Execution Time:0.00030183792114258
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '0eba56877efba2fbc5419bfc244d75fff2eeaacd' 
+ Execution Time:0.016221046447754
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00020003318786621
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00013613700866699
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.0001518726348877
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00012397766113281
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00010299682617188
+
+
+09:57:54 | 10.11.23.157
+http://10.11.23.93/odissey/snba/reports
+SELECT GET_LOCK('0eba56877efba2fbc5419bfc244d75fff2eeaacd', 300) AS ci_session_lock 
+ Execution Time:0.0001990795135498
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '0eba56877efba2fbc5419bfc244d75fff2eeaacd' 
+ Execution Time:0.001366138458252
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00012397766113281
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:9.1075897216797E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00012493133544922
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:8.392333984375E-5
+
+SELECT *
+FROM `od_partner`
+WHERE `partner_status` = 1 
+ Execution Time:0.00010299682617188
+
+SELECT *
+FROM `od_ba_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`ba_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+ORDER BY `ba_id` DESC 
+ Execution Time:0.00012588500976562
+
+SELECT *
+FROM `od_ba_stat` 
+ Execution Time:6.1988830566406E-5
+
+SELECT *
+FROM `od_ba_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`ba_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+ORDER BY `ba_id` DESC
+ LIMIT 20 
+ Execution Time:0.0001218318939209
+
+
+09:57:55 | 10.11.23.157
+http://10.11.23.93/odissey/snba/reports/preview/d7dd73beb05248bedac098259494fc1977092d7a
+SELECT GET_LOCK('66b7eaf4d9f9a99188e81ace09defdf98561fe58', 300) AS ci_session_lock 
+ Execution Time:0.00020813941955566
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '66b7eaf4d9f9a99188e81ace09defdf98561fe58' 
+ Execution Time:0.0090329647064209
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00014901161193848
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00013089179992676
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00015521049499512
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00012302398681641
+
+SELECT *
+FROM `od_ba_doc` 
+ Execution Time:9.5844268798828E-5
+
+SELECT *
+FROM `od_ba_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`ba_status`=`b`.`stat_id`
+JOIN `od_partner` as `c` ON `a`.`partner_id`=`c`.`partner_id`
+JOIN `od_user_level` as `d` ON `a`.`ul_id`=`d`.`id`
+JOIN `od_partner_mod` as `e` ON `a`.`partner_id`=`e`.`partner_id`
+JOIN `od_user` as `f` ON `e`.`user_id`=`f`.`id`
+WHERE `a`.`ba_id` = '4' 
+ Execution Time:0.00012016296386719
+
+SELECT *
+FROM `od_partner` as `a`
+JOIN `od_pks_doc` as `b` ON `a`.`partner_id`=`b`.`partner_id`
+JOIN `od_user_level` as `c` ON `c`.`id`=`b`.`ul_id`
+JOIN `od_partner_mod` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_user` as `e` ON `d`.`user_id`=`e`.`id`
+WHERE `a`.`partner_status` = 1
+AND `a`.`partner_id` = 'dnhy'
+AND `e`.`active` = 1
+AND `b`.`ul_id` = '8'
+AND `pks_stat` = 1 
+ Execution Time:0.00012397766113281
+
+SELECT *
+FROM `od_ba_mod`
+WHERE `ba_id` = '4' 
+ Execution Time:8.392333984375E-5
+
+SELECT *
+FROM `od_user_level`
+WHERE `id` = '8' 
+ Execution Time:7.0095062255859E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1125' 
+ Execution Time:6.103515625E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1126' 
+ Execution Time:5.7220458984375E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1130' 
+ Execution Time:6.0081481933594E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1143' 
+ Execution Time:5.6982040405273E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1147' 
+ Execution Time:5.4836273193359E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1164' 
+ Execution Time:5.793571472168E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1430' 
+ Execution Time:5.6028366088867E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1431' 
+ Execution Time:5.9127807617188E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1441' 
+ Execution Time:7.6055526733398E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1446' 
+ Execution Time:5.4836273193359E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1445' 
+ Execution Time:5.6982040405273E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1463' 
+ Execution Time:5.2928924560547E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1471' 
+ Execution Time:5.3882598876953E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1475' 
+ Execution Time:5.5789947509766E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1476' 
+ Execution Time:5.2928924560547E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1477' 
+ Execution Time:5.6028366088867E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1481' 
+ Execution Time:5.3167343139648E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1482' 
+ Execution Time:5.5074691772461E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1484' 
+ Execution Time:5.5789947509766E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1485' 
+ Execution Time:5.3882598876953E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1498' 
+ Execution Time:5.6028366088867E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1500' 
+ Execution Time:5.2928924560547E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1502' 
+ Execution Time:5.4121017456055E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1517' 
+ Execution Time:5.5074691772461E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1518' 
+ Execution Time:5.5074691772461E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1519' 
+ Execution Time:5.6028366088867E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1529' 
+ Execution Time:8.1062316894531E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1533' 
+ Execution Time:5.6028366088867E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1538' 
+ Execution Time:5.6028366088867E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1548' 
+ Execution Time:9.5129013061523E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1552' 
+ Execution Time:9.1075897216797E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1563' 
+ Execution Time:6.2942504882812E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1567' 
+ Execution Time:6.2227249145508E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1576' 
+ Execution Time:6.3896179199219E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1579' 
+ Execution Time:6.103515625E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1588' 
+ Execution Time:6.3896179199219E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1602' 
+ Execution Time:6.0081481933594E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1603' 
+ Execution Time:6.103515625E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1607' 
+ Execution Time:6.5088272094727E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1608' 
+ Execution Time:5.793571472168E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1611' 
+ Execution Time:6.1988830566406E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1613' 
+ Execution Time:5.793571472168E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1639' 
+ Execution Time:5.793571472168E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1646' 
+ Execution Time:6.103515625E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1647' 
+ Execution Time:5.9127807617188E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1650' 
+ Execution Time:5.8889389038086E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1656' 
+ Execution Time:6.0081481933594E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1665' 
+ Execution Time:6.6041946411133E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1674' 
+ Execution Time:6.1988830566406E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1676' 
+ Execution Time:5.6982040405273E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1677' 
+ Execution Time:5.793571472168E-5
+
+SELECT *
+FROM `od_qbaca_trx`
+WHERE `qtrx_id` = '1682' 
+ Execution Time:5.9843063354492E-5
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_user_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_user_level` as `c` ON `c`.`id`=`b`.`ul_id`
+WHERE `c`.`name` = 'snba'
+AND `a`.`active` = '1' 
+ Execution Time:0.00010991096496582
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_user_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_user_level` as `c` ON `c`.`id`=`b`.`ul_id`
+WHERE `c`.`name` = 'maker'
+AND `a`.`email` = '' 
+ Execution Time:0.00012493133544922
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_user_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_user_level` as `c` ON `c`.`id`=`b`.`ul_id`
+WHERE `c`.`name` = 'maker'
+AND `a`.`email` = 'r17.indra@gmail.com' 
+ Execution Time:9.3936920166016E-5
+
+SELECT *
+FROM `od_doc_log`
+WHERE `dlog_doc_id` = '4' 
+ Execution Time:9.7990036010742E-5
+
+SELECT *
+FROM `od_user`
+WHERE `id` = '3' 
+ Execution Time:0.00011706352233887
+
+SELECT *
+FROM `od_user`
+WHERE `id` = '4' 
+ Execution Time:7.5101852416992E-5
+
+SELECT *
+FROM `od_user`
+WHERE `id` = '1' 
+ Execution Time:7.1048736572266E-5
+
+SELECT *
+FROM `od_user`
+WHERE `id` = '1' 
+ Execution Time:7.1048736572266E-5
+
+SELECT *
+FROM `od_user`
+WHERE `id` = '1' 
+ Execution Time:7.2002410888672E-5
+
+SELECT *
+FROM `od_user`
+WHERE `id` = '9' 
+ Execution Time:7.0095062255859E-5
+
+
+10:04:11 | 10.11.23.157
+http://10.11.23.93/odissey/snba/invoices
+SELECT GET_LOCK('66b7eaf4d9f9a99188e81ace09defdf98561fe58', 300) AS ci_session_lock 
+ Execution Time:0.00032305717468262
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '66b7eaf4d9f9a99188e81ace09defdf98561fe58' 
+ Execution Time:0.0027730464935303
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00013303756713867
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:9.2983245849609E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00011992454528809
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:8.702278137207E-5
+
+SELECT *
+FROM `od_partner`
+WHERE `partner_status` = 1 
+ Execution Time:0.00010395050048828
+
+SELECT *, `a`.`number` as `inv_number`, `f`.`number` as `ba_number`
+FROM `od_inv_doc` as `a`
+JOIN `od_inv_stat` as `b` ON `a`.`inv_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_inv_mod` as `e` ON `a`.`inv_id`=`e`.`inv_id`
+JOIN `od_ba_doc` as `f` ON `e`.`ba_id`=`f`.`ba_id`
+ORDER BY `a`.`inv_id` DESC 
+ Execution Time:0.00015497207641602
+
+SELECT *
+FROM `od_inv_stat` 
+ Execution Time:6.103515625E-5
+
+SELECT *, `a`.`number` as `inv_number`, `f`.`number` as `ba_number`
+FROM `od_inv_doc` as `a`
+JOIN `od_inv_stat` as `b` ON `a`.`inv_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_inv_mod` as `e` ON `a`.`inv_id`=`e`.`inv_id`
+JOIN `od_ba_doc` as `f` ON `e`.`ba_id`=`f`.`ba_id`
+ORDER BY `a`.`inv_id` DESC
+ LIMIT 20 
+ Execution Time:0.00012707710266113
+
+
+10:04:15 | 10.11.23.157
+http://10.11.23.93/odissey/snba/invoices
+SELECT GET_LOCK('2ad300ed3afbfbc3590d30f5f9241e06681eba3d', 300) AS ci_session_lock 
+ Execution Time:0.00016903877258301
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '2ad300ed3afbfbc3590d30f5f9241e06681eba3d' 
+ Execution Time:0.0016400814056396
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.0001218318939209
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:8.7976455688477E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00011801719665527
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:8.392333984375E-5
+
+SELECT *
+FROM `od_partner`
+WHERE `partner_status` = 1 
+ Execution Time:0.00010895729064941
+
+SELECT *, `a`.`number` as `inv_number`, `f`.`number` as `ba_number`
+FROM `od_inv_doc` as `a`
+JOIN `od_inv_stat` as `b` ON `a`.`inv_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_inv_mod` as `e` ON `a`.`inv_id`=`e`.`inv_id`
+JOIN `od_ba_doc` as `f` ON `e`.`ba_id`=`f`.`ba_id`
+ORDER BY `a`.`inv_id` DESC 
+ Execution Time:0.00014090538024902
+
+SELECT *
+FROM `od_inv_stat` 
+ Execution Time:5.6028366088867E-5
+
+SELECT *, `a`.`number` as `inv_number`, `f`.`number` as `ba_number`
+FROM `od_inv_doc` as `a`
+JOIN `od_inv_stat` as `b` ON `a`.`inv_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_inv_mod` as `e` ON `a`.`inv_id`=`e`.`inv_id`
+JOIN `od_ba_doc` as `f` ON `e`.`ba_id`=`f`.`ba_id`
+ORDER BY `a`.`inv_id` DESC
+ LIMIT 20 
+ Execution Time:0.00011587142944336
+
+
+10:04:21 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('2ad300ed3afbfbc3590d30f5f9241e06681eba3d', 300) AS ci_session_lock 
+ Execution Time:0.00025200843811035
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '2ad300ed3afbfbc3590d30f5f9241e06681eba3d' 
+ Execution Time:0.0034248828887939
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00017499923706055
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00013995170593262
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00011897087097168
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:8.8930130004883E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:8.9168548583984E-5
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'indraahermanto'
+ORDER BY `task_date` DESC 
+ Execution Time:0.00013995170593262
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'indraahermanto'
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.00011897087097168
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:7.6055526733398E-5
+
+
+10:22:08 | 10.11.23.157
+http://10.11.23.93/odissey/snba
+SELECT GET_LOCK('2ad300ed3afbfbc3590d30f5f9241e06681eba3d', 300) AS ci_session_lock 
+ Execution Time:0.00033998489379883
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '2ad300ed3afbfbc3590d30f5f9241e06681eba3d' 
+ Execution Time:0.0012781620025635
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00012302398681641
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00014090538024902
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00011587142944336
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:7.7009201049805E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:7.5817108154297E-5
+
+
+10:22:10 | 10.11.23.157
+http://10.11.23.93/odissey/snba/qbaca/transaction
+SELECT GET_LOCK('0f05fea2614d9b77ca322886a2b8f18ab24f2b11', 300) AS ci_session_lock 
+ Execution Time:0.00034594535827637
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '0f05fea2614d9b77ca322886a2b8f18ab24f2b11' 
+ Execution Time:0.0063998699188232
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00018811225891113
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00014305114746094
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00027084350585938
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.0001678466796875
+
+SELECT *
+FROM `od_partner`
+WHERE `partner_status` = 1 
+ Execution Time:0.00021195411682129
+
+SELECT *
+FROM `od_qbaca_trx` AS `a`
+JOIN `od_partner` AS `b` ON `a`.`partner_id` = `b`.`partner_id`
+WHERE `b`.`partner_status` = '1'
+ORDER BY `a`.`qtrx_date` DESC 
+ Execution Time:0.00064492225646973
+
+SELECT *
+FROM `od_qbaca_trx` AS `a`
+JOIN `od_partner` AS `b` ON `a`.`partner_id` = `b`.`partner_id`
+WHERE `b`.`partner_status` = '1'
+ORDER BY `a`.`qtrx_date` DESC
+ LIMIT 20 
+ Execution Time:0.00014996528625488
+
+SELECT *
+FROM `od_qbaca_trx` AS `a`
+JOIN `od_partner` AS `b` ON `a`.`partner_id` = `b`.`partner_id`
+WHERE `b`.`partner_status` = '1'
+ORDER BY `a`.`qtrx_date` DESC 
+ Execution Time:0.00064301490783691
+
+SELECT *
+FROM `od_user_level`
+WHERE `name` = 'qbaca' 
+ Execution Time:0.00064706802368164
+
+
+10:25:43 | 10.11.23.157
+http://10.11.23.93/odissey/snba
+SELECT GET_LOCK('0f05fea2614d9b77ca322886a2b8f18ab24f2b11', 300) AS ci_session_lock 
+ Execution Time:0.00030303001403809
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '0f05fea2614d9b77ca322886a2b8f18ab24f2b11' 
+ Execution Time:0.0033528804779053
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00016188621520996
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.0001220703125
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00015115737915039
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '14' 
+ Execution Time:0.00012302398681641
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'odisseybot@gmail.com' 
+ Execution Time:0.00010204315185547
+
+
+10:55:52 | 10.11.23.157
+http://10.11.23.93/odissey/main/login
+SELECT GET_LOCK('2b36bd4ab08b541dfc9d621975a815a79bb6e259', 300) AS ci_session_lock 
+ Execution Time:0.00020718574523926
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '2b36bd4ab08b541dfc9d621975a815a79bb6e259' 
+ Execution Time:0.003324031829834
+
+
+10:56:01 | 10.11.23.157
+http://10.11.23.93/odissey/snba
+SELECT GET_LOCK('2b36bd4ab08b541dfc9d621975a815a79bb6e259', 300) AS ci_session_lock 
+ Execution Time:0.00028014183044434
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '2b36bd4ab08b541dfc9d621975a815a79bb6e259' 
+ Execution Time:0.0033628940582275
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00029110908508301
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:6.0081481933594E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:9.7036361694336E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:6.6995620727539E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:6.2942504882812E-5
+
+
+10:57:05 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('2b36bd4ab08b541dfc9d621975a815a79bb6e259', 300) AS ci_session_lock 
+ Execution Time:0.00019598007202148
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '2b36bd4ab08b541dfc9d621975a815a79bb6e259' 
+ Execution Time:0.0011038780212402
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00020909309387207
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:0.0001378059387207
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00013208389282227
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:7.3909759521484E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:8.4161758422852E-5
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'imel'
+ORDER BY `task_date` DESC 
+ Execution Time:0.0083920955657959
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'imel'
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.022585868835449
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.00015711784362793
+
+
+10:58:02 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('2b36bd4ab08b541dfc9d621975a815a79bb6e259', 300) AS ci_session_lock 
+ Execution Time:0.00030112266540527
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '2b36bd4ab08b541dfc9d621975a815a79bb6e259' 
+ Execution Time:0.0032141208648682
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00012516975402832
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:9.2029571533203E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00010490417480469
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:8.9883804321289E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:8.5115432739258E-5
+
+SELECT *
+FROM `od_task_stat`
+WHERE `stat_id` = 'cls' 
+ Execution Time:0.00020408630371094
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `a`.`task_status` = 'cls'
+AND `b`.`username` = 'imel'
+ORDER BY `task_date` DESC 
+ Execution Time:0.020334005355835
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `a`.`task_status` = 'cls'
+AND `b`.`username` = 'imel'
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.0091969966888428
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.00028300285339355
+
+
+11:34:53 | 10.11.23.157
+http://10.11.23.93/odissey/main/login
+SELECT GET_LOCK('df2c99e514fe7c886f407603a927680fd29c9387', 300) AS ci_session_lock 
+ Execution Time:0.00026893615722656
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = 'df2c99e514fe7c886f407603a927680fd29c9387' 
+ Execution Time:0.0031270980834961
+
+
+12:55:18 | 10.11.23.157
+http://10.11.23.93/odissey/main/login
+SELECT GET_LOCK('81c1e13d046c14cae171f94b4f9713926e21f682', 300) AS ci_session_lock 
+ Execution Time:0.013301849365234
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '81c1e13d046c14cae171f94b4f9713926e21f682' 
+ Execution Time:0.013719081878662
+
+
+14:04:41 | 10.11.23.157
+http://10.11.23.93/odissey/main/login
+SELECT GET_LOCK('c3c6d7c2765c0ba448dd0bb67129f38f08fbc31f', 300) AS ci_session_lock 
+ Execution Time:0.00017786026000977
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = 'c3c6d7c2765c0ba448dd0bb67129f38f08fbc31f' 
+ Execution Time:0.0012240409851074
+
+
+14:04:44 | 10.11.23.157
+http://10.11.23.93/odissey/snba
+SELECT GET_LOCK('c3c6d7c2765c0ba448dd0bb67129f38f08fbc31f', 300) AS ci_session_lock 
+ Execution Time:0.00027084350585938
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = 'c3c6d7c2765c0ba448dd0bb67129f38f08fbc31f' 
+ Execution Time:0.0032558441162109
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00059795379638672
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:0.00012898445129395
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00013995170593262
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:8.4161758422852E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:8.4877014160156E-5
+
+
+14:04:51 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('c3c6d7c2765c0ba448dd0bb67129f38f08fbc31f', 300) AS ci_session_lock 
+ Execution Time:0.00024604797363281
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = 'c3c6d7c2765c0ba448dd0bb67129f38f08fbc31f' 
+ Execution Time:0.0032060146331787
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00015401840209961
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:0.00011897087097168
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00014281272888184
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:9.3936920166016E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00015997886657715
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'imel'
+ORDER BY `task_date` DESC 
+ Execution Time:0.047820091247559
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'imel'
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.0028009414672852
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.00058698654174805
+
+
+14:16:21 | 10.11.23.117
+http://10.11.23.93/odissey/main/login
+SELECT GET_LOCK('c3c6d7c2765c0ba448dd0bb67129f38f08fbc31f', 300) AS ci_session_lock 
+ Execution Time:0.00016903877258301
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = 'c3c6d7c2765c0ba448dd0bb67129f38f08fbc31f' 
+ Execution Time:0.0014770030975342
+
+
+15:11:41 | 10.11.23.157
+http://10.11.23.93/odissey/snba
+SELECT GET_LOCK('243430ebceb149d83206c5c2dc7ddbfe22428f99', 300) AS ci_session_lock 
+ Execution Time:0.00029301643371582
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '243430ebceb149d83206c5c2dc7ddbfe22428f99' 
+ Execution Time:0.0028681755065918
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00026988983154297
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:5.6982040405273E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00026202201843262
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:0.00018405914306641
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00020098686218262
+
+
+15:11:45 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('243430ebceb149d83206c5c2dc7ddbfe22428f99', 300) AS ci_session_lock 
+ Execution Time:0.00031399726867676
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '243430ebceb149d83206c5c2dc7ddbfe22428f99' 
+ Execution Time:0.0032391548156738
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00010204315185547
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:7.2002410888672E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:9.4175338745117E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:6.6995620727539E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:7.5101852416992E-5
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'imel'
+ORDER BY `task_date` DESC 
+ Execution Time:0.015949010848999
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'imel'
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.0025870800018311
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.00033307075500488
+
+
+15:12:11 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('243430ebceb149d83206c5c2dc7ddbfe22428f99', 300) AS ci_session_lock 
+ Execution Time:0.00030994415283203
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '243430ebceb149d83206c5c2dc7ddbfe22428f99' 
+ Execution Time:0.0024468898773193
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00012612342834473
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:9.2983245849609E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00011682510375977
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:8.8930130004883E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:8.5830688476562E-5
+
+SELECT *
+FROM `od_task_stat`
+WHERE `stat_id` = 'cls' 
+ Execution Time:0.00017690658569336
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `a`.`task_status` = 'cls'
+AND `b`.`username` = 'imel'
+ORDER BY `task_date` DESC 
+ Execution Time:0.017315864562988
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `a`.`task_status` = 'cls'
+AND `b`.`username` = 'imel'
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.001291036605835
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.00013303756713867
+
+
+15:12:19 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task/new
+SELECT GET_LOCK('243430ebceb149d83206c5c2dc7ddbfe22428f99', 300) AS ci_session_lock 
+ Execution Time:0.00025796890258789
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '243430ebceb149d83206c5c2dc7ddbfe22428f99' 
+ Execution Time:0.00130295753479
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00019598007202148
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:0.00012803077697754
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00014209747314453
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:8.2969665527344E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:9.7990036010742E-5
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:7.5101852416992E-5
+
+
+15:13:27 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('243430ebceb149d83206c5c2dc7ddbfe22428f99', 300) AS ci_session_lock 
+ Execution Time:0.00022196769714355
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '243430ebceb149d83206c5c2dc7ddbfe22428f99' 
+ Execution Time:0.0031931400299072
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00012707710266113
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:9.0122222900391E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.0001060962677002
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:8.1062316894531E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:8.4877014160156E-5
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'imel'
+ORDER BY `task_date` DESC 
+ Execution Time:0.0011510848999023
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'imel'
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.0023539066314697
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.00019097328186035
+
+
+15:13:31 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task/new
+SELECT GET_LOCK('243430ebceb149d83206c5c2dc7ddbfe22428f99', 300) AS ci_session_lock 
+ Execution Time:0.00022196769714355
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '243430ebceb149d83206c5c2dc7ddbfe22428f99' 
+ Execution Time:0.0015900135040283
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00010395050048828
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:7.5817108154297E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00010514259338379
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:8.2015991210938E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:7.5817108154297E-5
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:5.6028366088867E-5
+
+
+15:14:22 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('243430ebceb149d83206c5c2dc7ddbfe22428f99', 300) AS ci_session_lock 
+ Execution Time:0.00016903877258301
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '243430ebceb149d83206c5c2dc7ddbfe22428f99' 
+ Execution Time:0.0010380744934082
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00018596649169922
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:0.00013518333435059
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00013017654418945
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:7.0095062255859E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:8.4877014160156E-5
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'imel'
+ORDER BY `task_date` DESC 
+ Execution Time:0.0029420852661133
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'imel'
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.0026750564575195
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.00012087821960449
+
+
+15:14:25 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task/new
+SELECT GET_LOCK('243430ebceb149d83206c5c2dc7ddbfe22428f99', 300) AS ci_session_lock 
+ Execution Time:0.00030303001403809
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '243430ebceb149d83206c5c2dc7ddbfe22428f99' 
+ Execution Time:0.0033628940582275
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00017213821411133
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:0.00017094612121582
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00010800361633301
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:9.2029571533203E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:8.8214874267578E-5
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:6.413459777832E-5
+
+
+15:15:42 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('243430ebceb149d83206c5c2dc7ddbfe22428f99', 300) AS ci_session_lock 
+ Execution Time:0.00028705596923828
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '243430ebceb149d83206c5c2dc7ddbfe22428f99' 
+ Execution Time:0.0033581256866455
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.0001530647277832
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:8.2015991210938E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00014591217041016
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:7.8201293945312E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00015020370483398
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'imel'
+ORDER BY `task_date` DESC 
+ Execution Time:0.0014159679412842
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'imel'
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.0012061595916748
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.00011610984802246
+
+
+15:16:00 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('243430ebceb149d83206c5c2dc7ddbfe22428f99', 300) AS ci_session_lock 
+ Execution Time:0.00031304359436035
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '243430ebceb149d83206c5c2dc7ddbfe22428f99' 
+ Execution Time:0.003324031829834
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.0001070499420166
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:8.4877014160156E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.0001070499420166
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:7.4148178100586E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:7.7962875366211E-5
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'imel'
+ORDER BY `task_date` DESC 
+ Execution Time:0.00015997886657715
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'imel'
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.00013995170593262
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.0001680850982666
+
+
+15:16:11 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('243430ebceb149d83206c5c2dc7ddbfe22428f99', 300) AS ci_session_lock 
+ Execution Time:0.00020790100097656
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '243430ebceb149d83206c5c2dc7ddbfe22428f99' 
+ Execution Time:0.0010499954223633
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00019407272338867
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:0.0001978874206543
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00013494491577148
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:7.5101852416992E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:8.5830688476562E-5
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'imel'
+ORDER BY `task_date` DESC 
+ Execution Time:0.00019001960754395
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'imel'
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.00017213821411133
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.00010490417480469
+
+
+15:16:27 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task/new
+SELECT GET_LOCK('243430ebceb149d83206c5c2dc7ddbfe22428f99', 300) AS ci_session_lock 
+ Execution Time:0.00030803680419922
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '243430ebceb149d83206c5c2dc7ddbfe22428f99' 
+ Execution Time:0.0034370422363281
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00013303756713867
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:9.5129013061523E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00010585784912109
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:8.0108642578125E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:7.7962875366211E-5
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:5.5789947509766E-5
+
+
+15:19:05 | 10.11.23.157
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('243430ebceb149d83206c5c2dc7ddbfe22428f99', 300) AS ci_session_lock 
+ Execution Time:0.00020408630371094
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '243430ebceb149d83206c5c2dc7ddbfe22428f99' 
+ Execution Time:0.001060962677002
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.0001990795135498
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:0.00017213821411133
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:0.00014805793762207
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '8' 
+ Execution Time:7.7009201049805E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'imel.irawani@gmail.com' 
+ Execution Time:9.2029571533203E-5
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'imel'
+ORDER BY `task_date` DESC 
+ Execution Time:0.0001838207244873
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+WHERE `b`.`username` = 'imel'
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.0001680850982666
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.00011014938354492
+
+
+16:02:46 | 10.244.27.245
+http://10.11.23.93/odissey/main/login
+SELECT GET_LOCK('159c794827c2ca74753613f89c1f506430f83143', 300) AS ci_session_lock 
+ Execution Time:0.00029110908508301
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '159c794827c2ca74753613f89c1f506430f83143' 
+ Execution Time:0.0033788681030273
+
+
+16:02:58 | 10.244.27.245
+http://10.11.23.93/odissey/snba
+SELECT GET_LOCK('159c794827c2ca74753613f89c1f506430f83143', 300) AS ci_session_lock 
+ Execution Time:0.00028014183044434
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '159c794827c2ca74753613f89c1f506430f83143' 
+ Execution Time:0.001784086227417
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:0.00033092498779297
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '11' 
+ Execution Time:6.7949295043945E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:0.00010418891906738
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '11' 
+ Execution Time:7.2002410888672E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:6.7949295043945E-5
+
+
+16:03:37 | 10.244.27.245
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('159c794827c2ca74753613f89c1f506430f83143', 300) AS ci_session_lock 
+ Execution Time:0.00031399726867676
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '159c794827c2ca74753613f89c1f506430f83143' 
+ Execution Time:0.0034060478210449
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:0.00015902519226074
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '11' 
+ Execution Time:8.2015991210938E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:0.0001530647277832
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '11' 
+ Execution Time:8.392333984375E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:0.00017309188842773
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+ORDER BY `task_date` DESC 
+ Execution Time:0.13958787918091
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.0039160251617432
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.00020813941955566
+
+
+16:15:37 | 10.11.62.254
+http://10.11.23.93/odissey/main/login
+SELECT GET_LOCK('4243943005e27b42215925e289bba4035d4b782e', 300) AS ci_session_lock 
+ Execution Time:0.00011706352233887
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '4243943005e27b42215925e289bba4035d4b782e' 
+ Execution Time:0.0012550354003906
+
+
+16:16:12 | 10.11.62.254
+http://10.11.23.93/odissey/snba
+SELECT GET_LOCK('4243943005e27b42215925e289bba4035d4b782e', 300) AS ci_session_lock 
+ Execution Time:0.00012302398681641
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '4243943005e27b42215925e289bba4035d4b782e' 
+ Execution Time:0.0014100074768066
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'maulud@telkom.co.id' 
+ Execution Time:0.00032305717468262
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '13' 
+ Execution Time:8.9168548583984E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'maulud@telkom.co.id' 
+ Execution Time:0.00011801719665527
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '13' 
+ Execution Time:9.0122222900391E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'maulud@telkom.co.id' 
+ Execution Time:7.7962875366211E-5
+
+
+16:16:16 | 10.11.62.254
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('4243943005e27b42215925e289bba4035d4b782e', 300) AS ci_session_lock 
+ Execution Time:0.00029993057250977
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '4243943005e27b42215925e289bba4035d4b782e' 
+ Execution Time:0.0025238990783691
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'maulud@telkom.co.id' 
+ Execution Time:0.00017619132995605
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '13' 
+ Execution Time:0.00015091896057129
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'maulud@telkom.co.id' 
+ Execution Time:0.00014615058898926
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '13' 
+ Execution Time:0.00012993812561035
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'maulud@telkom.co.id' 
+ Execution Time:0.0001070499420166
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+ORDER BY `task_date` DESC 
+ Execution Time:0.026627063751221
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.0017650127410889
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.00031113624572754
+
+
+16:16:20 | 10.11.62.254
+http://10.11.23.93/odissey/snba/task/new
+SELECT GET_LOCK('4243943005e27b42215925e289bba4035d4b782e', 300) AS ci_session_lock 
+ Execution Time:0.00036883354187012
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '4243943005e27b42215925e289bba4035d4b782e' 
+ Execution Time:0.0033907890319824
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'maulud@telkom.co.id' 
+ Execution Time:0.00012302398681641
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '13' 
+ Execution Time:9.2983245849609E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'maulud@telkom.co.id' 
+ Execution Time:0.00011086463928223
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '13' 
+ Execution Time:9.1075897216797E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'maulud@telkom.co.id' 
+ Execution Time:0.00017094612121582
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:8.7976455688477E-5
+
+
+16:20:00 | 10.11.62.254
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('4243943005e27b42215925e289bba4035d4b782e', 300) AS ci_session_lock 
+ Execution Time:0.00029397010803223
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '4243943005e27b42215925e289bba4035d4b782e' 
+ Execution Time:0.0017459392547607
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'maulud@telkom.co.id' 
+ Execution Time:0.00011801719665527
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '13' 
+ Execution Time:7.1048736572266E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'maulud@telkom.co.id' 
+ Execution Time:0.00012588500976562
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '13' 
+ Execution Time:9.5129013061523E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'maulud@telkom.co.id' 
+ Execution Time:7.6055526733398E-5
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+ORDER BY `task_date` DESC 
+ Execution Time:0.0019431114196777
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.0015718936920166
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.00014305114746094
+
+
+16:20:11 | 10.11.62.254
+http://10.11.23.93/odissey/main/login
+SELECT GET_LOCK('eb3e3b55270f53531283f8b2495cf65634e625f4', 300) AS ci_session_lock 
+ Execution Time:0.00027918815612793
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = 'eb3e3b55270f53531283f8b2495cf65634e625f4' 
+ Execution Time:0.0032618045806885
+
+
+16:22:10 | 10.244.27.245
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('159c794827c2ca74753613f89c1f506430f83143', 300) AS ci_session_lock 
+ Execution Time:0.0001988410949707
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '159c794827c2ca74753613f89c1f506430f83143' 
+ Execution Time:0.001007080078125
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:0.00062799453735352
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '11' 
+ Execution Time:9.2983245849609E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:9.2029571533203E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '11' 
+ Execution Time:7.8916549682617E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:8.2015991210938E-5
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+ORDER BY `task_date` DESC 
+ Execution Time:0.00017595291137695
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.00012588500976562
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.0001060962677002
+
+
+16:22:26 | 10.244.27.245
+http://10.11.23.93/odissey/snba/task/preview/18c35ab9bc0049971073d4381bf19c1bc60d774d
+SELECT GET_LOCK('204f9c61deb98852114dd72e9c5aaad96b398e9b', 300) AS ci_session_lock 
+ Execution Time:0.00025701522827148
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '204f9c61deb98852114dd72e9c5aaad96b398e9b' 
+ Execution Time:0.0032601356506348
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:0.00011897087097168
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '11' 
+ Execution Time:8.7976455688477E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:0.00010490417480469
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '11' 
+ Execution Time:7.5101852416992E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:8.1062316894531E-5
+
+SELECT *
+FROM `od_task_doc` 
+ Execution Time:0.00036001205444336
+
+SELECT *
+FROM `od_task_doc`
+WHERE `task_id` = '35' 
+ Execution Time:0.00023078918457031
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:5.6982040405273E-5
+
+
+16:27:40 | 10.11.23.117
+http://10.11.23.93/odissey/main/login
+SELECT GET_LOCK('359f0110bde43c4ab6cb73a8a6aa24c023ca22dc', 300) AS ci_session_lock 
+ Execution Time:0.00028109550476074
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '359f0110bde43c4ab6cb73a8a6aa24c023ca22dc' 
+ Execution Time:0.0031650066375732
+
+
+17:16:34 | 10.244.27.245
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('204f9c61deb98852114dd72e9c5aaad96b398e9b', 300) AS ci_session_lock 
+ Execution Time:0.0002291202545166
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = '204f9c61deb98852114dd72e9c5aaad96b398e9b' 
+ Execution Time:0.0015649795532227
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:0.00012803077697754
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '11' 
+ Execution Time:9.4890594482422E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:0.00011897087097168
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '11' 
+ Execution Time:9.7990036010742E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:8.8930130004883E-5
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+ORDER BY `task_date` DESC 
+ Execution Time:0.00021100044250488
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.00015115737915039
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.00015997886657715
+
+
+17:17:36 | 10.244.27.245
+http://10.11.23.93/odissey/snba/task/preview/ce0cb604aff54b92258682185f194ea3fcd0bf6d
+SELECT GET_LOCK('ba56c9e22e743cb14b374739f4c48927bf904299', 300) AS ci_session_lock 
+ Execution Time:0.00031089782714844
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = 'ba56c9e22e743cb14b374739f4c48927bf904299' 
+ Execution Time:0.0034141540527344
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:0.00015592575073242
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '11' 
+ Execution Time:8.9883804321289E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:0.00014090538024902
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '11' 
+ Execution Time:8.7976455688477E-5
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:0.0001060962677002
+
+SELECT *
+FROM `od_task_doc` 
+ Execution Time:0.00015711784362793
+
+SELECT *
+FROM `od_task_doc`
+WHERE `task_id` = '34' 
+ Execution Time:0.00027704238891602
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:5.6982040405273E-5
+
+
+17:17:52 | 10.244.27.245
+http://10.11.23.93/odissey/snba/task
+SELECT GET_LOCK('ba56c9e22e743cb14b374739f4c48927bf904299', 300) AS ci_session_lock 
+ Execution Time:0.00021910667419434
+
+SELECT `data`
+FROM `od_session`
+WHERE `id` = 'ba56c9e22e743cb14b374739f4c48927bf904299' 
+ Execution Time:0.0010678768157959
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:0.00024294853210449
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '11' 
+ Execution Time:0.00019407272338867
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:0.00024795532226562
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '11' 
+ Execution Time:0.00020599365234375
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'rikur@telkom.co.id' 
+ Execution Time:0.00021505355834961
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+ORDER BY `task_date` DESC 
+ Execution Time:0.00047492980957031
+
+SELECT *
+FROM `od_task_doc` as `a`
+JOIN `od_user` as `b` ON `a`.`user_id`=`b`.`username`
+JOIN `od_task_stat` as `c` ON `a`.`task_status`=`c`.`stat_id`
+ORDER BY `task_date` DESC
+ LIMIT 20 
+ Execution Time:0.00018596649169922
+
+SELECT *
+FROM `od_task_stat` 
+ Execution Time:0.0001680850982666
+

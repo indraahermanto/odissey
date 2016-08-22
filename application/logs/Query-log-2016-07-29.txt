@@ -1,0 +1,55 @@
+
+09:20:42 | 10.11.23.157
+http://10.11.23.93/odissey/main/login
+SELECT GET_LOCK('e8eddf18a41d735422d2e54ae2304d3190594546', 300) AS ci_session_lock 
+ Execution Time:0.00024199485778809
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'e8eddf18a41d735422d2e54ae2304d3190594546' 
+ Execution Time:0.0027041435241699
+
+
+09:20:48 | 10.11.23.157
+http://10.11.23.93/odissey/main/login
+SELECT GET_LOCK('e8eddf18a41d735422d2e54ae2304d3190594546', 300) AS ci_session_lock 
+ Execution Time:0.00016307830810547
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'e8eddf18a41d735422d2e54ae2304d3190594546' 
+ Execution Time:0.0010578632354736
+
+
+09:27:35 | 10.11.23.157
+http://10.11.23.93/odissey/main/login
+SELECT GET_LOCK('54548cf8fbe009d175bc2e8df66b889f3ec1ad9a', 300) AS ci_session_lock 
+ Execution Time:0.00027012825012207
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '54548cf8fbe009d175bc2e8df66b889f3ec1ad9a' 
+ Execution Time:0.0028870105743408
+
+
+15:58:29 | 10.11.23.157
+http://10.11.23.93/odissey/main/login
+SELECT GET_LOCK('91092bbe2395a058b1ab780de1630a2bc76dabb6', 300) AS ci_session_lock 
+ Execution Time:0.00026893615722656
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '91092bbe2395a058b1ab780de1630a2bc76dabb6' 
+ Execution Time:0.0028970241546631
+
+
+16:12:10 | 10.11.23.157
+http://10.11.23.93/odissey/main/login
+SELECT GET_LOCK('038b52258730d38507ce1d6d611680886c67ba45', 300) AS ci_session_lock 
+ Execution Time:0.00017404556274414
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '038b52258730d38507ce1d6d611680886c67ba45' 
+ Execution Time:0.0010879039764404
+

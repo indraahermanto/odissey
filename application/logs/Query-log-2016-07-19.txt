@@ -1,0 +1,450 @@
+
+08:48:10 | 127.0.0.1
+http://odissey.app/main/login
+SELECT GET_LOCK('a2e87b6ed8170186ba51eff88aabfb7d459cc8d7', 300) AS ci_session_lock 
+ Execution Time:0.030580997467041
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'a2e87b6ed8170186ba51eff88aabfb7d459cc8d7' 
+ Execution Time:0.025406122207642
+
+
+08:50:58 | 127.0.0.1
+http://odissey.app/main/login
+SELECT GET_LOCK('a2e87b6ed8170186ba51eff88aabfb7d459cc8d7', 300) AS ci_session_lock 
+ Execution Time:0.00013399124145508
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'a2e87b6ed8170186ba51eff88aabfb7d459cc8d7' 
+ Execution Time:0.00052690505981445
+
+
+08:54:11 | 127.0.0.1
+http://odissey.app/
+SELECT GET_LOCK('d4ae438904028bdda9775b3bc712db3363db2e15', 300) AS ci_session_lock 
+ Execution Time:0.00011301040649414
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd4ae438904028bdda9775b3bc712db3363db2e15' 
+ Execution Time:0.00059890747070312
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '1' 
+ Execution Time:0.00041794776916504
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'instamaxv@gmail.com' 
+ Execution Time:0.00039505958557129
+
+
+08:54:14 | 127.0.0.1
+http://odissey.app/partner/qbaca/transaction
+SELECT GET_LOCK('d4ae438904028bdda9775b3bc712db3363db2e15', 300) AS ci_session_lock 
+ Execution Time:0.0001838207244873
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd4ae438904028bdda9775b3bc712db3363db2e15' 
+ Execution Time:0.0014071464538574
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'instamaxv@gmail.com' 
+ Execution Time:0.0001378059387207
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '1' 
+ Execution Time:0.00015091896057129
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '1' 
+ Execution Time:0.00011396408081055
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_partner_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_partner` as `c` ON `b`.`partner_id`=`c`.`partner_id`
+JOIN `od_partner_bank` as `d` ON `c`.`partner_id`=`d`.`partner_id`
+WHERE `email` = 'instamaxv@gmail.com'
+AND `d`.`pbank_stat` = 1 
+ Execution Time:0.00051093101501465
+
+SELECT *
+FROM `od_qbaca_trx` AS `a`
+JOIN `od_partner` AS `b` ON `a`.`partner_id` = `b`.`partner_id`
+WHERE `b`.`partner_status` = '1'
+AND `a`.`partner_id` = 'dnhy'
+ORDER BY `a`.`qtrx_date` DESC 
+ Execution Time:0.020999908447266
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_partner_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_partner` as `c` ON `b`.`partner_id`=`c`.`partner_id`
+JOIN `od_partner_bank` as `d` ON `c`.`partner_id`=`d`.`partner_id`
+WHERE `email` = 'instamaxv@gmail.com'
+AND `d`.`pbank_stat` = 1 
+ Execution Time:0.00010490417480469
+
+SELECT *
+FROM `od_qbaca_trx` AS `a`
+JOIN `od_partner` AS `b` ON `a`.`partner_id` = `b`.`partner_id`
+WHERE `b`.`partner_status` = '1'
+AND `a`.`partner_id` = 'dnhy'
+ORDER BY `a`.`qtrx_date` DESC
+ LIMIT 20 
+ Execution Time:0.0016260147094727
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_partner_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_partner` as `c` ON `b`.`partner_id`=`c`.`partner_id`
+JOIN `od_partner_bank` as `d` ON `c`.`partner_id`=`d`.`partner_id`
+WHERE `email` = 'instamaxv@gmail.com'
+AND `d`.`pbank_stat` = 1 
+ Execution Time:0.00014400482177734
+
+SELECT *
+FROM `od_qbaca_trx` AS `a`
+JOIN `od_partner` AS `b` ON `a`.`partner_id` = `b`.`partner_id`
+WHERE `b`.`partner_status` = '1'
+AND `a`.`partner_id` = 'dnhy'
+ORDER BY `a`.`qtrx_date` DESC 
+ Execution Time:0.00019598007202148
+
+
+08:54:15 | 127.0.0.1
+http://odissey.app/partner/reports
+SELECT GET_LOCK('d4ae438904028bdda9775b3bc712db3363db2e15', 300) AS ci_session_lock 
+ Execution Time:0.00018000602722168
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd4ae438904028bdda9775b3bc712db3363db2e15' 
+ Execution Time:0.00094008445739746
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'instamaxv@gmail.com' 
+ Execution Time:0.00040388107299805
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '1' 
+ Execution Time:6.5088272094727E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '1' 
+ Execution Time:7.2956085205078E-5
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_partner_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_partner` as `c` ON `b`.`partner_id`=`c`.`partner_id`
+JOIN `od_partner_bank` as `d` ON `c`.`partner_id`=`d`.`partner_id`
+WHERE `email` = 'instamaxv@gmail.com'
+AND `d`.`pbank_stat` = 1 
+ Execution Time:0.00010418891906738
+
+SELECT *
+FROM `od_ba_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`ba_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+WHERE `a`.`partner_id` = 'dnhy'
+ORDER BY `ba_id` DESC 
+ Execution Time:0.00064587593078613
+
+SELECT *
+FROM `od_ba_stat` 
+ Execution Time:0.00021481513977051
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_partner_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_partner` as `c` ON `b`.`partner_id`=`c`.`partner_id`
+JOIN `od_partner_bank` as `d` ON `c`.`partner_id`=`d`.`partner_id`
+WHERE `email` = 'instamaxv@gmail.com'
+AND `d`.`pbank_stat` = 1 
+ Execution Time:0.00024294853210449
+
+SELECT *
+FROM `od_ba_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`ba_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+WHERE `a`.`partner_id` = 'dnhy'
+ORDER BY `ba_id` DESC
+ LIMIT 20 
+ Execution Time:0.00049901008605957
+
+
+08:54:20 | 127.0.0.1
+http://odissey.app/partner/invoices
+SELECT GET_LOCK('d4ae438904028bdda9775b3bc712db3363db2e15', 300) AS ci_session_lock 
+ Execution Time:0.00014400482177734
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd4ae438904028bdda9775b3bc712db3363db2e15' 
+ Execution Time:0.00060009956359863
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'instamaxv@gmail.com' 
+ Execution Time:0.00012087821960449
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '1' 
+ Execution Time:0.00013995170593262
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '1' 
+ Execution Time:0.00023102760314941
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_partner_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_partner` as `c` ON `b`.`partner_id`=`c`.`partner_id`
+JOIN `od_partner_bank` as `d` ON `c`.`partner_id`=`d`.`partner_id`
+WHERE `email` = 'instamaxv@gmail.com'
+AND `d`.`pbank_stat` = 1 
+ Execution Time:0.00014710426330566
+
+SELECT *
+FROM `od_ba_stat` 
+ Execution Time:9.8943710327148E-5
+
+SELECT *, `a`.`number` as `inv_number`, `f`.`number` as `ba_number`
+FROM `od_inv_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`inv_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_inv_mod` as `e` ON `a`.`inv_id`=`e`.`inv_id`
+JOIN `od_ba_doc` as `f` ON `e`.`ba_id`=`f`.`ba_id`
+WHERE `a`.`partner_id` = 'dnhy'
+ORDER BY `a`.`inv_id` DESC
+ LIMIT 20 
+ Execution Time:0.00081992149353027
+
+
+08:54:22 | 127.0.0.1
+http://odissey.app/partner/reports
+SELECT GET_LOCK('d4ae438904028bdda9775b3bc712db3363db2e15', 300) AS ci_session_lock 
+ Execution Time:0.00010895729064941
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd4ae438904028bdda9775b3bc712db3363db2e15' 
+ Execution Time:0.0011401176452637
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'instamaxv@gmail.com' 
+ Execution Time:0.00011205673217773
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '1' 
+ Execution Time:5.6028366088867E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '1' 
+ Execution Time:5.2213668823242E-5
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_partner_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_partner` as `c` ON `b`.`partner_id`=`c`.`partner_id`
+JOIN `od_partner_bank` as `d` ON `c`.`partner_id`=`d`.`partner_id`
+WHERE `email` = 'instamaxv@gmail.com'
+AND `d`.`pbank_stat` = 1 
+ Execution Time:8.7976455688477E-5
+
+SELECT *
+FROM `od_ba_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`ba_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+WHERE `a`.`partner_id` = 'dnhy'
+ORDER BY `ba_id` DESC 
+ Execution Time:0.00011420249938965
+
+SELECT *
+FROM `od_ba_stat` 
+ Execution Time:3.4093856811523E-5
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_partner_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_partner` as `c` ON `b`.`partner_id`=`c`.`partner_id`
+JOIN `od_partner_bank` as `d` ON `c`.`partner_id`=`d`.`partner_id`
+WHERE `email` = 'instamaxv@gmail.com'
+AND `d`.`pbank_stat` = 1 
+ Execution Time:5.9843063354492E-5
+
+SELECT *
+FROM `od_ba_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`ba_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+WHERE `a`.`partner_id` = 'dnhy'
+ORDER BY `ba_id` DESC
+ LIMIT 20 
+ Execution Time:7.3909759521484E-5
+
+
+08:54:23 | 127.0.0.1
+http://odissey.app/partner/qbaca/transaction
+SELECT GET_LOCK('d4ae438904028bdda9775b3bc712db3363db2e15', 300) AS ci_session_lock 
+ Execution Time:0.00015902519226074
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd4ae438904028bdda9775b3bc712db3363db2e15' 
+ Execution Time:0.001417875289917
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'instamaxv@gmail.com' 
+ Execution Time:0.0003361701965332
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '1' 
+ Execution Time:5.3882598876953E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '1' 
+ Execution Time:5.1975250244141E-5
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_partner_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_partner` as `c` ON `b`.`partner_id`=`c`.`partner_id`
+JOIN `od_partner_bank` as `d` ON `c`.`partner_id`=`d`.`partner_id`
+WHERE `email` = 'instamaxv@gmail.com'
+AND `d`.`pbank_stat` = 1 
+ Execution Time:8.7976455688477E-5
+
+SELECT *
+FROM `od_qbaca_trx` AS `a`
+JOIN `od_partner` AS `b` ON `a`.`partner_id` = `b`.`partner_id`
+WHERE `b`.`partner_status` = '1'
+AND `a`.`partner_id` = 'dnhy'
+ORDER BY `a`.`qtrx_date` DESC 
+ Execution Time:0.0001680850982666
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_partner_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_partner` as `c` ON `b`.`partner_id`=`c`.`partner_id`
+JOIN `od_partner_bank` as `d` ON `c`.`partner_id`=`d`.`partner_id`
+WHERE `email` = 'instamaxv@gmail.com'
+AND `d`.`pbank_stat` = 1 
+ Execution Time:6.6041946411133E-5
+
+SELECT *
+FROM `od_qbaca_trx` AS `a`
+JOIN `od_partner` AS `b` ON `a`.`partner_id` = `b`.`partner_id`
+WHERE `b`.`partner_status` = '1'
+AND `a`.`partner_id` = 'dnhy'
+ORDER BY `a`.`qtrx_date` DESC
+ LIMIT 20 
+ Execution Time:6.6041946411133E-5
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_partner_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_partner` as `c` ON `b`.`partner_id`=`c`.`partner_id`
+JOIN `od_partner_bank` as `d` ON `c`.`partner_id`=`d`.`partner_id`
+WHERE `email` = 'instamaxv@gmail.com'
+AND `d`.`pbank_stat` = 1 
+ Execution Time:7.1048736572266E-5
+
+SELECT *
+FROM `od_qbaca_trx` AS `a`
+JOIN `od_partner` AS `b` ON `a`.`partner_id` = `b`.`partner_id`
+WHERE `b`.`partner_status` = '1'
+AND `a`.`partner_id` = 'dnhy'
+ORDER BY `a`.`qtrx_date` DESC 
+ Execution Time:0.00015687942504883
+
+
+08:54:27 | 127.0.0.1
+http://odissey.app/main/login
+SELECT GET_LOCK('a3f1b6515c6e003fad484fdb46124d1c2f639847', 300) AS ci_session_lock 
+ Execution Time:0.00014805793762207
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'a3f1b6515c6e003fad484fdb46124d1c2f639847' 
+ Execution Time:0.00056195259094238
+
+
+08:55:06 | 127.0.0.1
+http://odissey.app/main/login
+SELECT GET_LOCK('a3f1b6515c6e003fad484fdb46124d1c2f639847', 300) AS ci_session_lock 
+ Execution Time:0.00013613700866699
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'a3f1b6515c6e003fad484fdb46124d1c2f639847' 
+ Execution Time:7.5817108154297E-5
+
+
+09:15:16 | 127.0.0.1
+http://odissey.app/main/login
+SELECT GET_LOCK('1c57ea5fc8b20cc39b04ff7fac4166e80771e582', 300) AS ci_session_lock 
+ Execution Time:8.4161758422852E-5
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '1c57ea5fc8b20cc39b04ff7fac4166e80771e582' 
+ Execution Time:0.00050878524780273
+
+
+09:15:21 | 127.0.0.1
+http://odissey.app/
+SELECT GET_LOCK('1c57ea5fc8b20cc39b04ff7fac4166e80771e582', 300) AS ci_session_lock 
+ Execution Time:9.7036361694336E-5
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '1c57ea5fc8b20cc39b04ff7fac4166e80771e582' 
+ Execution Time:0.00076603889465332
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '1' 
+ Execution Time:0.00011992454528809
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'instamaxv@gmail.com' 
+ Execution Time:0.00036096572875977
+

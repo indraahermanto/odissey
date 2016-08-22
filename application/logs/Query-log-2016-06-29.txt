@@ -1,0 +1,305 @@
+
+14:07:59 | 127.0.0.1
+http://odissey.app/
+
+14:07:59 | 127.0.0.1
+http://odissey.app/
+SELECT GET_LOCK('cdcade2c52856077a5b783aaceccf1975f0e3d23', 300) AS ci_session_lock 
+ Execution Time:0.23312211036682
+
+SELECT GET_LOCK('9ca5125c6e04640f50970192118eb345d53a5c8a', 300) AS ci_session_lock 
+ Execution Time:0.1923770904541
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'cdcade2c52856077a5b783aaceccf1975f0e3d23' 
+ Execution Time:1.2031719684601
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '9ca5125c6e04640f50970192118eb345d53a5c8a' 
+ Execution Time:1.2126932144165
+
+
+14:08:11 | 127.0.0.1
+http://odissey.app/member/login
+SELECT GET_LOCK('cdcade2c52856077a5b783aaceccf1975f0e3d23', 300) AS ci_session_lock 
+ Execution Time:9.7036361694336E-5
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'cdcade2c52856077a5b783aaceccf1975f0e3d23' 
+ Execution Time:0.011918783187866
+
+
+14:35:55 | 127.0.0.1
+http://odissey.app/member/login
+SELECT GET_LOCK('a5a2aba50f3ebb1f56ea8210a3203d8155974dad', 300) AS ci_session_lock 
+ Execution Time:0.0001068115234375
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'a5a2aba50f3ebb1f56ea8210a3203d8155974dad' 
+ Execution Time:0.0095500946044922
+
+
+14:36:03 | 127.0.0.1
+http://odissey.app/snba
+SELECT GET_LOCK('a5a2aba50f3ebb1f56ea8210a3203d8155974dad', 300) AS ci_session_lock 
+ Execution Time:0.00012588500976562
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'a5a2aba50f3ebb1f56ea8210a3203d8155974dad' 
+ Execution Time:0.00056910514831543
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'r17.indra@gmail.com' 
+ Execution Time:0.038853168487549
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '3' 
+ Execution Time:0.00011706352233887
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '3' 
+ Execution Time:0.00012898445129395
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'r17.indra@gmail.com' 
+ Execution Time:0.00011801719665527
+
+
+14:36:06 | 127.0.0.1
+http://odissey.app/snba/invoices
+SELECT GET_LOCK('a5a2aba50f3ebb1f56ea8210a3203d8155974dad', 300) AS ci_session_lock 
+ Execution Time:8.702278137207E-5
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'a5a2aba50f3ebb1f56ea8210a3203d8155974dad' 
+ Execution Time:0.00043392181396484
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'r17.indra@gmail.com' 
+ Execution Time:6.1988830566406E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '3' 
+ Execution Time:4.6968460083008E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '3' 
+ Execution Time:9.2983245849609E-5
+
+SELECT *
+FROM `od_partner`
+WHERE `partner_status` = 1 
+ Execution Time:0.47916507720947
+
+SELECT *, `a`.`number` as `inv_number`, `f`.`number` as `ba_number`
+FROM `od_inv_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`inv_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_inv_mod` as `e` ON `a`.`inv_id`=`e`.`inv_id`
+JOIN `od_ba_doc` as `f` ON `e`.`ba_id`=`f`.`ba_id`
+ORDER BY `a`.`inv_id` DESC 
+ Execution Time:0.45990180969238
+
+SELECT *
+FROM `od_ba_stat` 
+ Execution Time:0.0050559043884277
+
+SELECT *, `a`.`number` as `inv_number`, `f`.`number` as `ba_number`
+FROM `od_inv_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`inv_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_inv_mod` as `e` ON `a`.`inv_id`=`e`.`inv_id`
+JOIN `od_ba_doc` as `f` ON `e`.`ba_id`=`f`.`ba_id`
+ORDER BY `a`.`inv_id` DESC
+ LIMIT 20 
+ Execution Time:0.028976202011108
+
+
+14:36:09 | 127.0.0.1
+http://odissey.app/snba/invoices/preview/5bd1ab70d3f6faf0bd96937b9463c0f2ecea5427
+SELECT GET_LOCK('a5a2aba50f3ebb1f56ea8210a3203d8155974dad', 300) AS ci_session_lock 
+ Execution Time:0.00026202201843262
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'a5a2aba50f3ebb1f56ea8210a3203d8155974dad' 
+ Execution Time:0.00058507919311523
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'r17.indra@gmail.com' 
+ Execution Time:8.082389831543E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '3' 
+ Execution Time:0.00014591217041016
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '3' 
+ Execution Time:4.6014785766602E-5
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_partner_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_partner` as `c` ON `b`.`partner_id`=`c`.`partner_id`
+JOIN `od_partner_bank` as `d` ON `c`.`partner_id`=`d`.`partner_id`
+WHERE `email` = 'r17.indra@gmail.com'
+AND `d`.`pbank_stat` = 1 
+ Execution Time:0.35222697257996
+
+SELECT *
+FROM `od_inv_doc` 
+ Execution Time:0.00030994415283203
+
+SELECT *, `a`.`number` as `inv_number`, `f`.`number` as `ba_number`
+FROM `od_inv_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`inv_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_inv_mod` as `e` ON `a`.`inv_id`=`e`.`inv_id`
+JOIN `od_ba_doc` as `f` ON `e`.`ba_id`=`f`.`ba_id`
+JOIN `od_partner_bank` as `g` ON `a`.`partner_id`=`g`.`partner_id`
+JOIN `od_partner_mod` as `h` ON `a`.`partner_id`=`h`.`partner_id`
+JOIN `od_user` as `i` ON `h`.`user_id`=`i`.`id`
+WHERE `a`.`inv_id` = '3'
+AND `c`.`status` = 1
+ORDER BY `a`.`inv_id` DESC 
+ Execution Time:0.037437915802002
+
+
+14:36:14 | 127.0.0.1
+http://odissey.app/snba/invoices
+SELECT GET_LOCK('a5a2aba50f3ebb1f56ea8210a3203d8155974dad', 300) AS ci_session_lock 
+ Execution Time:0.00023603439331055
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'a5a2aba50f3ebb1f56ea8210a3203d8155974dad' 
+ Execution Time:0.02734899520874
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'r17.indra@gmail.com' 
+ Execution Time:0.00010490417480469
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '3' 
+ Execution Time:4.6968460083008E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '3' 
+ Execution Time:4.7922134399414E-5
+
+SELECT *
+FROM `od_partner`
+WHERE `partner_status` = 1 
+ Execution Time:6.103515625E-5
+
+SELECT *, `a`.`number` as `inv_number`, `f`.`number` as `ba_number`
+FROM `od_inv_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`inv_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_inv_mod` as `e` ON `a`.`inv_id`=`e`.`inv_id`
+JOIN `od_ba_doc` as `f` ON `e`.`ba_id`=`f`.`ba_id`
+ORDER BY `a`.`inv_id` DESC 
+ Execution Time:0.00010418891906738
+
+SELECT *
+FROM `od_ba_stat` 
+ Execution Time:8.8930130004883E-5
+
+SELECT *, `a`.`number` as `inv_number`, `f`.`number` as `ba_number`
+FROM `od_inv_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`inv_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_inv_mod` as `e` ON `a`.`inv_id`=`e`.`inv_id`
+JOIN `od_ba_doc` as `f` ON `e`.`ba_id`=`f`.`ba_id`
+ORDER BY `a`.`inv_id` DESC
+ LIMIT 20 
+ Execution Time:6.6995620727539E-5
+
+
+14:36:53 | 127.0.0.1
+http://odissey.app/snba/invoices/preview/5bd1ab70d3f6faf0bd96937b9463c0f2ecea5427
+SELECT GET_LOCK('a5a2aba50f3ebb1f56ea8210a3203d8155974dad', 300) AS ci_session_lock 
+ Execution Time:0.0001068115234375
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'a5a2aba50f3ebb1f56ea8210a3203d8155974dad' 
+ Execution Time:0.0006260871887207
+
+SELECT *
+FROM `od_user`
+WHERE `email` = 'r17.indra@gmail.com' 
+ Execution Time:0.00014305114746094
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '3' 
+ Execution Time:6.1988830566406E-5
+
+SELECT `od_user_mod`.`ul_id` as `id`, `od_user_level`.`name`, `od_user_level`.`description`
+FROM `od_user_mod`
+JOIN `od_user_level` ON `od_user_mod`.`ul_id`=`od_user_level`.`id`
+WHERE `od_user_mod`.`user_id` = '3' 
+ Execution Time:6.6041946411133E-5
+
+SELECT *
+FROM `od_user` as `a`
+JOIN `od_partner_mod` as `b` ON `a`.`id`=`b`.`user_id`
+JOIN `od_partner` as `c` ON `b`.`partner_id`=`c`.`partner_id`
+JOIN `od_partner_bank` as `d` ON `c`.`partner_id`=`d`.`partner_id`
+WHERE `email` = 'r17.indra@gmail.com'
+AND `d`.`pbank_stat` = 1 
+ Execution Time:8.7976455688477E-5
+
+SELECT *
+FROM `od_inv_doc` 
+ Execution Time:9.2029571533203E-5
+
+SELECT *, `a`.`number` as `inv_number`, `f`.`number` as `ba_number`
+FROM `od_inv_doc` as `a`
+JOIN `od_ba_stat` as `b` ON `a`.`inv_status`=`b`.`stat_id`
+JOIN `od_user_level` as `c` ON `a`.`ul_id`=`c`.`id`
+JOIN `od_partner` as `d` ON `a`.`partner_id`=`d`.`partner_id`
+JOIN `od_inv_mod` as `e` ON `a`.`inv_id`=`e`.`inv_id`
+JOIN `od_ba_doc` as `f` ON `e`.`ba_id`=`f`.`ba_id`
+JOIN `od_partner_bank` as `g` ON `a`.`partner_id`=`g`.`partner_id`
+JOIN `od_partner_mod` as `h` ON `a`.`partner_id`=`h`.`partner_id`
+JOIN `od_user` as `i` ON `h`.`user_id`=`i`.`id`
+WHERE `a`.`inv_id` = '3'
+AND `c`.`status` = 1
+ORDER BY `a`.`inv_id` DESC 
+ Execution Time:9.2983245849609E-5
+

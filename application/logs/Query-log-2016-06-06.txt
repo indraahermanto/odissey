@@ -1,0 +1,163 @@
+
+15:08:51 | 127.0.0.1
+http://pulsa.go/
+SELECT GET_LOCK('5ffe083c2fcf0c7ac68e8b73c316da8fe3ce9678', 300) AS ci_session_lock 
+ Execution Time:0.12215995788574
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5ffe083c2fcf0c7ac68e8b73c316da8fe3ce9678' 
+ Execution Time:0.60691809654236
+
+
+15:08:52 | 127.0.0.1
+http://pulsa.go/
+SELECT GET_LOCK('dd05ca538baac1b22f3e953f8d204e3d6277da82', 300) AS ci_session_lock 
+ Execution Time:0.12215900421143
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'dd05ca538baac1b22f3e953f8d204e3d6277da82' 
+ Execution Time:0.63809990882874
+
+
+15:08:56 | 127.0.0.1
+http://pulsa.go/member/login
+SELECT GET_LOCK('dd05ca538baac1b22f3e953f8d204e3d6277da82', 300) AS ci_session_lock 
+ Execution Time:9.7990036010742E-5
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'dd05ca538baac1b22f3e953f8d204e3d6277da82' 
+ Execution Time:0.00022792816162109
+
+
+15:09:03 | 127.0.0.1
+http://pulsa.go/
+SELECT GET_LOCK('dd05ca538baac1b22f3e953f8d204e3d6277da82', 300) AS ci_session_lock 
+ Execution Time:0.00013899803161621
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'dd05ca538baac1b22f3e953f8d204e3d6277da82' 
+ Execution Time:0.00030112266540527
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.18888092041016
+
+
+15:09:05 | 127.0.0.1
+http://pulsa.go/admin
+SELECT GET_LOCK('dd05ca538baac1b22f3e953f8d204e3d6277da82', 300) AS ci_session_lock 
+ Execution Time:0.00011992454528809
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'dd05ca538baac1b22f3e953f8d204e3d6277da82' 
+ Execution Time:0.00025796890258789
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:7.7962875366211E-5
+
+
+15:09:09 | 127.0.0.1
+http://pulsa.go/admin/order_pulsa
+SELECT GET_LOCK('dd05ca538baac1b22f3e953f8d204e3d6277da82', 300) AS ci_session_lock 
+ Execution Time:0.00013303756713867
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'dd05ca538baac1b22f3e953f8d204e3d6277da82' 
+ Execution Time:0.00028610229492188
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:9.2983245849609E-5
+
+SELECT *
+FROM `sp_user_group`
+ORDER BY `ug_name` 
+ Execution Time:0.10601687431335
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '8'
+ORDER BY `username` 
+ Execution Time:0.033995866775513
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '9'
+ORDER BY `username` 
+ Execution Time:0.00054001808166504
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '3'
+ORDER BY `username` 
+ Execution Time:0.00096893310546875
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '1'
+ORDER BY `username` 
+ Execution Time:0.00044107437133789
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '6'
+ORDER BY `username` 
+ Execution Time:0.00033307075500488
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '5'
+ORDER BY `username` 
+ Execution Time:0.080809116363525
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '7'
+ORDER BY `username` 
+ Execution Time:0.00027990341186523
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '2'
+ORDER BY `username` 
+ Execution Time:0.00024080276489258
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '4'
+ORDER BY `username` 
+ Execution Time:0.00058102607727051
+
+
+18:05:07 | 127.0.0.1
+http://pulsa.go/
+SELECT GET_LOCK('063c4f6ade6b06408288b85921f1ed4dc846b392', 300) AS ci_session_lock 
+ Execution Time:0.00016689300537109
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '063c4f6ade6b06408288b85921f1ed4dc846b392' 
+ Execution Time:0.0070719718933105
+

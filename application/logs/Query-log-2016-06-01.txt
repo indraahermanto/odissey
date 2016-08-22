@@ -1,0 +1,2719 @@
+
+14:55:09 | 127.0.0.1
+http://pulsa.go/
+SELECT GET_LOCK('a1ce8c8c56531aae5c76e56e4bf7a71506009ea8', 300) AS ci_session_lock 
+ Execution Time:0.4160270690918
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'a1ce8c8c56531aae5c76e56e4bf7a71506009ea8' 
+ Execution Time:1.3610298633575
+
+
+14:57:39 | 127.0.0.1
+http://pulsa.go/member/login
+SELECT GET_LOCK('a1ce8c8c56531aae5c76e56e4bf7a71506009ea8', 300) AS ci_session_lock 
+ Execution Time:0.00016593933105469
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'a1ce8c8c56531aae5c76e56e4bf7a71506009ea8' 
+ Execution Time:0.00034379959106445
+
+
+14:57:45 | 127.0.0.1
+http://pulsa.go/
+SELECT GET_LOCK('a1ce8c8c56531aae5c76e56e4bf7a71506009ea8', 300) AS ci_session_lock 
+ Execution Time:0.00016498565673828
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'a1ce8c8c56531aae5c76e56e4bf7a71506009ea8' 
+ Execution Time:0.040992975234985
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.14520597457886
+
+
+15:32:38 | 127.0.0.1
+http://pulsa.go/
+SELECT GET_LOCK('a1ce8c8c56531aae5c76e56e4bf7a71506009ea8', 300) AS ci_session_lock 
+ Execution Time:0.00011491775512695
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'a1ce8c8c56531aae5c76e56e4bf7a71506009ea8' 
+ Execution Time:0.00022196769714355
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00022602081298828
+
+
+15:32:41 | 127.0.0.1
+http://pulsa.go/payments
+SELECT GET_LOCK('48307230f8bf571548b8e763a4f35355caef7c32', 300) AS ci_session_lock 
+ Execution Time:8.9883804321289E-5
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '48307230f8bf571548b8e763a4f35355caef7c32' 
+ Execution Time:0.00022411346435547
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00011205673217773
+
+
+15:32:42 | 127.0.0.1
+http://pulsa.go/reports
+SELECT GET_LOCK('48307230f8bf571548b8e763a4f35355caef7c32', 300) AS ci_session_lock 
+ Execution Time:0.0001068115234375
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '48307230f8bf571548b8e763a4f35355caef7c32' 
+ Execution Time:0.00026988983154297
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:7.9870223999023E-5
+
+
+15:32:43 | 127.0.0.1
+http://pulsa.go/member
+SELECT GET_LOCK('48307230f8bf571548b8e763a4f35355caef7c32', 300) AS ci_session_lock 
+ Execution Time:0.00017905235290527
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '48307230f8bf571548b8e763a4f35355caef7c32' 
+ Execution Time:0.00034594535827637
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:8.082389831543E-5
+
+SELECT `sp_user`.*, `sp_user`.`id` as `id`, `sp_user`.`id` as `user_id`
+FROM `sp_user` 
+ Execution Time:0.00065398216247559
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '1' 
+ Execution Time:0.00072002410888672
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:6.6041946411133E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '3' 
+ Execution Time:0.00025010108947754
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '4' 
+ Execution Time:0.00020289421081543
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '5' 
+ Execution Time:0.00016093254089355
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '6' 
+ Execution Time:0.0001518726348877
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '7' 
+ Execution Time:0.00014996528625488
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '8' 
+ Execution Time:0.00018191337585449
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '9' 
+ Execution Time:0.00018811225891113
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '10' 
+ Execution Time:0.0001530647277832
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '11' 
+ Execution Time:0.00014519691467285
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '12' 
+ Execution Time:0.00014305114746094
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '13' 
+ Execution Time:0.00013995170593262
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '14' 
+ Execution Time:0.00019001960754395
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '15' 
+ Execution Time:0.00031280517578125
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '16' 
+ Execution Time:0.00016283988952637
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '17' 
+ Execution Time:0.00018310546875
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '18' 
+ Execution Time:0.00026893615722656
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '19' 
+ Execution Time:0.00018215179443359
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '20' 
+ Execution Time:0.00015592575073242
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '21' 
+ Execution Time:0.00014710426330566
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '22' 
+ Execution Time:0.00013279914855957
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '23' 
+ Execution Time:0.00014305114746094
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '24' 
+ Execution Time:0.00014686584472656
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '25' 
+ Execution Time:0.00014090538024902
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '26' 
+ Execution Time:0.00017189979553223
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '27' 
+ Execution Time:0.00014901161193848
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '28' 
+ Execution Time:0.0001528263092041
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '29' 
+ Execution Time:0.00018596649169922
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '30' 
+ Execution Time:0.00015091896057129
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '31' 
+ Execution Time:0.00013995170593262
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '32' 
+ Execution Time:0.00018095970153809
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '33' 
+ Execution Time:0.00014090538024902
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '34' 
+ Execution Time:0.00020003318786621
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '35' 
+ Execution Time:0.0002591609954834
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '36' 
+ Execution Time:0.00028109550476074
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '37' 
+ Execution Time:0.0003049373626709
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '38' 
+ Execution Time:0.0011100769042969
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '39' 
+ Execution Time:0.00029993057250977
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '40' 
+ Execution Time:0.00035810470581055
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '41' 
+ Execution Time:0.00062799453735352
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '42' 
+ Execution Time:0.0001990795135498
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '43' 
+ Execution Time:0.00016593933105469
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '44' 
+ Execution Time:0.00015902519226074
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '45' 
+ Execution Time:0.00015616416931152
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '46' 
+ Execution Time:0.00015592575073242
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '47' 
+ Execution Time:0.00015401840209961
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '48' 
+ Execution Time:0.00027704238891602
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '49' 
+ Execution Time:0.00017094612121582
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '50' 
+ Execution Time:0.00015497207641602
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '51' 
+ Execution Time:0.00017714500427246
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '52' 
+ Execution Time:0.00015497207641602
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '53' 
+ Execution Time:0.0001530647277832
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '54' 
+ Execution Time:0.00015783309936523
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '55' 
+ Execution Time:0.0001528263092041
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '56' 
+ Execution Time:0.00020003318786621
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '57' 
+ Execution Time:0.00017094612121582
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '58' 
+ Execution Time:0.00015711784362793
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '59' 
+ Execution Time:0.00015401840209961
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '60' 
+ Execution Time:0.00015878677368164
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '61' 
+ Execution Time:0.00015401840209961
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '62' 
+ Execution Time:0.00015592575073242
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '63' 
+ Execution Time:0.0001838207244873
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '64' 
+ Execution Time:0.00022482872009277
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '65' 
+ Execution Time:0.00018906593322754
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '66' 
+ Execution Time:0.00018095970153809
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '67' 
+ Execution Time:0.00015616416931152
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '68' 
+ Execution Time:0.0001518726348877
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '69' 
+ Execution Time:0.00015091896057129
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '70' 
+ Execution Time:0.00015592575073242
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '71' 
+ Execution Time:0.016698122024536
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '72' 
+ Execution Time:0.00075197219848633
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '73' 
+ Execution Time:0.0001678466796875
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '74' 
+ Execution Time:0.00016307830810547
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '75' 
+ Execution Time:0.00014209747314453
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '76' 
+ Execution Time:0.00014019012451172
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '77' 
+ Execution Time:0.00016188621520996
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '78' 
+ Execution Time:0.00018501281738281
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '79' 
+ Execution Time:0.00013995170593262
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '80' 
+ Execution Time:0.0001378059387207
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '81' 
+ Execution Time:0.0001370906829834
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '82' 
+ Execution Time:0.0001380443572998
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '83' 
+ Execution Time:0.0001368522644043
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '84' 
+ Execution Time:0.00013899803161621
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '85' 
+ Execution Time:0.00017690658569336
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '86' 
+ Execution Time:0.00028800964355469
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '87' 
+ Execution Time:0.00021791458129883
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '88' 
+ Execution Time:0.00020194053649902
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '89' 
+ Execution Time:0.00017094612121582
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '90' 
+ Execution Time:0.00016689300537109
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '91' 
+ Execution Time:0.00015783309936523
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '96' 
+ Execution Time:0.00015807151794434
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '97' 
+ Execution Time:0.00015687942504883
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '98' 
+ Execution Time:0.00017905235290527
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '99' 
+ Execution Time:0.00015592575073242
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '100' 
+ Execution Time:0.00020289421081543
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '101' 
+ Execution Time:0.0001370906829834
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '102' 
+ Execution Time:0.00013589859008789
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '103' 
+ Execution Time:0.00019001960754395
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '104' 
+ Execution Time:0.00028514862060547
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '105' 
+ Execution Time:0.00028586387634277
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '106' 
+ Execution Time:0.00018692016601562
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '107' 
+ Execution Time:0.00014400482177734
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '108' 
+ Execution Time:0.00015783309936523
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '109' 
+ Execution Time:0.00015592575073242
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '110' 
+ Execution Time:0.00023388862609863
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '111' 
+ Execution Time:0.0002598762512207
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '112' 
+ Execution Time:0.00020003318786621
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '113' 
+ Execution Time:0.00016093254089355
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '114' 
+ Execution Time:0.00015401840209961
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '115' 
+ Execution Time:0.00022196769714355
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '116' 
+ Execution Time:0.00015687942504883
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '117' 
+ Execution Time:0.0001380443572998
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '118' 
+ Execution Time:0.0001380443572998
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '119' 
+ Execution Time:0.00014305114746094
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '120' 
+ Execution Time:0.00016593933105469
+
+
+15:32:45 | 127.0.0.1
+http://pulsa.go/reports
+SELECT GET_LOCK('48307230f8bf571548b8e763a4f35355caef7c32', 300) AS ci_session_lock 
+ Execution Time:0.0001530647277832
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '48307230f8bf571548b8e763a4f35355caef7c32' 
+ Execution Time:0.00037288665771484
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00017499923706055
+
+
+15:33:23 | 127.0.0.1
+http://pulsa.go/admin
+SELECT GET_LOCK('48307230f8bf571548b8e763a4f35355caef7c32', 300) AS ci_session_lock 
+ Execution Time:0.00010299682617188
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '48307230f8bf571548b8e763a4f35355caef7c32' 
+ Execution Time:0.0003201961517334
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00010299682617188
+
+
+15:33:50 | 127.0.0.1
+http://pulsa.go/admin/orders
+SELECT GET_LOCK('48307230f8bf571548b8e763a4f35355caef7c32', 300) AS ci_session_lock 
+ Execution Time:0.00011086463928223
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '48307230f8bf571548b8e763a4f35355caef7c32' 
+ Execution Time:0.0003659725189209
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00035381317138672
+
+SELECT *
+FROM `sp_order` as `a`
+JOIN `sp_user` as `b` ON `a`.`user_id`=`b`.`id`
+JOIN `sp_invoice` as `c` ON `a`.`order_id` = `c`.`order_id`
+JOIN `sp_invoice_stat` as `d` ON `c`.`istat_code` = `d`.`istat_code`
+JOIN `sp_number` as `e` ON `c`.`number_id`=`e`.`number_id`
+JOIN `sp_p_product` as `f` ON `c`.`product_id`=`f`.`product_id`
+JOIN `sp_order_type` as `g` ON `a`.`otype_code`=`g`.`otype_code`
+WHERE `a`.`otype_code` = '400'
+ORDER BY `a`.`order_date` DESC 
+ Execution Time:24.475419044495
+
+SELECT *
+FROM `sp_order` as `a`
+JOIN `sp_user` as `b` ON `a`.`user_id`=`b`.`id`
+JOIN `sp_invoice` as `c` ON `a`.`order_id` = `c`.`order_id`
+JOIN `sp_invoice_stat` as `d` ON `c`.`istat_code` = `d`.`istat_code`
+JOIN `sp_number` as `e` ON `c`.`number_id`=`e`.`number_id`
+JOIN `sp_p_product` as `f` ON `c`.`product_id`=`f`.`product_id`
+JOIN `sp_order_type` as `g` ON `a`.`otype_code`=`g`.`otype_code`
+WHERE `a`.`otype_code` = '400'
+ORDER BY `a`.`order_date` DESC
+ LIMIT 20 
+ Execution Time:0.0090000629425049
+
+SELECT *
+FROM `sp_invoice_stat` 
+ Execution Time:0.00020694732666016
+
+
+15:33:51 | 127.0.0.1
+http://pulsa.go/admin/orders
+SELECT GET_LOCK('48307230f8bf571548b8e763a4f35355caef7c32', 300) AS ci_session_lock 
+ Execution Time:0.00010895729064941
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '48307230f8bf571548b8e763a4f35355caef7c32' 
+ Execution Time:0.00025200843811035
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:9.7990036010742E-5
+
+SELECT *
+FROM `sp_order` as `a`
+JOIN `sp_user` as `b` ON `a`.`user_id`=`b`.`id`
+JOIN `sp_invoice` as `c` ON `a`.`order_id` = `c`.`order_id`
+JOIN `sp_invoice_stat` as `d` ON `c`.`istat_code` = `d`.`istat_code`
+JOIN `sp_number` as `e` ON `c`.`number_id`=`e`.`number_id`
+JOIN `sp_p_product` as `f` ON `c`.`product_id`=`f`.`product_id`
+JOIN `sp_order_type` as `g` ON `a`.`otype_code`=`g`.`otype_code`
+WHERE `a`.`otype_code` = '400'
+ORDER BY `a`.`order_date` DESC 
+ Execution Time:0.0012660026550293
+
+SELECT *
+FROM `sp_order` as `a`
+JOIN `sp_user` as `b` ON `a`.`user_id`=`b`.`id`
+JOIN `sp_invoice` as `c` ON `a`.`order_id` = `c`.`order_id`
+JOIN `sp_invoice_stat` as `d` ON `c`.`istat_code` = `d`.`istat_code`
+JOIN `sp_number` as `e` ON `c`.`number_id`=`e`.`number_id`
+JOIN `sp_p_product` as `f` ON `c`.`product_id`=`f`.`product_id`
+JOIN `sp_order_type` as `g` ON `a`.`otype_code`=`g`.`otype_code`
+WHERE `a`.`otype_code` = '400'
+ORDER BY `a`.`order_date` DESC
+ LIMIT 20 
+ Execution Time:0.0001521110534668
+
+SELECT *
+FROM `sp_invoice_stat` 
+ Execution Time:0.00010895729064941
+
+
+15:34:08 | 127.0.0.1
+http://pulsa.go/admin/order_pulsa
+SELECT GET_LOCK('48307230f8bf571548b8e763a4f35355caef7c32', 300) AS ci_session_lock 
+ Execution Time:0.00017309188842773
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '48307230f8bf571548b8e763a4f35355caef7c32' 
+ Execution Time:0.00034999847412109
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:7.7009201049805E-5
+
+SELECT *
+FROM `sp_user_group`
+ORDER BY `ug_name` 
+ Execution Time:1.7229409217834
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '8'
+ORDER BY `username` 
+ Execution Time:0.57271218299866
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '9'
+ORDER BY `username` 
+ Execution Time:0.00028610229492188
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '3'
+ORDER BY `username` 
+ Execution Time:0.00040984153747559
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '1'
+ORDER BY `username` 
+ Execution Time:0.00041699409484863
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '6'
+ORDER BY `username` 
+ Execution Time:0.0001828670501709
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '5'
+ORDER BY `username` 
+ Execution Time:0.00031614303588867
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '7'
+ORDER BY `username` 
+ Execution Time:0.00016093254089355
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '2'
+ORDER BY `username` 
+ Execution Time:0.00026822090148926
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '4'
+ORDER BY `username` 
+ Execution Time:0.00047183036804199
+
+
+15:34:11 | 127.0.0.1
+http://pulsa.go/ajax/getNumber
+SELECT GET_LOCK('48307230f8bf571548b8e763a4f35355caef7c32', 300) AS ci_session_lock 
+ Execution Time:0.00011396408081055
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '48307230f8bf571548b8e763a4f35355caef7c32' 
+ Execution Time:0.00023484230041504
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'su718' 
+ Execution Time:0.00027322769165039
+
+SELECT *
+FROM `sp_number` as `a`
+JOIN `sp_provider` as `b` ON `a`.`provider_id`=`b`.`provider_id`
+WHERE `number_status` = '1'
+AND `user_id` = '86'
+GROUP BY `a`.`provider_id`
+ORDER BY `a`.`provider_id` 
+ Execution Time:0.18811392784119
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'su718' 
+ Execution Time:8.4877014160156E-5
+
+SELECT *
+FROM `sp_number`
+WHERE `number_status` = '1'
+AND `user_id` = '86'
+AND `provider_id` = 'bMcq'
+ORDER BY `number_id` 
+ Execution Time:0.094778060913086
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'su718' 
+ Execution Time:8.392333984375E-5
+
+SELECT *
+FROM `sp_number`
+WHERE `number_status` = '1'
+AND `user_id` = '86'
+AND `provider_id` = 'Uptd'
+ORDER BY `number_id` 
+ Execution Time:0.00038599967956543
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'su718' 
+ Execution Time:5.8889389038086E-5
+
+SELECT *
+FROM `sp_number`
+WHERE `number_status` = '1'
+AND `user_id` = '86'
+AND `provider_id` = 'vYHq'
+ORDER BY `number_id` 
+ Execution Time:0.00029802322387695
+
+
+15:34:14 | 127.0.0.1
+http://pulsa.go/ajax/getProvider
+SELECT GET_LOCK('48307230f8bf571548b8e763a4f35355caef7c32', 300) AS ci_session_lock 
+ Execution Time:0.00012493133544922
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '48307230f8bf571548b8e763a4f35355caef7c32' 
+ Execution Time:0.0003960132598877
+
+SELECT *
+FROM `sp_provider`
+WHERE `provider_status` = '1' 
+ Execution Time:0.0003058910369873
+
+SELECT *
+FROM `sp_p_product`
+WHERE `product_status` = '1'
+AND `provider_id` = 'bMcq'
+ORDER BY `product_nom` 
+ Execution Time:0.31446599960327
+
+
+15:34:17 | 127.0.0.1
+http://pulsa.go/ajax/getPrice
+SELECT GET_LOCK('48307230f8bf571548b8e763a4f35355caef7c32', 300) AS ci_session_lock 
+ Execution Time:0.00015401840209961
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '48307230f8bf571548b8e763a4f35355caef7c32' 
+ Execution Time:0.00030088424682617
+
+SELECT *
+FROM `sp_p_product`
+WHERE `product_status` = '1'
+AND `product_id` = 'EUAt9' 
+ Execution Time:0.00025510787963867
+
+
+16:53:45 | 127.0.0.1
+http://pulsa.go/
+
+16:53:45 | 127.0.0.1
+http://pulsa.go/
+SELECT GET_LOCK('d444854123900e1165a44f20a0316ed270d18065', 300) AS ci_session_lock 
+ Execution Time:0.15157294273376
+
+SELECT GET_LOCK('938aae4461e042a5a2ed96fc1eb4d030a8470ebd', 300) AS ci_session_lock 
+ Execution Time:0.14221405982971
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd444854123900e1165a44f20a0316ed270d18065' 
+ Execution Time:0.41752600669861
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '938aae4461e042a5a2ed96fc1eb4d030a8470ebd' 
+ Execution Time:0.46248602867126
+
+
+16:53:53 | 127.0.0.1
+http://pulsa.go/member/login
+SELECT GET_LOCK('d444854123900e1165a44f20a0316ed270d18065', 300) AS ci_session_lock 
+ Execution Time:0.00012397766113281
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd444854123900e1165a44f20a0316ed270d18065' 
+ Execution Time:0.19042301177979
+
+
+16:54:01 | 127.0.0.1
+http://pulsa.go/
+SELECT GET_LOCK('d444854123900e1165a44f20a0316ed270d18065', 300) AS ci_session_lock 
+ Execution Time:0.00017309188842773
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd444854123900e1165a44f20a0316ed270d18065' 
+ Execution Time:0.00030207633972168
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:9.2983245849609E-5
+
+
+16:54:04 | 127.0.0.1
+http://pulsa.go/admin
+SELECT GET_LOCK('d444854123900e1165a44f20a0316ed270d18065', 300) AS ci_session_lock 
+ Execution Time:0.00010299682617188
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd444854123900e1165a44f20a0316ed270d18065' 
+ Execution Time:0.00023794174194336
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00027203559875488
+
+
+16:54:06 | 127.0.0.1
+http://pulsa.go/admin/order_pulsa
+SELECT GET_LOCK('d444854123900e1165a44f20a0316ed270d18065', 300) AS ci_session_lock 
+ Execution Time:0.00010299682617188
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd444854123900e1165a44f20a0316ed270d18065' 
+ Execution Time:0.00025486946105957
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:8.8930130004883E-5
+
+SELECT *
+FROM `sp_user_group`
+ORDER BY `ug_name` 
+ Execution Time:5.793571472168E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '8'
+ORDER BY `username` 
+ Execution Time:0.1336658000946
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '9'
+ORDER BY `username` 
+ Execution Time:0.011427879333496
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '3'
+ORDER BY `username` 
+ Execution Time:0.15305519104004
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '1'
+ORDER BY `username` 
+ Execution Time:0.00067400932312012
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '6'
+ORDER BY `username` 
+ Execution Time:0.00029802322387695
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '5'
+ORDER BY `username` 
+ Execution Time:0.00095582008361816
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '7'
+ORDER BY `username` 
+ Execution Time:0.00025296211242676
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '2'
+ORDER BY `username` 
+ Execution Time:0.00026702880859375
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '4'
+ORDER BY `username` 
+ Execution Time:0.001007080078125
+
+
+16:54:09 | 127.0.0.1
+http://pulsa.go/ajax/getNumber
+SELECT GET_LOCK('d444854123900e1165a44f20a0316ed270d18065', 300) AS ci_session_lock 
+ Execution Time:0.00013208389282227
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd444854123900e1165a44f20a0316ed270d18065' 
+ Execution Time:0.00025510787963867
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'su718' 
+ Execution Time:0.00030803680419922
+
+SELECT *
+FROM `sp_number` as `a`
+JOIN `sp_provider` as `b` ON `a`.`provider_id`=`b`.`provider_id`
+WHERE `number_status` = '1'
+AND `user_id` = '86'
+GROUP BY `a`.`provider_id`
+ORDER BY `a`.`provider_id` 
+ Execution Time:6.103515625E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'su718' 
+ Execution Time:4.887580871582E-5
+
+SELECT *
+FROM `sp_number`
+WHERE `number_status` = '1'
+AND `user_id` = '86'
+AND `provider_id` = 'bMcq'
+ORDER BY `number_id` 
+ Execution Time:4.6014785766602E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'su718' 
+ Execution Time:4.6014785766602E-5
+
+SELECT *
+FROM `sp_number`
+WHERE `number_status` = '1'
+AND `user_id` = '86'
+AND `provider_id` = 'Uptd'
+ORDER BY `number_id` 
+ Execution Time:3.6001205444336E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'su718' 
+ Execution Time:3.7908554077148E-5
+
+SELECT *
+FROM `sp_number`
+WHERE `number_status` = '1'
+AND `user_id` = '86'
+AND `provider_id` = 'vYHq'
+ORDER BY `number_id` 
+ Execution Time:3.6001205444336E-5
+
+
+16:54:10 | 127.0.0.1
+http://pulsa.go/ajax/getProvider
+SELECT GET_LOCK('d444854123900e1165a44f20a0316ed270d18065', 300) AS ci_session_lock 
+ Execution Time:0.00011420249938965
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd444854123900e1165a44f20a0316ed270d18065' 
+ Execution Time:0.033240079879761
+
+SELECT *
+FROM `sp_provider`
+WHERE `provider_status` = '1' 
+ Execution Time:9.1075897216797E-5
+
+SELECT *
+FROM `sp_p_product`
+WHERE `product_status` = '1'
+AND `provider_id` = 'bMcq'
+ORDER BY `product_nom` 
+ Execution Time:5.8889389038086E-5
+
+
+16:54:13 | 127.0.0.1
+http://pulsa.go/ajax/getPrice
+SELECT GET_LOCK('d444854123900e1165a44f20a0316ed270d18065', 300) AS ci_session_lock 
+ Execution Time:0.00011897087097168
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd444854123900e1165a44f20a0316ed270d18065' 
+ Execution Time:0.00037693977355957
+
+SELECT *
+FROM `sp_p_product`
+WHERE `product_status` = '1'
+AND `product_id` = 'Rbhor' 
+ Execution Time:0.081425189971924
+
+
+16:54:15 | 127.0.0.1
+http://pulsa.go/ajax/getProduct
+SELECT GET_LOCK('d444854123900e1165a44f20a0316ed270d18065', 300) AS ci_session_lock 
+ Execution Time:0.0001070499420166
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd444854123900e1165a44f20a0316ed270d18065' 
+ Execution Time:0.00023484230041504
+
+SELECT *
+FROM `sp_p_product`
+WHERE `product_status` = '1'
+AND `provider_id` = '6Cri'
+ORDER BY `product_nom` 
+ Execution Time:0.042541980743408
+
+
+16:54:17 | 127.0.0.1
+http://pulsa.go/ajax/getPrice
+SELECT GET_LOCK('d444854123900e1165a44f20a0316ed270d18065', 300) AS ci_session_lock 
+ Execution Time:0.00012588500976562
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd444854123900e1165a44f20a0316ed270d18065' 
+ Execution Time:0.00038385391235352
+
+SELECT *
+FROM `sp_p_product`
+WHERE `product_status` = '1'
+AND `product_id` = 'g69Gt' 
+ Execution Time:0.00032997131347656
+
+
+17:30:45 | 127.0.0.1
+http://pulsa.go/admin/order_pulsa
+SELECT GET_LOCK('d444854123900e1165a44f20a0316ed270d18065', 300) AS ci_session_lock 
+ Execution Time:0.00017309188842773
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd444854123900e1165a44f20a0316ed270d18065' 
+ Execution Time:0.0003199577331543
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:7.7962875366211E-5
+
+SELECT *
+FROM `sp_user_group`
+ORDER BY `ug_name` 
+ Execution Time:4.2915344238281E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '8'
+ORDER BY `username` 
+ Execution Time:3.9100646972656E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '9'
+ORDER BY `username` 
+ Execution Time:3.6954879760742E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '3'
+ORDER BY `username` 
+ Execution Time:4.7922134399414E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '1'
+ORDER BY `username` 
+ Execution Time:4.0054321289062E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '6'
+ORDER BY `username` 
+ Execution Time:3.504753112793E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '5'
+ORDER BY `username` 
+ Execution Time:3.6954879760742E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '7'
+ORDER BY `username` 
+ Execution Time:3.504753112793E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '2'
+ORDER BY `username` 
+ Execution Time:3.6001205444336E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '4'
+ORDER BY `username` 
+ Execution Time:4.2915344238281E-5
+
+
+17:30:47 | 127.0.0.1
+http://pulsa.go/ajax/getNumber
+SELECT GET_LOCK('c3c8185f41af95609d0995c38bfc1c4849932144', 300) AS ci_session_lock 
+ Execution Time:0.00014996528625488
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'c3c8185f41af95609d0995c38bfc1c4849932144' 
+ Execution Time:0.00033807754516602
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'su718' 
+ Execution Time:0.00011897087097168
+
+SELECT *
+FROM `sp_number` as `a`
+JOIN `sp_provider` as `b` ON `a`.`provider_id`=`b`.`provider_id`
+WHERE `number_status` = '1'
+AND `user_id` = '86'
+GROUP BY `a`.`provider_id`
+ORDER BY `a`.`provider_id` 
+ Execution Time:7.2956085205078E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'su718' 
+ Execution Time:5.6028366088867E-5
+
+SELECT *
+FROM `sp_number`
+WHERE `number_status` = '1'
+AND `user_id` = '86'
+AND `provider_id` = 'bMcq'
+ORDER BY `number_id` 
+ Execution Time:5.6982040405273E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'su718' 
+ Execution Time:4.6014785766602E-5
+
+SELECT *
+FROM `sp_number`
+WHERE `number_status` = '1'
+AND `user_id` = '86'
+AND `provider_id` = 'Uptd'
+ORDER BY `number_id` 
+ Execution Time:4.6014785766602E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'su718' 
+ Execution Time:4.887580871582E-5
+
+SELECT *
+FROM `sp_number`
+WHERE `number_status` = '1'
+AND `user_id` = '86'
+AND `provider_id` = 'vYHq'
+ORDER BY `number_id` 
+ Execution Time:5.0067901611328E-5
+
+
+17:30:49 | 127.0.0.1
+http://pulsa.go/ajax/getProvider
+SELECT GET_LOCK('c3c8185f41af95609d0995c38bfc1c4849932144', 300) AS ci_session_lock 
+ Execution Time:0.00016498565673828
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'c3c8185f41af95609d0995c38bfc1c4849932144' 
+ Execution Time:0.00025391578674316
+
+SELECT *
+FROM `sp_provider`
+WHERE `provider_status` = '1' 
+ Execution Time:8.4877014160156E-5
+
+SELECT *
+FROM `sp_p_product`
+WHERE `product_status` = '1'
+AND `provider_id` = 'Uptd'
+ORDER BY `product_nom` 
+ Execution Time:0.02521800994873
+
+
+17:30:50 | 127.0.0.1
+http://pulsa.go/ajax/getPrice
+SELECT GET_LOCK('c3c8185f41af95609d0995c38bfc1c4849932144', 300) AS ci_session_lock 
+ Execution Time:0.0001368522644043
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'c3c8185f41af95609d0995c38bfc1c4849932144' 
+ Execution Time:0.00024986267089844
+
+SELECT *
+FROM `sp_p_product`
+WHERE `product_status` = '1'
+AND `product_id` = 'AlqPY' 
+ Execution Time:0.0003199577331543
+
+
+17:33:56 | 127.0.0.1
+http://pulsa.go/admin/order_pulsa
+SELECT GET_LOCK('c3c8185f41af95609d0995c38bfc1c4849932144', 300) AS ci_session_lock 
+ Execution Time:0.00010395050048828
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'c3c8185f41af95609d0995c38bfc1c4849932144' 
+ Execution Time:0.00022292137145996
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:8.9883804321289E-5
+
+SELECT *
+FROM `sp_user_group`
+ORDER BY `ug_name` 
+ Execution Time:4.3869018554688E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '8'
+ORDER BY `username` 
+ Execution Time:5.5074691772461E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '9'
+ORDER BY `username` 
+ Execution Time:4.7922134399414E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '3'
+ORDER BY `username` 
+ Execution Time:5.2928924560547E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '1'
+ORDER BY `username` 
+ Execution Time:5.1975250244141E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '6'
+ORDER BY `username` 
+ Execution Time:0.00013113021850586
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '5'
+ORDER BY `username` 
+ Execution Time:6.2942504882812E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '7'
+ORDER BY `username` 
+ Execution Time:6.1988830566406E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '2'
+ORDER BY `username` 
+ Execution Time:5.8889389038086E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '4'
+ORDER BY `username` 
+ Execution Time:9.2029571533203E-5
+
+
+17:38:17 | 127.0.0.1
+http://pulsa.go/admin/order_pulsa
+SELECT GET_LOCK('c3c8185f41af95609d0995c38bfc1c4849932144', 300) AS ci_session_lock 
+ Execution Time:0.017781019210815
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'c3c8185f41af95609d0995c38bfc1c4849932144' 
+ Execution Time:0.00031781196594238
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00011897087097168
+
+SELECT *
+FROM `sp_user_group`
+ORDER BY `ug_name` 
+ Execution Time:5.1021575927734E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '8'
+ORDER BY `username` 
+ Execution Time:5.1975250244141E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '9'
+ORDER BY `username` 
+ Execution Time:5.3882598876953E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '3'
+ORDER BY `username` 
+ Execution Time:6.6041946411133E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '1'
+ORDER BY `username` 
+ Execution Time:5.4836273193359E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '6'
+ORDER BY `username` 
+ Execution Time:4.4822692871094E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '5'
+ORDER BY `username` 
+ Execution Time:4.2915344238281E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '7'
+ORDER BY `username` 
+ Execution Time:3.9100646972656E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '2'
+ORDER BY `username` 
+ Execution Time:5.9127807617188E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '4'
+ORDER BY `username` 
+ Execution Time:6.2942504882812E-5
+
+
+17:38:28 | 127.0.0.1
+http://pulsa.go/admin/order_pulsa
+SELECT GET_LOCK('95be9625ac37d5f7864e21c2c2c24d7f47fa31ac', 300) AS ci_session_lock 
+ Execution Time:0.00012898445129395
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '95be9625ac37d5f7864e21c2c2c24d7f47fa31ac' 
+ Execution Time:0.00025010108947754
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:9.9897384643555E-5
+
+SELECT *
+FROM `sp_user_group`
+ORDER BY `ug_name` 
+ Execution Time:4.6014785766602E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '8'
+ORDER BY `username` 
+ Execution Time:4.7922134399414E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '9'
+ORDER BY `username` 
+ Execution Time:4.2915344238281E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '3'
+ORDER BY `username` 
+ Execution Time:5.793571472168E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '1'
+ORDER BY `username` 
+ Execution Time:4.9829483032227E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '6'
+ORDER BY `username` 
+ Execution Time:4.1961669921875E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '5'
+ORDER BY `username` 
+ Execution Time:4.6014785766602E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '7'
+ORDER BY `username` 
+ Execution Time:5.0067901611328E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '2'
+ORDER BY `username` 
+ Execution Time:4.6014785766602E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '4'
+ORDER BY `username` 
+ Execution Time:5.4121017456055E-5
+
+
+17:38:35 | 127.0.0.1
+http://pulsa.go/admin/order_pulsa
+SELECT GET_LOCK('95be9625ac37d5f7864e21c2c2c24d7f47fa31ac', 300) AS ci_session_lock 
+ Execution Time:0.00014591217041016
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '95be9625ac37d5f7864e21c2c2c24d7f47fa31ac' 
+ Execution Time:0.00042009353637695
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00010800361633301
+
+SELECT *
+FROM `sp_user_group`
+ORDER BY `ug_name` 
+ Execution Time:7.2002410888672E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '8'
+ORDER BY `username` 
+ Execution Time:0.00011205673217773
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '9'
+ORDER BY `username` 
+ Execution Time:0.00013995170593262
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '3'
+ORDER BY `username` 
+ Execution Time:9.7990036010742E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '1'
+ORDER BY `username` 
+ Execution Time:0.00016498565673828
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '6'
+ORDER BY `username` 
+ Execution Time:4.4822692871094E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '5'
+ORDER BY `username` 
+ Execution Time:4.4822692871094E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '7'
+ORDER BY `username` 
+ Execution Time:3.6001205444336E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '2'
+ORDER BY `username` 
+ Execution Time:5.8174133300781E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '4'
+ORDER BY `username` 
+ Execution Time:4.6968460083008E-5
+
+
+17:38:35 | 127.0.0.1
+http://pulsa.go/admin/order_pulsa
+SELECT GET_LOCK('95be9625ac37d5f7864e21c2c2c24d7f47fa31ac', 300) AS ci_session_lock 
+ Execution Time:9.3936920166016E-5
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '95be9625ac37d5f7864e21c2c2c24d7f47fa31ac' 
+ Execution Time:0.012601137161255
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:7.8201293945312E-5
+
+SELECT *
+FROM `sp_user_group`
+ORDER BY `ug_name` 
+ Execution Time:3.814697265625E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '8'
+ORDER BY `username` 
+ Execution Time:4.1007995605469E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '9'
+ORDER BY `username` 
+ Execution Time:4.5061111450195E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '3'
+ORDER BY `username` 
+ Execution Time:0.00017809867858887
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '1'
+ORDER BY `username` 
+ Execution Time:9.4890594482422E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '6'
+ORDER BY `username` 
+ Execution Time:6.6041946411133E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '5'
+ORDER BY `username` 
+ Execution Time:6.3896179199219E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '7'
+ORDER BY `username` 
+ Execution Time:5.5789947509766E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '2'
+ORDER BY `username` 
+ Execution Time:5.2928924560547E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '4'
+ORDER BY `username` 
+ Execution Time:8.1062316894531E-5
+
+
+17:38:42 | 127.0.0.1
+http://pulsa.go/admin/order_pulsa
+SELECT GET_LOCK('95be9625ac37d5f7864e21c2c2c24d7f47fa31ac', 300) AS ci_session_lock 
+ Execution Time:0.00019097328186035
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '95be9625ac37d5f7864e21c2c2c24d7f47fa31ac' 
+ Execution Time:0.0003659725189209
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00010991096496582
+
+SELECT *
+FROM `sp_user_group`
+ORDER BY `ug_name` 
+ Execution Time:6.6041946411133E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '8'
+ORDER BY `username` 
+ Execution Time:7.3909759521484E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '9'
+ORDER BY `username` 
+ Execution Time:6.0081481933594E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '3'
+ORDER BY `username` 
+ Execution Time:7.1048736572266E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '1'
+ORDER BY `username` 
+ Execution Time:7.4148178100586E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '6'
+ORDER BY `username` 
+ Execution Time:6.0796737670898E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '5'
+ORDER BY `username` 
+ Execution Time:0.00042486190795898
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '7'
+ORDER BY `username` 
+ Execution Time:7.8916549682617E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '2'
+ORDER BY `username` 
+ Execution Time:9.1075897216797E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '4'
+ORDER BY `username` 
+ Execution Time:8.702278137207E-5
+
+
+17:38:45 | 127.0.0.1
+http://pulsa.go/ajax/getNumber
+SELECT GET_LOCK('95be9625ac37d5f7864e21c2c2c24d7f47fa31ac', 300) AS ci_session_lock 
+ Execution Time:0.00010108947753906
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '95be9625ac37d5f7864e21c2c2c24d7f47fa31ac' 
+ Execution Time:0.00025701522827148
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'su718' 
+ Execution Time:7.319450378418E-5
+
+SELECT *
+FROM `sp_number` as `a`
+JOIN `sp_provider` as `b` ON `a`.`provider_id`=`b`.`provider_id`
+WHERE `number_status` = '1'
+AND `user_id` = '86'
+GROUP BY `a`.`provider_id`
+ORDER BY `a`.`provider_id` 
+ Execution Time:6.103515625E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'su718' 
+ Execution Time:5.6028366088867E-5
+
+SELECT *
+FROM `sp_number`
+WHERE `number_status` = '1'
+AND `user_id` = '86'
+AND `provider_id` = 'bMcq'
+ORDER BY `number_id` 
+ Execution Time:5.4121017456055E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'su718' 
+ Execution Time:5.5074691772461E-5
+
+SELECT *
+FROM `sp_number`
+WHERE `number_status` = '1'
+AND `user_id` = '86'
+AND `provider_id` = 'Uptd'
+ORDER BY `number_id` 
+ Execution Time:5.3167343139648E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'su718' 
+ Execution Time:5.4121017456055E-5
+
+SELECT *
+FROM `sp_number`
+WHERE `number_status` = '1'
+AND `user_id` = '86'
+AND `provider_id` = 'vYHq'
+ORDER BY `number_id` 
+ Execution Time:5.1975250244141E-5
+
+
+17:38:47 | 127.0.0.1
+http://pulsa.go/ajax/getProvider
+SELECT GET_LOCK('95be9625ac37d5f7864e21c2c2c24d7f47fa31ac', 300) AS ci_session_lock 
+ Execution Time:0.00013899803161621
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '95be9625ac37d5f7864e21c2c2c24d7f47fa31ac' 
+ Execution Time:0.00027298927307129
+
+SELECT *
+FROM `sp_provider`
+WHERE `provider_status` = '1' 
+ Execution Time:0.00010204315185547
+
+SELECT *
+FROM `sp_p_product`
+WHERE `product_status` = '1'
+AND `provider_id` = 'bMcq'
+ORDER BY `product_nom` 
+ Execution Time:5.3882598876953E-5
+
+
+17:38:48 | 127.0.0.1
+http://pulsa.go/ajax/getPrice
+SELECT GET_LOCK('95be9625ac37d5f7864e21c2c2c24d7f47fa31ac', 300) AS ci_session_lock 
+ Execution Time:0.00010895729064941
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '95be9625ac37d5f7864e21c2c2c24d7f47fa31ac' 
+ Execution Time:0.00032997131347656
+
+SELECT *
+FROM `sp_p_product`
+WHERE `product_status` = '1'
+AND `product_id` = 'EUAt9' 
+ Execution Time:0.00012707710266113
+
+
+17:38:50 | 127.0.0.1
+http://pulsa.go/admin/order_pulsa
+SELECT GET_LOCK('95be9625ac37d5f7864e21c2c2c24d7f47fa31ac', 300) AS ci_session_lock 
+ Execution Time:0.00015592575073242
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '95be9625ac37d5f7864e21c2c2c24d7f47fa31ac' 
+ Execution Time:0.00037384033203125
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00010085105895996
+
+SELECT *
+FROM `sp_user_group`
+ORDER BY `ug_name` 
+ Execution Time:4.6968460083008E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '8'
+ORDER BY `username` 
+ Execution Time:5.3167343139648E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '9'
+ORDER BY `username` 
+ Execution Time:5.2928924560547E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '3'
+ORDER BY `username` 
+ Execution Time:7.5101852416992E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '1'
+ORDER BY `username` 
+ Execution Time:8.1062316894531E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '6'
+ORDER BY `username` 
+ Execution Time:7.8201293945312E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '5'
+ORDER BY `username` 
+ Execution Time:6.0081481933594E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '7'
+ORDER BY `username` 
+ Execution Time:0.00074410438537598
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '2'
+ORDER BY `username` 
+ Execution Time:7.0095062255859E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '4'
+ORDER BY `username` 
+ Execution Time:6.1988830566406E-5
+
+
+17:38:55 | 127.0.0.1
+http://pulsa.go/admin/order_pulsa
+SELECT GET_LOCK('95be9625ac37d5f7864e21c2c2c24d7f47fa31ac', 300) AS ci_session_lock 
+ Execution Time:0.00025510787963867
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '95be9625ac37d5f7864e21c2c2c24d7f47fa31ac' 
+ Execution Time:0.00042486190795898
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00011992454528809
+
+SELECT *
+FROM `sp_user_group`
+ORDER BY `ug_name` 
+ Execution Time:5.1975250244141E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '8'
+ORDER BY `username` 
+ Execution Time:0.00016093254089355
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '9'
+ORDER BY `username` 
+ Execution Time:0.00017285346984863
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '3'
+ORDER BY `username` 
+ Execution Time:0.00011205673217773
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '1'
+ORDER BY `username` 
+ Execution Time:7.2002410888672E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '6'
+ORDER BY `username` 
+ Execution Time:5.6982040405273E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '5'
+ORDER BY `username` 
+ Execution Time:6.103515625E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '7'
+ORDER BY `username` 
+ Execution Time:7.9870223999023E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '2'
+ORDER BY `username` 
+ Execution Time:8.9168548583984E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '4'
+ORDER BY `username` 
+ Execution Time:8.8930130004883E-5
+
+
+17:39:17 | 127.0.0.1
+http://pulsa.go/admin/order_pulsa
+SELECT GET_LOCK('95be9625ac37d5f7864e21c2c2c24d7f47fa31ac', 300) AS ci_session_lock 
+ Execution Time:0.00016999244689941
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '95be9625ac37d5f7864e21c2c2c24d7f47fa31ac' 
+ Execution Time:0.00042986869812012
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00031614303588867
+
+SELECT *
+FROM `sp_user_group`
+ORDER BY `ug_name` 
+ Execution Time:0.00016617774963379
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '8'
+ORDER BY `username` 
+ Execution Time:6.1988830566406E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '9'
+ORDER BY `username` 
+ Execution Time:4.1007995605469E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '3'
+ORDER BY `username` 
+ Execution Time:7.2956085205078E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '1'
+ORDER BY `username` 
+ Execution Time:6.6995620727539E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '6'
+ORDER BY `username` 
+ Execution Time:6.5803527832031E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '5'
+ORDER BY `username` 
+ Execution Time:0.00019598007202148
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '7'
+ORDER BY `username` 
+ Execution Time:0.0001680850982666
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '2'
+ORDER BY `username` 
+ Execution Time:5.7220458984375E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '4'
+ORDER BY `username` 
+ Execution Time:8.6069107055664E-5
+
+
+17:41:11 | 127.0.0.1
+http://pulsa.go/admin/order_pulsa
+SELECT GET_LOCK('95be9625ac37d5f7864e21c2c2c24d7f47fa31ac', 300) AS ci_session_lock 
+ Execution Time:0.00016307830810547
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '95be9625ac37d5f7864e21c2c2c24d7f47fa31ac' 
+ Execution Time:0.00027608871459961
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00010395050048828
+
+SELECT *
+FROM `sp_user_group`
+ORDER BY `ug_name` 
+ Execution Time:0.00010895729064941
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '8'
+ORDER BY `username` 
+ Execution Time:0.00021100044250488
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '9'
+ORDER BY `username` 
+ Execution Time:8.2015991210938E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '3'
+ORDER BY `username` 
+ Execution Time:7.4863433837891E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '1'
+ORDER BY `username` 
+ Execution Time:9.7036361694336E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '6'
+ORDER BY `username` 
+ Execution Time:4.6968460083008E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '5'
+ORDER BY `username` 
+ Execution Time:4.9114227294922E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '7'
+ORDER BY `username` 
+ Execution Time:5.5074691772461E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '2'
+ORDER BY `username` 
+ Execution Time:4.6014785766602E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '4'
+ORDER BY `username` 
+ Execution Time:5.793571472168E-5
+
+
+17:41:21 | 127.0.0.1
+http://pulsa.go/admin/order_pulsa
+SELECT GET_LOCK('95be9625ac37d5f7864e21c2c2c24d7f47fa31ac', 300) AS ci_session_lock 
+ Execution Time:0.00015616416931152
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '95be9625ac37d5f7864e21c2c2c24d7f47fa31ac' 
+ Execution Time:0.00031900405883789
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:8.702278137207E-5
+
+SELECT *
+FROM `sp_user_group`
+ORDER BY `ug_name` 
+ Execution Time:4.7922134399414E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '8'
+ORDER BY `username` 
+ Execution Time:4.9829483032227E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '9'
+ORDER BY `username` 
+ Execution Time:4.6014785766602E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '3'
+ORDER BY `username` 
+ Execution Time:5.4121017456055E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '1'
+ORDER BY `username` 
+ Execution Time:0.00012397766113281
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '6'
+ORDER BY `username` 
+ Execution Time:5.2213668823242E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '5'
+ORDER BY `username` 
+ Execution Time:4.6968460083008E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '7'
+ORDER BY `username` 
+ Execution Time:4.1007995605469E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '2'
+ORDER BY `username` 
+ Execution Time:4.1007995605469E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `active` = '1'
+AND `ug_code` = '4'
+ORDER BY `username` 
+ Execution Time:5.9127807617188E-5
+
+
+17:41:51 | 127.0.0.1
+http://pulsa.go/ajax/getNumber
+SELECT GET_LOCK('95be9625ac37d5f7864e21c2c2c24d7f47fa31ac', 300) AS ci_session_lock 
+ Execution Time:0.010715961456299
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '95be9625ac37d5f7864e21c2c2c24d7f47fa31ac' 
+ Execution Time:0.0003349781036377
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'pi353' 
+ Execution Time:0.0002589225769043
+
+SELECT *
+FROM `sp_number` as `a`
+JOIN `sp_provider` as `b` ON `a`.`provider_id`=`b`.`provider_id`
+WHERE `number_status` = '1'
+AND `user_id` = '77'
+GROUP BY `a`.`provider_id`
+ORDER BY `a`.`provider_id` 
+ Execution Time:0.10914897918701
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'pi353' 
+ Execution Time:8.5115432739258E-5
+
+SELECT *
+FROM `sp_number`
+WHERE `number_status` = '1'
+AND `user_id` = '77'
+AND `provider_id` = 'v6CY'
+ORDER BY `number_id` 
+ Execution Time:0.022052049636841
+
+
+17:41:53 | 127.0.0.1
+http://pulsa.go/ajax/getProvider
+SELECT GET_LOCK('95be9625ac37d5f7864e21c2c2c24d7f47fa31ac', 300) AS ci_session_lock 
+ Execution Time:0.00014805793762207
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '95be9625ac37d5f7864e21c2c2c24d7f47fa31ac' 
+ Execution Time:0.00032401084899902
+
+SELECT *
+FROM `sp_provider`
+WHERE `provider_status` = '1' 
+ Execution Time:0.0001521110534668
+
+SELECT *
+FROM `sp_p_product`
+WHERE `product_status` = '1'
+AND `provider_id` = 'v6CY'
+ORDER BY `product_nom` 
+ Execution Time:0.070897102355957
+
+
+17:41:56 | 127.0.0.1
+http://pulsa.go/ajax/getPrice
+SELECT GET_LOCK('95be9625ac37d5f7864e21c2c2c24d7f47fa31ac', 300) AS ci_session_lock 
+ Execution Time:0.00014901161193848
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '95be9625ac37d5f7864e21c2c2c24d7f47fa31ac' 
+ Execution Time:0.00028085708618164
+
+SELECT *
+FROM `sp_p_product`
+WHERE `product_status` = '1'
+AND `product_id` = 'VBSux' 
+ Execution Time:0.00029897689819336
+

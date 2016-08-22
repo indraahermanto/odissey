@@ -1,0 +1,2055 @@
+
+12:45:22 | 127.0.0.1
+http://pulsa.go/
+SELECT GET_LOCK('9756d499f7b5d996703e6324fcd212c5271e19bf', 300) AS ci_session_lock 
+ Execution Time:0.11592102050781
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '9756d499f7b5d996703e6324fcd212c5271e19bf' 
+ Execution Time:0.63515710830688
+
+
+13:23:06 | 127.0.0.1
+http://pulsa.go/
+SELECT GET_LOCK('9756d499f7b5d996703e6324fcd212c5271e19bf', 300) AS ci_session_lock 
+ Execution Time:0.00051403045654297
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '9756d499f7b5d996703e6324fcd212c5271e19bf' 
+ Execution Time:0.001349925994873
+
+
+13:23:06 | 127.0.0.1
+http://pulsa.go/
+SELECT GET_LOCK('9756d499f7b5d996703e6324fcd212c5271e19bf', 300) AS ci_session_lock 
+ Execution Time:0.13240885734558
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '9756d499f7b5d996703e6324fcd212c5271e19bf' 
+ Execution Time:0.00043916702270508
+
+
+13:23:10 | 127.0.0.1
+http://pulsa.go/member/login
+SELECT GET_LOCK('fa4bae3b48c09e8d46f92ad4a30ec4152ffa6643', 300) AS ci_session_lock 
+ Execution Time:0.00013279914855957
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'fa4bae3b48c09e8d46f92ad4a30ec4152ffa6643' 
+ Execution Time:0.00048303604125977
+
+
+13:23:16 | 127.0.0.1
+http://pulsa.go/
+SELECT GET_LOCK('fa4bae3b48c09e8d46f92ad4a30ec4152ffa6643', 300) AS ci_session_lock 
+ Execution Time:0.00010800361633301
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'fa4bae3b48c09e8d46f92ad4a30ec4152ffa6643' 
+ Execution Time:0.00041103363037109
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.015844106674194
+
+
+13:23:18 | 127.0.0.1
+http://pulsa.go/admin
+SELECT GET_LOCK('fa4bae3b48c09e8d46f92ad4a30ec4152ffa6643', 300) AS ci_session_lock 
+ Execution Time:0.00023293495178223
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'fa4bae3b48c09e8d46f92ad4a30ec4152ffa6643' 
+ Execution Time:0.00060200691223145
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:9.2983245849609E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('200', '210', '220', '290')
+AND `order_status` = 1 
+ Execution Time:0.017985820770264
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('110', '510', '620', '720')
+AND `order_status` = 1 
+ Execution Time:0.00041294097900391
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('100', '110', '120', '190')
+AND `order_status` = 1 
+ Execution Time:0.00076103210449219
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('210', '610', '700')
+AND `order_status` = 1 
+ Execution Time:0.00030207633972168
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('500', '590')
+AND `order_status` = 1 
+ Execution Time:0.00028681755065918
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('400')
+AND `order_status` = 1 
+ Execution Time:0.00075507164001465
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('600')
+AND `order_status` = 1 
+ Execution Time:0.00014805793762207
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('610', '620', '630', '640')
+AND `order_status` = 1 
+ Execution Time:0.00016283988952637
+
+
+13:23:21 | 127.0.0.1
+http://pulsa.go/admin/payments
+SELECT GET_LOCK('fa4bae3b48c09e8d46f92ad4a30ec4152ffa6643', 300) AS ci_session_lock 
+ Execution Time:0.00010895729064941
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'fa4bae3b48c09e8d46f92ad4a30ec4152ffa6643' 
+ Execution Time:0.00034999847412109
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00033712387084961
+
+SELECT `c`.`first_name`, `d`.`ug_name`, `c`.`username`, SUM(`product_price`) AS `amount`
+FROM `sp_invoice` as `a`
+JOIN `sp_order` as `b` ON `a`.`order_id`=`b`.`order_id`
+JOIN `sp_user` as `c` ON `b`.`user_id`=`c`.`id`
+JOIN `sp_user_group` as `d` ON `c`.`ug_code`=`d`.`ug_code`
+WHERE `istat_code` = 'hut'
+GROUP BY `b`.`user_id`
+ORDER BY `c`.`first_name` 
+ Execution Time:0.010922193527222
+
+
+13:23:21 | 127.0.0.1
+http://pulsa.go/admin/transaction
+SELECT GET_LOCK('fa4bae3b48c09e8d46f92ad4a30ec4152ffa6643', 300) AS ci_session_lock 
+ Execution Time:0.00042486190795898
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'fa4bae3b48c09e8d46f92ad4a30ec4152ffa6643' 
+ Execution Time:0.0003669261932373
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:7.9870223999023E-5
+
+SELECT *
+FROM `sp_order` as `a`
+WHERE `otype_code` IN('400', '600', '610', '620', '630', '400', '210', '110', '510', '700', '720', '120', '220', '190', '290', '590', '510')
+ORDER BY `order_date` DESC 
+ Execution Time:0.0024020671844482
+
+SELECT *
+FROM `sp_order` as `a`
+JOIN `sp_user` as `b` ON `a`.`user_id`=`b`.`id`
+JOIN `sp_order_type` as `c` ON `a`.`otype_code`=`c`.`otype_code`
+WHERE `a`.`otype_code` IN('400', '600', '610', '620', '630', '400', '210', '110', '510', '700', '720', '120', '220', '190', '290', '590', '510')
+ORDER BY `order_date` DESC
+ LIMIT 20 
+ Execution Time:0.012434005737305
+
+
+13:23:23 | 127.0.0.1
+http://pulsa.go/admin/payments
+SELECT GET_LOCK('fa4bae3b48c09e8d46f92ad4a30ec4152ffa6643', 300) AS ci_session_lock 
+ Execution Time:0.00058507919311523
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'fa4bae3b48c09e8d46f92ad4a30ec4152ffa6643' 
+ Execution Time:0.00011491775512695
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:7.7962875366211E-5
+
+SELECT `c`.`first_name`, `d`.`ug_name`, `c`.`username`, SUM(`product_price`) AS `amount`
+FROM `sp_invoice` as `a`
+JOIN `sp_order` as `b` ON `a`.`order_id`=`b`.`order_id`
+JOIN `sp_user` as `c` ON `b`.`user_id`=`c`.`id`
+JOIN `sp_user_group` as `d` ON `c`.`ug_code`=`d`.`ug_code`
+WHERE `istat_code` = 'hut'
+GROUP BY `b`.`user_id`
+ORDER BY `c`.`first_name` 
+ Execution Time:5.0067901611328E-5
+
+
+13:23:26 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('fa4bae3b48c09e8d46f92ad4a30ec4152ffa6643', 300) AS ci_session_lock 
+ Execution Time:0.00011110305786133
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'fa4bae3b48c09e8d46f92ad4a30ec4152ffa6643' 
+ Execution Time:0.00056004524230957
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00030684471130371
+
+
+13:29:02 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('fa4bae3b48c09e8d46f92ad4a30ec4152ffa6643', 300) AS ci_session_lock 
+ Execution Time:0.00055217742919922
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'fa4bae3b48c09e8d46f92ad4a30ec4152ffa6643' 
+ Execution Time:0.00041699409484863
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:8.2969665527344E-5
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'abi593' 
+ Execution Time:0.00023293495178223
+
+
+17:23:33 | 127.0.0.1
+http://pulsa.go/
+
+17:23:33 | 127.0.0.1
+http://pulsa.go/
+SELECT GET_LOCK('ff8f45571306cd8e1871c63cb44353cf5946ea92', 300) AS ci_session_lock 
+ Execution Time:0.00017094612121582
+
+SELECT GET_LOCK('e363ec6a2971f9c8d03776211d6ce70d83897013', 300) AS ci_session_lock 
+ Execution Time:0.0001530647277832
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'ff8f45571306cd8e1871c63cb44353cf5946ea92' 
+ Execution Time:0.00084590911865234
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'e363ec6a2971f9c8d03776211d6ce70d83897013' 
+ Execution Time:0.00082802772521973
+
+
+17:23:39 | 127.0.0.1
+http://pulsa.go/member/login
+SELECT GET_LOCK('e363ec6a2971f9c8d03776211d6ce70d83897013', 300) AS ci_session_lock 
+ Execution Time:0.00055193901062012
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'e363ec6a2971f9c8d03776211d6ce70d83897013' 
+ Execution Time:0.0005028247833252
+
+
+17:24:09 | 127.0.0.1
+http://pulsa.go/
+SELECT GET_LOCK('e363ec6a2971f9c8d03776211d6ce70d83897013', 300) AS ci_session_lock 
+ Execution Time:0.00011706352233887
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'e363ec6a2971f9c8d03776211d6ce70d83897013' 
+ Execution Time:0.00030708312988281
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.011704206466675
+
+
+17:26:44 | 127.0.0.1
+http://pulsa.go/admin
+SELECT GET_LOCK('e363ec6a2971f9c8d03776211d6ce70d83897013', 300) AS ci_session_lock 
+ Execution Time:0.0001990795135498
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'e363ec6a2971f9c8d03776211d6ce70d83897013' 
+ Execution Time:0.00063395500183105
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00010800361633301
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('200', '210', '220', '290')
+AND `order_status` = 1 
+ Execution Time:0.029894113540649
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('110', '510', '620', '720')
+AND `order_status` = 1 
+ Execution Time:0.0006711483001709
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('100', '110', '120', '190')
+AND `order_status` = 1 
+ Execution Time:0.0015280246734619
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('210', '610', '700')
+AND `order_status` = 1 
+ Execution Time:0.0013289451599121
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('500', '590')
+AND `order_status` = 1 
+ Execution Time:0.00055193901062012
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('400')
+AND `order_status` = 1 
+ Execution Time:0.0013329982757568
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('600')
+AND `order_status` = 1 
+ Execution Time:0.00036287307739258
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('610', '620', '630', '640')
+AND `order_status` = 1 
+ Execution Time:0.00029516220092773
+
+
+17:26:50 | 127.0.0.1
+http://pulsa.go/admin/payments
+SELECT GET_LOCK('e363ec6a2971f9c8d03776211d6ce70d83897013', 300) AS ci_session_lock 
+ Execution Time:0.00060915946960449
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'e363ec6a2971f9c8d03776211d6ce70d83897013' 
+ Execution Time:0.00074386596679688
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00011706352233887
+
+SELECT `c`.`first_name`, `d`.`ug_name`, `c`.`username`, SUM(`product_price`) AS `amount`
+FROM `sp_invoice` as `a`
+JOIN `sp_order` as `b` ON `a`.`order_id`=`b`.`order_id`
+JOIN `sp_user` as `c` ON `b`.`user_id`=`c`.`id`
+JOIN `sp_user_group` as `d` ON `c`.`ug_code`=`d`.`ug_code`
+WHERE `istat_code` = 'hut'
+GROUP BY `b`.`user_id`
+ORDER BY `c`.`first_name` 
+ Execution Time:0.0010440349578857
+
+
+17:26:51 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('e363ec6a2971f9c8d03776211d6ce70d83897013', 300) AS ci_session_lock 
+ Execution Time:9.5129013061523E-5
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'e363ec6a2971f9c8d03776211d6ce70d83897013' 
+ Execution Time:0.0011970996856689
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00023698806762695
+
+SELECT *
+FROM `sp_user`
+WHERE `username` = 'abi593' 
+ Execution Time:0.00045514106750488
+
+
+17:27:58 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('e363ec6a2971f9c8d03776211d6ce70d83897013', 300) AS ci_session_lock 
+ Execution Time:0.00012397766113281
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'e363ec6a2971f9c8d03776211d6ce70d83897013' 
+ Execution Time:0.00034809112548828
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00010585784912109
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'abi593' 
+ Execution Time:0.00054478645324707
+
+
+17:28:02 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('e363ec6a2971f9c8d03776211d6ce70d83897013', 300) AS ci_session_lock 
+ Execution Time:0.00016498565673828
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'e363ec6a2971f9c8d03776211d6ce70d83897013' 
+ Execution Time:0.0005791187286377
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:8.702278137207E-5
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'abi593' 
+ Execution Time:8.5115432739258E-5
+
+
+17:45:22 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('e363ec6a2971f9c8d03776211d6ce70d83897013', 300) AS ci_session_lock 
+ Execution Time:0.00016188621520996
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'e363ec6a2971f9c8d03776211d6ce70d83897013' 
+ Execution Time:0.00081801414489746
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00012683868408203
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'abi593' 
+ Execution Time:6.8187713623047E-5
+
+
+17:53:04 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('fa60fe82f4d6d2e6e098ac9e2359d631d00fa6de', 300) AS ci_session_lock 
+ Execution Time:0.00013995170593262
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'fa60fe82f4d6d2e6e098ac9e2359d631d00fa6de' 
+ Execution Time:0.00036883354187012
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00012707710266113
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'abi593' 
+ Execution Time:0.0001530647277832
+
+
+17:53:24 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('5da78e02e03f57b9c1b12cdda7aec997f5303c9b', 300) AS ci_session_lock 
+ Execution Time:0.00015807151794434
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5da78e02e03f57b9c1b12cdda7aec997f5303c9b' 
+ Execution Time:9.7036361694336E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00028705596923828
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'abi593' 
+ Execution Time:0.00016093254089355
+
+
+17:55:21 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('5da78e02e03f57b9c1b12cdda7aec997f5303c9b', 300) AS ci_session_lock 
+ Execution Time:0.00017690658569336
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5da78e02e03f57b9c1b12cdda7aec997f5303c9b' 
+ Execution Time:0.00013494491577148
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00029897689819336
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` IS NULL 
+ Execution Time:0.00026488304138184
+
+
+17:55:56 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('5da78e02e03f57b9c1b12cdda7aec997f5303c9b', 300) AS ci_session_lock 
+ Execution Time:0.00010895729064941
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5da78e02e03f57b9c1b12cdda7aec997f5303c9b' 
+ Execution Time:0.00032806396484375
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:9.2983245849609E-5
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'abi593' 
+ Execution Time:0.00015997886657715
+
+
+17:56:14 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('5da78e02e03f57b9c1b12cdda7aec997f5303c9b', 300) AS ci_session_lock 
+ Execution Time:0.00011396408081055
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5da78e02e03f57b9c1b12cdda7aec997f5303c9b' 
+ Execution Time:6.2942504882812E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00011301040649414
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'abi593' 
+ Execution Time:0.00018215179443359
+
+
+17:56:41 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('5da78e02e03f57b9c1b12cdda7aec997f5303c9b', 300) AS ci_session_lock 
+ Execution Time:0.00025415420532227
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5da78e02e03f57b9c1b12cdda7aec997f5303c9b' 
+ Execution Time:0.00081801414489746
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00013399124145508
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'abi593' 
+ Execution Time:0.00025701522827148
+
+
+18:02:12 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('5da78e02e03f57b9c1b12cdda7aec997f5303c9b', 300) AS ci_session_lock 
+ Execution Time:0.00049614906311035
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5da78e02e03f57b9c1b12cdda7aec997f5303c9b' 
+ Execution Time:0.00011396408081055
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00010514259338379
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'abi593' 
+ Execution Time:6.6041946411133E-5
+
+
+18:02:41 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('d3875ede56ac177820d08e1dd5f13aa103e2f9c8', 300) AS ci_session_lock 
+ Execution Time:0.00025200843811035
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd3875ede56ac177820d08e1dd5f13aa103e2f9c8' 
+ Execution Time:0.00015807151794434
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.0001370906829834
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'abi593' 
+ Execution Time:0.00017786026000977
+
+
+18:03:06 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('d3875ede56ac177820d08e1dd5f13aa103e2f9c8', 300) AS ci_session_lock 
+ Execution Time:0.00012803077697754
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd3875ede56ac177820d08e1dd5f13aa103e2f9c8' 
+ Execution Time:6.5088272094727E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:9.2983245849609E-5
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'abi593' 
+ Execution Time:7.2002410888672E-5
+
+
+18:04:46 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('d3875ede56ac177820d08e1dd5f13aa103e2f9c8', 300) AS ci_session_lock 
+ Execution Time:0.0002140998840332
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd3875ede56ac177820d08e1dd5f13aa103e2f9c8' 
+ Execution Time:0.00066804885864258
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00012302398681641
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'abi593' 
+ Execution Time:0.00010514259338379
+
+
+18:04:55 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('d3875ede56ac177820d08e1dd5f13aa103e2f9c8', 300) AS ci_session_lock 
+ Execution Time:0.00012898445129395
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd3875ede56ac177820d08e1dd5f13aa103e2f9c8' 
+ Execution Time:7.9870223999023E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00011301040649414
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'abi593' 
+ Execution Time:8.1062316894531E-5
+
+
+18:09:03 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('d3875ede56ac177820d08e1dd5f13aa103e2f9c8', 300) AS ci_session_lock 
+ Execution Time:0.00015401840209961
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'd3875ede56ac177820d08e1dd5f13aa103e2f9c8' 
+ Execution Time:8.2969665527344E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:8.082389831543E-5
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'abi593' 
+ Execution Time:0.00010991096496582
+
+
+18:09:27 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('4b4203222d9fb81c78054e888edb7055aac7d659', 300) AS ci_session_lock 
+ Execution Time:0.00011897087097168
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '4b4203222d9fb81c78054e888edb7055aac7d659' 
+ Execution Time:8.4877014160156E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:7.2956085205078E-5
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'abi593' 
+ Execution Time:4.9829483032227E-5
+
+
+18:12:14 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('4b4203222d9fb81c78054e888edb7055aac7d659', 300) AS ci_session_lock 
+ Execution Time:0.0001220703125
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '4b4203222d9fb81c78054e888edb7055aac7d659' 
+ Execution Time:7.6055526733398E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00011396408081055
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'abi593' 
+ Execution Time:7.6055526733398E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('600')
+AND `order_status` = 1 
+ Execution Time:5.0067901611328E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('610', '620', '630', '640')
+AND `order_status` = 1 
+ Execution Time:0.00017285346984863
+
+
+18:16:25 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('4b4203222d9fb81c78054e888edb7055aac7d659', 300) AS ci_session_lock 
+ Execution Time:0.00012898445129395
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '4b4203222d9fb81c78054e888edb7055aac7d659' 
+ Execution Time:8.2015991210938E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.0001070499420166
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'abi593' 
+ Execution Time:7.9154968261719E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '104' 
+ Execution Time:0.00031208992004395
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '104' 
+ Execution Time:0.00025606155395508
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '104' 
+ Execution Time:0.0001990795135498
+
+
+18:16:42 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('ec4d239b4b7523c951ba339cb421d2fae5cfa6cf', 300) AS ci_session_lock 
+ Execution Time:0.00012993812561035
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'ec4d239b4b7523c951ba339cb421d2fae5cfa6cf' 
+ Execution Time:7.4148178100586E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.0001528263092041
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'abi593' 
+ Execution Time:0.00016999244689941
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '104' 
+ Execution Time:0.00020098686218262
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '104' 
+ Execution Time:0.00014901161193848
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '104' 
+ Execution Time:0.00019216537475586
+
+
+18:17:36 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/abi593
+SELECT GET_LOCK('ec4d239b4b7523c951ba339cb421d2fae5cfa6cf', 300) AS ci_session_lock 
+ Execution Time:0.00022602081298828
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'ec4d239b4b7523c951ba339cb421d2fae5cfa6cf' 
+ Execution Time:0.0001528263092041
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00012087821960449
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'abi593' 
+ Execution Time:8.4877014160156E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '104' 
+ Execution Time:5.1975250244141E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '104' 
+ Execution Time:4.5061111450195E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '104' 
+ Execution Time:4.3153762817383E-5
+
+
+18:21:19 | 127.0.0.1
+http://pulsa.go/admin/payments
+SELECT GET_LOCK('ec4d239b4b7523c951ba339cb421d2fae5cfa6cf', 300) AS ci_session_lock 
+ Execution Time:0.0002138614654541
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'ec4d239b4b7523c951ba339cb421d2fae5cfa6cf' 
+ Execution Time:0.00014996528625488
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00028705596923828
+
+SELECT `c`.`first_name`, `d`.`ug_name`, `c`.`username`, SUM(`product_price`) AS `amount`
+FROM `sp_invoice` as `a`
+JOIN `sp_order` as `b` ON `a`.`order_id`=`b`.`order_id`
+JOIN `sp_user` as `c` ON `b`.`user_id`=`c`.`id`
+JOIN `sp_user_group` as `d` ON `c`.`ug_code`=`d`.`ug_code`
+WHERE `istat_code` = 'hut'
+GROUP BY `b`.`user_id`
+ORDER BY `c`.`first_name` 
+ Execution Time:6.103515625E-5
+
+
+18:21:20 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('ec4d239b4b7523c951ba339cb421d2fae5cfa6cf', 300) AS ci_session_lock 
+ Execution Time:7.8916549682617E-5
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'ec4d239b4b7523c951ba339cb421d2fae5cfa6cf' 
+ Execution Time:0.00026988983154297
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00020480155944824
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:0.00066113471984863
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:0.00029301643371582
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:0.00035214424133301
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:0.00028800964355469
+
+
+18:22:15 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('ec4d239b4b7523c951ba339cb421d2fae5cfa6cf', 300) AS ci_session_lock 
+ Execution Time:0.00013279914855957
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = 'ec4d239b4b7523c951ba339cb421d2fae5cfa6cf' 
+ Execution Time:6.9141387939453E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:8.0108642578125E-5
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:7.2002410888672E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:4.3153762817383E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:3.8862228393555E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:6.103515625E-5
+
+
+18:22:38 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('5b4a33e78cc641a4625b8e7c3f5e861d69ef5472', 300) AS ci_session_lock 
+ Execution Time:0.00011706352233887
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5b4a33e78cc641a4625b8e7c3f5e861d69ef5472' 
+ Execution Time:6.7949295043945E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00021791458129883
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:9.8943710327148E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:0.00013899803161621
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:8.0108642578125E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:3.4809112548828E-5
+
+
+18:22:50 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('5b4a33e78cc641a4625b8e7c3f5e861d69ef5472', 300) AS ci_session_lock 
+ Execution Time:0.00026297569274902
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5b4a33e78cc641a4625b8e7c3f5e861d69ef5472' 
+ Execution Time:0.00017189979553223
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.0001060962677002
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:0.00010108947753906
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:5.3882598876953E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:4.8160552978516E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:4.1007995605469E-5
+
+
+18:23:03 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('5b4a33e78cc641a4625b8e7c3f5e861d69ef5472', 300) AS ci_session_lock 
+ Execution Time:0.00050711631774902
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5b4a33e78cc641a4625b8e7c3f5e861d69ef5472' 
+ Execution Time:0.00015091896057129
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00013184547424316
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:9.6797943115234E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:6.4849853515625E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:6.1988830566406E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:5.9127807617188E-5
+
+
+18:23:11 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('5b4a33e78cc641a4625b8e7c3f5e861d69ef5472', 300) AS ci_session_lock 
+ Execution Time:0.00011706352233887
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5b4a33e78cc641a4625b8e7c3f5e861d69ef5472' 
+ Execution Time:7.4863433837891E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00028300285339355
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:0.00020599365234375
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:4.5061111450195E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:3.9815902709961E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:6.0081481933594E-5
+
+
+18:23:18 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('5b4a33e78cc641a4625b8e7c3f5e861d69ef5472', 300) AS ci_session_lock 
+ Execution Time:0.0001828670501709
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5b4a33e78cc641a4625b8e7c3f5e861d69ef5472' 
+ Execution Time:9.7990036010742E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:7.5817108154297E-5
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:4.6014785766602E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:3.3855438232422E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:3.1948089599609E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:3.0994415283203E-5
+
+
+18:23:27 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('5b4a33e78cc641a4625b8e7c3f5e861d69ef5472', 300) AS ci_session_lock 
+ Execution Time:0.00013303756713867
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5b4a33e78cc641a4625b8e7c3f5e861d69ef5472' 
+ Execution Time:8.1062316894531E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:9.608268737793E-5
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:7.6055526733398E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:4.887580871582E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:5.1975250244141E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:4.9829483032227E-5
+
+
+18:23:29 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('5b4a33e78cc641a4625b8e7c3f5e861d69ef5472', 300) AS ci_session_lock 
+ Execution Time:0.00012493133544922
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5b4a33e78cc641a4625b8e7c3f5e861d69ef5472' 
+ Execution Time:0.00036191940307617
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:7.3909759521484E-5
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:8.392333984375E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:5.8889389038086E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:6.5088272094727E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:5.2928924560547E-5
+
+
+18:23:38 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('5b4a33e78cc641a4625b8e7c3f5e861d69ef5472', 300) AS ci_session_lock 
+ Execution Time:0.00013017654418945
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5b4a33e78cc641a4625b8e7c3f5e861d69ef5472' 
+ Execution Time:7.4863433837891E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00010013580322266
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:9.9897384643555E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:8.9883804321289E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:0.00013017654418945
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:0.00016093254089355
+
+
+18:25:10 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('5b4a33e78cc641a4625b8e7c3f5e861d69ef5472', 300) AS ci_session_lock 
+ Execution Time:0.00024294853210449
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5b4a33e78cc641a4625b8e7c3f5e861d69ef5472' 
+ Execution Time:0.0006871223449707
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00012922286987305
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:0.00019693374633789
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:0.00015711784362793
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:7.7009201049805E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:8.4877014160156E-5
+
+
+18:25:21 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('5b4a33e78cc641a4625b8e7c3f5e861d69ef5472', 300) AS ci_session_lock 
+ Execution Time:0.00011396408081055
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5b4a33e78cc641a4625b8e7c3f5e861d69ef5472' 
+ Execution Time:0.00042891502380371
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:8.702278137207E-5
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:5.9843063354492E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:5.793571472168E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:4.3153762817383E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:4.1007995605469E-5
+
+
+18:26:01 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('5b4a33e78cc641a4625b8e7c3f5e861d69ef5472', 300) AS ci_session_lock 
+ Execution Time:0.00011801719665527
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5b4a33e78cc641a4625b8e7c3f5e861d69ef5472' 
+ Execution Time:8.1777572631836E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:7.3909759521484E-5
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:0.00019216537475586
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:6.2227249145508E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:9.8943710327148E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:3.814697265625E-5
+
+
+18:26:16 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('5b4a33e78cc641a4625b8e7c3f5e861d69ef5472', 300) AS ci_session_lock 
+ Execution Time:0.00015711784362793
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5b4a33e78cc641a4625b8e7c3f5e861d69ef5472' 
+ Execution Time:8.4161758422852E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:8.1062316894531E-5
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:5.1975250244141E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:3.6001205444336E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:3.2901763916016E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:3.1948089599609E-5
+
+
+18:26:26 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('5b4a33e78cc641a4625b8e7c3f5e861d69ef5472', 300) AS ci_session_lock 
+ Execution Time:9.2983245849609E-5
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5b4a33e78cc641a4625b8e7c3f5e861d69ef5472' 
+ Execution Time:8.9883804321289E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00010085105895996
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:7.2002410888672E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:5.1975250244141E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:4.6968460083008E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:3.9815902709961E-5
+
+
+18:27:04 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('5b4a33e78cc641a4625b8e7c3f5e861d69ef5472', 300) AS ci_session_lock 
+ Execution Time:0.00019502639770508
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5b4a33e78cc641a4625b8e7c3f5e861d69ef5472' 
+ Execution Time:0.000946044921875
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:7.3909759521484E-5
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:6.9856643676758E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:4.5061111450195E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:4.0054321289062E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:3.8862228393555E-5
+
+
+18:27:26 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('5b4a33e78cc641a4625b8e7c3f5e861d69ef5472', 300) AS ci_session_lock 
+ Execution Time:0.00016593933105469
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '5b4a33e78cc641a4625b8e7c3f5e861d69ef5472' 
+ Execution Time:9.7036361694336E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00010108947753906
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:0.00027799606323242
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:7.319450378418E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:4.7922134399414E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:4.0054321289062E-5
+
+
+18:27:56 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('1e9c213a6d45b17a18ae9752836a3b596747433b', 300) AS ci_session_lock 
+ Execution Time:0.00034594535827637
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '1e9c213a6d45b17a18ae9752836a3b596747433b' 
+ Execution Time:0.00041389465332031
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00012993812561035
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:0.00010418891906738
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:7.4148178100586E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:7.0095062255859E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:7.0810317993164E-5
+
+
+18:28:46 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('1e9c213a6d45b17a18ae9752836a3b596747433b', 300) AS ci_session_lock 
+ Execution Time:0.00013113021850586
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '1e9c213a6d45b17a18ae9752836a3b596747433b' 
+ Execution Time:7.3909759521484E-5
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:8.0108642578125E-5
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:6.413459777832E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:4.1961669921875E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:5.0067901611328E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:5.1021575927734E-5
+
+
+18:29:01 | 127.0.0.1
+http://pulsa.go/admin/payments/detail/an243
+SELECT GET_LOCK('1e9c213a6d45b17a18ae9752836a3b596747433b', 300) AS ci_session_lock 
+ Execution Time:0.00029397010803223
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '1e9c213a6d45b17a18ae9752836a3b596747433b' 
+ Execution Time:0.00048589706420898
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00010991096496582
+
+SELECT *
+FROM `sp_user` as `a`
+JOIN `sp_user_group` as `b` ON `a`.`ug_code`=`b`.`ug_code`
+JOIN `sp_number` as `c` ON `a`.`id`=`c`.`user_id`
+JOIN `sp_user_mod` as `d` ON `d`.`user_id`=`a`.`id`
+JOIN `sp_user_level` as `e` ON `d`.`ul_id`=`e`.`id`
+WHERE `username` = 'an243' 
+ Execution Time:8.2015991210938E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('630', '640')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:5.1975250244141E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('300')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:4.7922134399414E-5
+
+SELECT SUM(`order_amount`) AS `amount`
+FROM `sp_order`
+WHERE `otype_code` IN('120', '220', '630')
+AND `order_status` = 1
+AND `user_id` = '7' 
+ Execution Time:4.6968460083008E-5
+
+
+18:51:22 | 127.0.0.1
+http://pulsa.go/admin/orders
+SELECT GET_LOCK('1e9c213a6d45b17a18ae9752836a3b596747433b', 300) AS ci_session_lock 
+ Execution Time:0.00051093101501465
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '1e9c213a6d45b17a18ae9752836a3b596747433b' 
+ Execution Time:0.00024318695068359
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:8.1062316894531E-5
+
+SELECT *
+FROM `sp_order` as `a`
+JOIN `sp_user` as `b` ON `a`.`user_id`=`b`.`id`
+JOIN `sp_invoice` as `c` ON `a`.`order_id` = `c`.`order_id`
+JOIN `sp_invoice_stat` as `d` ON `c`.`istat_code` = `d`.`istat_code`
+JOIN `sp_number` as `e` ON `c`.`number_id`=`e`.`number_id`
+JOIN `sp_p_product` as `f` ON `c`.`product_id`=`f`.`product_id`
+JOIN `sp_order_type` as `g` ON `a`.`otype_code`=`g`.`otype_code`
+WHERE `a`.`otype_code` = '400'
+ORDER BY `a`.`order_date` DESC 
+ Execution Time:0.0025999546051025
+
+SELECT *
+FROM `sp_order` as `a`
+JOIN `sp_user` as `b` ON `a`.`user_id`=`b`.`id`
+JOIN `sp_invoice` as `c` ON `a`.`order_id` = `c`.`order_id`
+JOIN `sp_invoice_stat` as `d` ON `c`.`istat_code` = `d`.`istat_code`
+JOIN `sp_number` as `e` ON `c`.`number_id`=`e`.`number_id`
+JOIN `sp_p_product` as `f` ON `c`.`product_id`=`f`.`product_id`
+JOIN `sp_order_type` as `g` ON `a`.`otype_code`=`g`.`otype_code`
+WHERE `a`.`otype_code` = '400'
+ORDER BY `a`.`order_date` DESC
+ LIMIT 20 
+ Execution Time:0.0022997856140137
+
+SELECT *
+FROM `sp_invoice_stat` 
+ Execution Time:0.00010108947753906
+
+
+18:51:25 | 127.0.0.1
+http://pulsa.go/admin/transaction
+SELECT GET_LOCK('0461f2f8feea58ada9615adc62aef6708f8b211d', 300) AS ci_session_lock 
+ Execution Time:0.00016188621520996
+
+SELECT `data`
+FROM `siimanto_sess`
+WHERE `id` = '0461f2f8feea58ada9615adc62aef6708f8b211d' 
+ Execution Time:0.0012080669403076
+
+SELECT `sp_user_mod`.`ul_id` as `id`, `sp_user_level`.`name`, `sp_user_level`.`description`
+FROM `sp_user_mod`
+JOIN `sp_user_level` ON `sp_user_mod`.`ul_id`=`sp_user_level`.`id`
+WHERE `sp_user_mod`.`user_id` = '2' 
+ Execution Time:0.00039100646972656
+
+SELECT *
+FROM `sp_order` as `a`
+WHERE `otype_code` IN('400', '600', '610', '620', '630', '400', '210', '110', '510', '700', '720', '120', '220', '190', '290', '590', '510')
+ORDER BY `order_date` DESC 
+ Execution Time:0.0024209022521973
+
+SELECT *
+FROM `sp_order` as `a`
+JOIN `sp_user` as `b` ON `a`.`user_id`=`b`.`id`
+JOIN `sp_order_type` as `c` ON `a`.`otype_code`=`c`.`otype_code`
+WHERE `a`.`otype_code` IN('400', '600', '610', '620', '630', '400', '210', '110', '510', '700', '720', '120', '220', '190', '290', '590', '510')
+ORDER BY `order_date` DESC
+ LIMIT 20 
+ Execution Time:0.0018491744995117
+
